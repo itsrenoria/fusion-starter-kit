@@ -1,0 +1,100 @@
+[
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/action-square.png",
+    "hideTitle": true,
+    "id": "CEC4FBE4-74A8-4267-B175-4F6636BA57FF",
+    "layout": "Square",
+    "name": "Action"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/adventure-square.png",
+    "hideTitle": true,
+    "id": "842DF978-A0AE-45D2-ABFD-C3A194A1A381",
+    "layout": "Square",
+    "name": "Adventure"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/anime-square.png",
+    "hideTitle": true,
+    "id": "ABEC5D3C-689B-4E12-A724-FD3D4DCD01E0",
+    "layout": "Square",
+    "name": "Anime"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/comedy-square.png",
+    "hideTitle": true,
+    "id": "89247243-2627-4913-80C6-5670FEB36514",
+    "layout": "Square",
+    "name": "Comedy"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/documentary-square.png",
+    "hideTitle": true,
+    "id": "26CDD8F0-3859-4B4D-BD03-3AA32038A9E0",
+    "layout": "Square",
+    "name": "Documentary"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/drama-square.png",
+    "hideTitle": true,
+    "id": "311E46E7-3497-49A6-8448-34C3A0B6D6DC",
+    "layout": "Square",
+    "name": "Drama"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/family-square.png",
+    "hideTitle": true,
+    "id": "FAD5C6EE-2F3D-4104-88C0-27A33F69E30D",
+    "layout": "Square",
+    "name": "Family"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/history-square.png",
+    "hideTitle": true,
+    "id": "F91B9D87-5C9D-41FE-8261-6DBCF7A811DB",
+    "layout": "Square",
+    "name": "History"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/horror-square.png",
+    "hideTitle": true,
+    "id": "D8872A5C-91AF-4A08-ADF3-2DE48B070622",
+    "layout": "Square",
+    "name": "Horror"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/nature-square.png",
+    "hideTitle": true,
+    "id": "DCE69238-3497-48E2-BBF1-4D86662050F4",
+    "layout": "Square",
+    "name": "Nature"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/reality-square.png",
+    "hideTitle": true,
+    "id": "D716C36D-2CB1-42AA-B762-60F0B9E821C3",
+    "layout": "Square",
+    "name": "Reality"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/romance-square.png",
+    "hideTitle": true,
+    "id": "E9E2EA19-84A5-473B-9518-FA32C7C7689D",
+    "layout": "Square",
+    "name": "Romance"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/scifi-square.png",
+    "hideTitle": true,
+    "id": "ECD19AF8-B6FF-407D-BA98-2BE8E8BF94B0",
+    "layout": "Square",
+    "name": "Scifi"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/thriller-square.png",
+    "hideTitle": true,
+    "id": "67BFE5B2-E451-4F7F-9E07-51465FBCC099",
+    "layout": "Square",
+    "name": "Thriller"
+  }
+]
