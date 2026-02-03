@@ -1,2 +1,4 @@
 .DS_Store
 generate_site.py
+generate_json.py
+assets/

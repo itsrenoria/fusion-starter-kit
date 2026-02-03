@@ -1,0 +1,44 @@
+[
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/bafta-poster.png",
+    "hideTitle": true,
+    "id": "0D4A6435-6469-4D12-A561-9D4F814FE636",
+    "layout": "Poster",
+    "name": "Bafta"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/fisa-poster.png",
+    "hideTitle": true,
+    "id": "CD1A3AF0-D08C-450C-A893-D089F6252E7D",
+    "layout": "Poster",
+    "name": "Fisa"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/goldenglobes-poster.png",
+    "hideTitle": true,
+    "id": "E2892E24-094A-4DA9-BFF9-1322CEAFAF4B",
+    "layout": "Poster",
+    "name": "Goldenglobes"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/iff-poster.png",
+    "hideTitle": true,
+    "id": "ED107D75-BF59-4E20-B3C2-501A734103F2",
+    "layout": "Poster",
+    "name": "Iff"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/oscars-poster.png",
+    "hideTitle": true,
+    "id": "25289A44-698C-4A14-83DF-C253B57B88E9",
+    "layout": "Poster",
+    "name": "Oscars"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/viff-poster.png",
+    "hideTitle": true,
+    "id": "746100FB-9F3A-41A5-BCB7-F3FC1321586B",
+    "layout": "Poster",
+    "name": "Viff"
+  }
+]
