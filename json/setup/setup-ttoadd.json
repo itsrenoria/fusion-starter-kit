@@ -1,0 +1,429 @@
+{
+  "exportType" : "fusionWidgets",
+  "exportVersion" : 1,
+  "widgets" : [
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Daily Picks",
+          "listSlug" : "daily-picks",
+          "traktId" : 31897770,
+          "username" : "tvgeniekodi"
+        }
+      },
+      "id" : "trakt.EF19B376-7017-4DBC-AFDC-9286AE69401D",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Daily Picks",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Latest Movies",
+          "listSlug" : "latest-movies",
+          "traktId" : 30828678,
+          "username" : "tvgeniekodi"
+        }
+      },
+      "id" : "trakt.F089AF15-FBC1-440D-8863-B74160232664",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Latest Movies",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Trending Movies",
+          "listSlug" : "trending-movies",
+          "traktId" : 30828647,
+          "username" : "tvgeniekodi"
+        }
+      },
+      "id" : "trakt.D5E4C996-4781-40A7-A553-E897AC866408",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Movies",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Latest Shows",
+          "listSlug" : "latest-shows",
+          "traktId" : 31015440,
+          "username" : "tvgeniekodi"
+        }
+      },
+      "id" : "trakt.604EA10E-D893-49AE-BEE9-1C281ACFB462",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Latest Shows",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Trending Shows",
+          "listSlug" : "trending-shows",
+          "traktId" : 30828660,
+          "username" : "tvgeniekodi"
+        }
+      },
+      "id" : "trakt.1A319F30-72A9-420E-B9C0-E4E80D32FC28",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Shows",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Trending Anime Movies",
+          "listSlug" : "trending-anime-movies",
+          "traktId" : 30828755,
+          "username" : "tvgeniekodi"
+        }
+      },
+      "id" : "trakt.80EA8972-8E6D-43FF-93B7-9254E44C29C4",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Anime Movies",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Trending Anime Shows",
+          "listSlug" : "trending-anime-shows",
+          "traktId" : 30828760,
+          "username" : "tvgeniekodi"
+        }
+      },
+      "id" : "trakt.0CB86FE1-6035-49CA-94A4-CCD8D6249EA0",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Anime Shows",
+      "type" : "row.classic"
+    },
+    {
+      "dataSource" : {
+        "kind" : "collection",
+        "payload" : {
+          "items" : [
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Netflix Movies",
+                    "listSlug" : "netflix-movies",
+                    "traktId" : 30828956,
+                    "username" : "tvgeniekodi"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Netflix Shows",
+                    "listSlug" : "netflix-shows",
+                    "traktId" : 30828975,
+                    "username" : "tvgeniekodi"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "BCC26070-6DD6-4F36-B229-28D76F9F6F57",
+              "imageAspect" : "square",
+              "imageURL" : "https:\/\/files.orangebyte.io\/resources\/omni\/images\/groups\/netflix.png",
+              "title" : "Netflix"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Max Movies",
+                    "listSlug" : "max-movies",
+                    "traktId" : 30828916,
+                    "username" : "tvgeniekodi"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Max Shows",
+                    "listSlug" : "max-shows",
+                    "traktId" : 30828923,
+                    "username" : "tvgeniekodi"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "6E5FCCE6-9CBD-41EB-951D-9C10A919839D",
+              "imageAspect" : "square",
+              "imageURL" : "https:\/\/files.orangebyte.io\/resources\/omni\/images\/groups\/hbomax.png",
+              "title" : "HBO Max"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Disney+ Movies",
+                    "listSlug" : "disney-movies",
+                    "traktId" : 30828895,
+                    "username" : "tvgeniekodi"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Disney+ Shows",
+                    "listSlug" : "disney-shows",
+                    "traktId" : 30828903,
+                    "username" : "tvgeniekodi"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "EC9FEA7D-51C0-46F5-85D1-2EDC93C9A710",
+              "imageAspect" : "square",
+              "imageURL" : "https:\/\/files.orangebyte.io\/resources\/omni\/images\/groups\/disney.png",
+              "title" : "Disney+"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Apple+ Movies",
+                    "listSlug" : "apple-movies",
+                    "traktId" : 30828825,
+                    "username" : "tvgeniekodi"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Apple+ Shows",
+                    "listSlug" : "apple-shows",
+                    "traktId" : 30828834,
+                    "username" : "tvgeniekodi"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "39ED7DD1-CA33-4C8E-9A90-EB8BCDF3C4BE",
+              "imageAspect" : "square",
+              "imageURL" : "https:\/\/files.orangebyte.io\/resources\/omni\/images\/groups\/appletv.png",
+              "title" : "Apple TV+"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Hulu Movies",
+                    "listSlug" : "hulu-movies",
+                    "traktId" : 30828935,
+                    "username" : "tvgeniekodi"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Hulu Shows",
+                    "listSlug" : "hulu-shows",
+                    "traktId" : 30828945,
+                    "username" : "tvgeniekodi"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "6D0C87C7-1A69-434A-AB22-F68CFC0D0B0D",
+              "imageAspect" : "square",
+              "imageURL" : "https:\/\/files.orangebyte.io\/resources\/omni\/images\/groups\/hulu.png",
+              "title" : "Hulu"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Paramount+ Movies",
+                    "listSlug" : "paramount-movies",
+                    "traktId" : 30828986,
+                    "username" : "tvgeniekodi"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Paramount+ Shows",
+                    "listSlug" : "paramount-shows",
+                    "traktId" : 30828993,
+                    "username" : "tvgeniekodi"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "CEB2EA71-EE2B-4E2D-8BF7-C789C8A3B2CD",
+              "imageAspect" : "square",
+              "imageURL" : "https:\/\/files.orangebyte.io\/resources\/omni\/images\/groups\/paramount.png",
+              "title" : "Paramount+"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Prime Movies",
+                    "listSlug" : "prime-movies",
+                    "traktId" : 30829008,
+                    "username" : "tvgeniekodi"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Prime Shows",
+                    "listSlug" : "prime-shows",
+                    "traktId" : 30829011,
+                    "username" : "tvgeniekodi"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "31AC37AA-02DE-4B81-8253-72E65BE6702F",
+              "imageAspect" : "square",
+              "imageURL" : "https:\/\/files.orangebyte.io\/resources\/omni\/images\/groups\/primevideo.png",
+              "title" : "Prime Video"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Crunchyroll Top 100 Movies",
+                    "listSlug" : "crunchyroll-top-100-movies",
+                    "traktId" : 30832006,
+                    "username" : "aawalton"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Crunchyroll Top 100 Shows",
+                    "listSlug" : "crunchyroll-top-100-shows",
+                    "traktId" : 30824611,
+                    "username" : "aawalton"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "66F8058E-9C12-4F27-BA9A-5B61393D58C2",
+              "imageAspect" : "square",
+              "imageURL" : "https:\/\/files.orangebyte.io\/resources\/omni\/images\/groups\/crunchyroll.png",
+              "title" : "Crunchyroll"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Peacock Movies",
+                    "listSlug" : "peacock-movies",
+                    "traktId" : 30504299,
+                    "username" : "tvgeniekodi"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Peacock Shows",
+                    "listSlug" : "peacock-shows",
+                    "traktId" : 30504294,
+                    "username" : "tvgeniekodi"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "14BBFB02-27EC-4602-A649-E2688FCB4BD7",
+              "imageAspect" : "square",
+              "imageURL" : "https:\/\/files.orangebyte.io\/resources\/omni\/images\/groups\/peacock.png",
+              "title" : "Peacock"
+            }
+          ]
+        }
+      },
+      "id" : "collection.DF84597A-F0CF-4D13-8FE8-6129482460F1",
+      "title" : "Streaming Services",
+      "type" : "collection.row"
+    }
+  ]
+}
