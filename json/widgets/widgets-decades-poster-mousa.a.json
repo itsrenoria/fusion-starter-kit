@@ -2,49 +2,49 @@
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1960s-poster.png",
     "hideTitle": true,
-    "id": "394106CC-E726-4B6A-8913-37884A73E188",
+    "id": "F1048948-322F-438D-A77D-99C1D726A463",
     "layout": "Poster",
     "name": "1960s"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1970s-poster.png",
     "hideTitle": true,
-    "id": "AEC94E95-2A7E-4DC3-9902-7A84E45846EF",
+    "id": "F5316A99-5234-4265-8096-C04B0D3E9BAC",
     "layout": "Poster",
     "name": "1970s"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1980s-poster.png",
     "hideTitle": true,
-    "id": "F76924F9-F6CF-4572-A525-F3627AB38038",
+    "id": "D2F7C8CF-57B2-4AC6-AA31-F736F09F8881",
     "layout": "Poster",
     "name": "1980s"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1990s-poster.png",
     "hideTitle": true,
-    "id": "AC90EFD7-91B6-4D8F-8B8E-F50AF76010BD",
+    "id": "83E6C561-1FFC-46F9-BD79-8AF621F9EC5B",
     "layout": "Poster",
     "name": "1990s"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2000s-poster.png",
     "hideTitle": true,
-    "id": "ED28E44A-E64F-4D1C-B46D-7486BA0A3A4C",
+    "id": "DB30FD3F-ED0E-4B90-8D75-E825D93F5608",
     "layout": "Poster",
     "name": "2000s"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2010s-poster.png",
     "hideTitle": true,
-    "id": "FC29895B-C7A9-4AB8-85CD-4377A9788D44",
+    "id": "55DD0AB2-F592-45E3-A29F-C02C6F43C703",
     "layout": "Poster",
     "name": "2010s"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2020s-poster.png",
     "hideTitle": true,
-    "id": "20F61397-6FEE-47E0-B6C4-62A3155D0CA8",
+    "id": "E2C808C1-377B-4F32-BA67-5612AFF67A10",
     "layout": "Poster",
     "name": "2020s"
   }
