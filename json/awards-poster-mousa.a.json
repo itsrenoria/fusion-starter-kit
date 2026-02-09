@@ -2,42 +2,42 @@
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/bafta-poster.png",
     "hideTitle": true,
-    "id": "67FD85D2-9E05-4568-A092-304387682D45",
+    "id": "B3E76DC1-FCFF-4E83-908F-596DA44CEB66",
     "layout": "Poster",
     "name": "Bafta"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/fisa-poster.png",
     "hideTitle": true,
-    "id": "83CD2E95-03D2-48B4-8551-8D9E1B0FA2D5",
+    "id": "F95C5ABB-418B-4F7A-87E6-9E22399B3EAF",
     "layout": "Poster",
     "name": "Fisa"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/goldenglobes-poster.png",
     "hideTitle": true,
-    "id": "64D5A7F8-FC52-4BE1-8216-8EEC6866AE32",
+    "id": "39321604-DD4C-438D-90B9-0E03FB7470D2",
     "layout": "Poster",
     "name": "Goldenglobes"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/iff-poster.png",
     "hideTitle": true,
-    "id": "88A006AA-E100-4F1A-B49C-921297E27145",
+    "id": "EA58B550-7A9C-4B33-A498-6E9761B0AEE2",
     "layout": "Poster",
     "name": "Iff"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/oscars-poster.png",
     "hideTitle": true,
-    "id": "6118CBE7-9283-4903-A5A4-50EDA1DE0DF5",
+    "id": "0FF1D32C-1B34-47CE-9A29-3EF89587A11E",
     "layout": "Poster",
     "name": "Oscars"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/viff-poster.png",
     "hideTitle": true,
-    "id": "2D0672E7-9973-440C-B101-23BFBE5D84AF",
+    "id": "5106A487-D97A-4EA9-B6CA-A17D599C70C1",
     "layout": "Poster",
     "name": "Viff"
   }
