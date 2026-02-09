@@ -1,0 +1,34 @@
+[
+  {
+    "name": "IMDB",
+    "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/IMDB.png"
+  },
+  {
+    "name": "Letterboxd",
+    "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Letterboxd.png"
+  },
+  {
+    "name": "MDBList",
+    "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/MDBList.png"
+  },
+  {
+    "name": "Metacritic",
+    "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Metacritic.png"
+  },
+  {
+    "name": "Popcornmeter",
+    "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Popcornmeter.png"
+  },
+  {
+    "name": "TMDB",
+    "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/TMDB.png"
+  },
+  {
+    "name": "Tomatometer",
+    "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Tomatometer.png"
+  },
+  {
+    "name": "Trakt",
+    "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Trakt.png"
+  }
+]

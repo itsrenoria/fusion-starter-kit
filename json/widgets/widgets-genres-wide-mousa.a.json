@@ -1,0 +1,72 @@
+[
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/action-wide.png",
+    "hideTitle": true,
+    "id": "22A1960D-EBF5-491C-B381-BD523369D49F",
+    "layout": "Wide",
+    "name": "Action"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/comedy-wide.png",
+    "hideTitle": true,
+    "id": "C3FC5034-7277-4C51-AF0A-5B8E3201202F",
+    "layout": "Wide",
+    "name": "Comedy"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/crime-wide.png",
+    "hideTitle": true,
+    "id": "F20B73D0-D5EB-4D06-8170-7BA51F45043E",
+    "layout": "Wide",
+    "name": "Crime"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/drama-wide.png",
+    "hideTitle": true,
+    "id": "3BC9456F-91D9-4A05-8436-8633699858AC",
+    "layout": "Wide",
+    "name": "Drama"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/fantasy-wide.png",
+    "hideTitle": true,
+    "id": "E3E31D5E-17FB-4DD4-8502-945BD350177D",
+    "layout": "Wide",
+    "name": "Fantasy"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/horror-wide.png",
+    "hideTitle": true,
+    "id": "3BC8191D-80A0-4800-8F76-EBC9D9ECF415",
+    "layout": "Wide",
+    "name": "Horror"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/kids-wide.png",
+    "hideTitle": true,
+    "id": "F9EB31B5-5324-4114-A736-B31F88F1FC22",
+    "layout": "Wide",
+    "name": "Kids"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/romance-wide.png",
+    "hideTitle": true,
+    "id": "ACA60066-9F8B-4063-A530-116EBBD8FCD5",
+    "layout": "Wide",
+    "name": "Romance"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/scifi-wide.png",
+    "hideTitle": true,
+    "id": "A96058E8-9FC5-4016-B5FE-1A555882A49A",
+    "layout": "Wide",
+    "name": "Scifi"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/thriller-wide.png",
+    "hideTitle": true,
+    "id": "86F9FD4E-35D4-456C-B6E6-52003D7AF550",
+    "layout": "Wide",
+    "name": "Thriller"
+  }
+]

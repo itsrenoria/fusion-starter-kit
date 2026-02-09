@@ -15,7 +15,6 @@
             --border-card: rgba(255, 255, 255, 0.1);
             --text-main: #fafafa;
             --text-muted: #71717a;
-            --accent-glow: rgba(255, 255, 255, 0.03);
             --btn-bg: #ffffff;
             --btn-text: #000000;
             --btn-hover: #f0f0f0;
@@ -32,11 +31,8 @@
             background-color: var(--bg-page);
             color: var(--text-main);
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
         }
 
-        /* Layout */
         .container {
             width: 100%;
             max-width: 1200px;
@@ -63,148 +59,10 @@
         .subtitle {
             color: var(--text-muted);
             font-size: 1.1rem;
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
         }
 
-        /* Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 1.5rem;
-            padding: 2rem 0 4rem;
-        }
-
-        /* Card */
-        .card {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-card);
-            border-radius: 16px;
-            overflow: hidden;
-            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-            display: flex;
-            flex-direction: column;
-            padding: 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .card:hover {
-            border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-        }
-
-        /* Card Header - Now at top */
-        .card-header-top {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 16px 20px;
-            margin-bottom: 0;
-        }
-
-        .card-title {
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--text-main);
-        }
-
-        .card-author-inline {
-            font-size: 12px;
-            color: var(--text-main);
-            opacity: 0.5;
-        }
-
-        .badge {
-            font-size: 0.65rem;
-            background-color: var(--border-card);
-            color: #a1a1aa;
-            padding: 3px 8px;
-            border-radius: 999px;
-            font-weight: 500;
-            white-space: nowrap;
-            text-transform: capitalize;
-            margin-left: auto;
-        }
-
-        /* Image Preview - Horizontal Scrollable */
-        .card-preview {
-            height: 195px;
-            background-color: transparent;
-            display: flex;
-            gap: 12px;
-            position: relative;
-            overflow-x: auto;
-            overflow-y: hidden;
-            border-radius: 8px;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            padding-left: 20px;
-        }
-
-        .card-preview::-webkit-scrollbar {
-            display: none;
-        }
-
-        .thumb {
-            flex: 0 0 auto;
-            height: 100%;
-            aspect-ratio: 2/3;
-            background-size: cover;
-            background-position: center;
-            border-radius: 6px;
-            transition: transform 0.2s ease;
-        }
-
-        .thumb.wide {
-            aspect-ratio: 16/9;
-        }
-
-        .thumb.square {
-            aspect-ratio: 1/1;
-        }
-
-        .thumb:hover {
-            transform: translateY(-2px);
-        }
-
-        .card-content {
-            padding: 16px 20px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        /* Button */
-        .copy-btn {
-            margin-top: auto;
-            width: 100%;
-            background-color: var(--btn-bg);
-            color: var(--btn-text);
-            border: none;
-            padding: 0.85rem;
-            border-radius: 8px;
-            font-weight: 500;
-            font-size: 0.875rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            transition: background-color 0.2s;
-            height: 42px;
-        }
-
-        .copy-btn:hover {
-            background-color: var(--btn-hover);
-        }
-
-        .copy-btn .btn-icon {
-            display: flex;
-            align-items: center;
-        }
-
-        /* Search styling */
         .search-container {
             margin-top: 1.5rem;
             display: flex;
@@ -214,7 +72,7 @@
         .search-wrapper {
             position: relative;
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
         }
 
         .search-icon {
@@ -250,11 +108,316 @@
         .search-input:focus {
             border-color: var(--text-muted);
         }
+
+        .type-filter-wrap {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            margin: 0.8rem 0 0.4rem;
+            padding: 0.4rem 0 0.55rem;
+            background: rgba(9, 9, 11, 0.82);
+            backdrop-filter: blur(8px);
+            display: flex;
+            justify-content: center;
+        }
+
+        .type-filter {
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            white-space: nowrap;
+            padding-bottom: 2px;
+            justify-content: center;
+            width: fit-content;
+            max-width: 100%;
+        }
+
+        .type-filter::-webkit-scrollbar {
+            display: none;
+        }
+
+        .type-pill {
+            border: 1px solid var(--border-card);
+            background: rgba(255, 255, 255, 0.02);
+            color: var(--text-muted);
+            border-radius: 999px;
+            padding: 0.45rem 0.8rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .type-pill:hover {
+            border-color: rgba(255, 255, 255, 0.24);
+            color: var(--text-main);
+        }
+
+        .type-pill.active {
+            background: var(--btn-bg);
+            color: var(--btn-text);
+            border-color: transparent;
+        }
+
+        @media (max-width: 900px) {
+            .type-filter-wrap {
+                justify-content: flex-start;
+            }
+
+            .type-filter {
+                justify-content: flex-start;
+                width: 100%;
+            }
+        }
+
+        .content-section {
+            margin: 1.25rem 0 2.5rem;
+        }
+
+        .section-header {
+            margin-bottom: 1rem;
+        }
+
+        .section-header h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-header-top {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 16px 20px;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .card-author-inline {
+            font-size: 12px;
+            color: var(--text-main);
+            opacity: 0.5;
+        }
+
+        .badge {
+            font-size: 0.65rem;
+            background-color: var(--border-card);
+            color: #a1a1aa;
+            padding: 3px 8px;
+            border-radius: 999px;
+            font-weight: 500;
+            white-space: nowrap;
+            text-transform: capitalize;
+            margin-left: auto;
+        }
+
+        .card-preview {
+            height: 195px;
+            background-color: transparent;
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            border-radius: 8px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .card-preview::-webkit-scrollbar {
+            display: none;
+        }
+
+        .thumb {
+            flex: 0 0 auto;
+            height: 100%;
+            aspect-ratio: 2/3;
+            background-size: cover;
+            background-position: center;
+            border-radius: 6px;
+            transition: transform 0.2s ease;
+        }
+
+        .thumb.wide {
+            aspect-ratio: 16/9;
+        }
+
+        .thumb.square {
+            aspect-ratio: 1/1;
+        }
+
+        .thumb:hover {
+            transform: translateY(-2px);
+        }
+
+        .generic-preview {
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .generic-preview-content {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            opacity: 0.9;
+        }
+
+        .icon-pack-preview {
+            height: auto;
+            overflow: hidden;
+            display: block;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .icon-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .icon-cell {
+            aspect-ratio: 1 / 1;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.03);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+        }
+
+        .icon-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .card-content {
+            padding: 16px 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 0.4rem;
+        }
+
+        .generic-meta {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            opacity: 0.8;
+            line-height: 1.35;
+        }
+
+        .generic-description {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.35;
+            margin-bottom: 0.3rem;
+        }
+
+        .copy-btn {
+            margin-top: auto;
+            width: 100%;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            border: none;
+            padding: 0.85rem;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.875rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: background-color 0.2s;
+            height: 42px;
+        }
+
+        .copy-btn:hover {
+            background-color: var(--btn-hover);
+        }
+
+        .copy-btn .btn-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .empty-state {
+            border: 1px dashed var(--border-card);
+            border-radius: 16px;
+            padding: 2rem;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.015);
+        }
+
+        .empty-state h3 {
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .empty-state p {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0 2.5rem;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            font-family: 'Inter', sans-serif;
+        }
     </style>
 </head>
 
 <body>
-
     <header>
         <div class="container">
             <h1 class="logo-title">Fusion Starter Kit</h1>
@@ -275,32 +438,112 @@
     </header>
 
     <main class="container">
-        <div class="grid" id="cardGrid">
 
-            <div class="card" data-type="poster">
+        <div class="type-filter-wrap">
+            <div class="type-filter" id="typeFilter">
+
+                    <button class="type-pill active" data-type="all" onclick="setTypeFilter('all', this)">
+                        All
+                    </button>
+                    <button class="type-pill" data-type="icon-packs" onclick="setTypeFilter('icon-packs', this)">
+                        Icon Packs
+                    </button>
+                    <button class="type-pill" data-type="widgets" onclick="setTypeFilter('widgets', this)">
+                        Widgets
+                    </button>
+                    <button class="type-pill" data-type="setup" onclick="setTypeFilter('setup', this)">
+                        Full Setup
+                    </button>
+                    <button class="type-pill" data-type="aio-formatter" onclick="setTypeFilter('aio-formatter', this)">
+                        AIO Formatter
+                    </button>
+            </div>
+        </div>
+
+
+        <section class="content-section" data-section="icon-packs"
+            data-section-search="icon packs icon-packs">
+            <div class="section-header">
+                <h2>Icon Packs</h2>
+                <p>Community icon packs that add ratings icons to Fusion 2.</p>
+            </div>
+            <div class="grid">
+
+            <div class="card card-icon-pack" data-search="itsrenoria imdb letterboxd mdblist metacritic popcornmeter tmdb tomatometer trakt icon packs icon-packs icons">
+                <div class="card-header-top">
+                    <h3 class="card-title">itsrenoria</h3>
+                    <span class="badge">Icon Packs</span>
+                </div>
+                <div class="card-preview icon-pack-preview">
+                    <div class="icon-grid">
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/IMDB.png" alt="IMDB" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Letterboxd.png" alt="Letterboxd" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/MDBList.png" alt="MDBList" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Metacritic.png" alt="Metacritic" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Popcornmeter.png" alt="Popcornmeter" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/TMDB.png" alt="TMDB" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Tomatometer.png" alt="Tomatometer" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Trakt.png" alt="Trakt" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p class="generic-description">8 icons</p>
+                    <p class="card-author" style="display:none;">itsrenoria IMDB Letterboxd MDBList Metacritic Popcornmeter TMDB Tomatometer Trakt Icon Packs icon-packs icons</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/icon-packs/icon-packs-itsrenoria.json', this)">
+                        <span class="btn-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </span>
+                        <span class="btn-text">Copy JSON URL</span>
+                    </button>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <section class="content-section" data-section="widgets"
+            data-section-search="widgets widgets">
+            <div class="section-header">
+                <h2>Widgets</h2>
+                <p>Community collection of widgets for different categories for Fusion 2.</p>
+            </div>
+            <div class="grid">
+
+            <div class="card card-widget" data-search="awards mousa.a  poster widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Awards</h3>
                     <span class="card-author-inline">by mousa.a</span>
                     <span class="badge">poster</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/bafta-poster.png');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/fisa-poster.png');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/goldenglobes-poster.png');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/awards/poster/mousa.a/iff-poster.png');">
-                    </div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/bafta-poster.png');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/fisa-poster.png');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/goldenglobes-poster.png');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/iff-poster.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">mousa.a poster</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/awards-poster-mousa.a.json', this)">
+                    <p class="card-author" style="display:none;">Awards mousa.a  poster widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -313,30 +556,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="poster">
+            <div class="card card-widget" data-search="decades mousa.a  poster widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Decades</h3>
                     <span class="card-author-inline">by mousa.a</span>
                     <span class="badge">poster</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/poster/mousa.a/1960s-poster.png');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/poster/mousa.a/1970s-poster.png');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/poster/mousa.a/1980s-poster.png');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/poster/mousa.a/1990s-poster.png');">
-                    </div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1960s-poster.png');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1970s-poster.png');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1980s-poster.png');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1990s-poster.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">mousa.a poster</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/decades-poster-mousa.a.json', this)">
+                    <p class="card-author" style="display:none;">Decades mousa.a  poster widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -349,30 +583,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="square">
+            <div class="card card-widget" data-search="decades orangebyte  square widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Decades</h3>
                     <span class="card-author-inline">by orangebyte</span>
                     <span class="badge">square</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/square/orangebyte/1930s-square.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/square/orangebyte/1940s-square.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/square/orangebyte/1950s-square.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/square/orangebyte/1960s-square.png');">
-                    </div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1930s-square.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1940s-square.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1950s-square.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1960s-square.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">orangebyte square</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/decades-square-orangebyte.json', this)">
+                    <p class="card-author" style="display:none;">Decades orangebyte  square widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-square-orangebyte.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -385,30 +610,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="wide">
+            <div class="card card-widget" data-search="decades mousa.a  wide widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Decades</h3>
                     <span class="card-author-inline">by mousa.a</span>
                     <span class="badge">wide</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/wide/mousa.a/1960s-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/wide/mousa.a/1970s-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/wide/mousa.a/1980s-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/wide/mousa.a/1990s-wide.png');">
-                    </div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1960s-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1970s-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1980s-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1990s-wide.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">mousa.a wide</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/decades-wide-mousa.a.json', this)">
+                    <p class="card-author" style="display:none;">Decades mousa.a  wide widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -421,30 +637,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="wide">
+            <div class="card card-widget" data-search="decades rdnoni  wide widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Decades</h3>
                     <span class="card-author-inline">by rdnoni</span>
                     <span class="badge">wide</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/wide/rdnoni/1980s-wide.jpg');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/wide/rdnoni/1990s-wide.jpg');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/wide/rdnoni/2000s-wide.jpg');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/decades/wide/rdnoni/2010s-wide.jpg');">
-                    </div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/1980s-wide.jpg');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/1990s-wide.jpg');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2000s-wide.jpg');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2010s-wide.jpg');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">rdnoni wide</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/decades-wide-rdnoni.json', this)">
+                    <p class="card-author" style="display:none;">Decades rdnoni  wide widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -457,30 +664,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="wide">
+            <div class="card card-widget" data-search="directors fexm92  wide widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Directors</h3>
                     <span class="card-author-inline">by fexm92</span>
                     <span class="badge">wide</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/directors/wide/fexm92/anderson-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/directors/wide/fexm92/carpenter-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/directors/wide/fexm92/depalma-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/directors/wide/fexm92/fincher-wide.png');">
-                    </div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/anderson-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/carpenter-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/depalma-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/fincher-wide.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">fexm92 wide</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/directors-wide-fexm92.json', this)">
+                    <p class="card-author" style="display:none;">Directors fexm92  wide widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -493,30 +691,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="poster">
+            <div class="card card-widget" data-search="genres dangeruex23  poster widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Genres</h3>
                     <span class="card-author-inline">by dangeruex23</span>
                     <span class="badge">poster</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/poster/dangeruex23/action-poster.jpg');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/poster/dangeruex23/animation-poster.jpg');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/poster/dangeruex23/animation2-poster.jpg');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/poster/dangeruex23/comedy-poster.jpg');">
-                    </div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/action-poster.jpg');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/animation-poster.jpg');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/animation2-poster.jpg');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/comedy-poster.jpg');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">dangeruex23 poster</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/genres-poster-dangeruex23.json', this)">
+                    <p class="card-author" style="display:none;">Genres dangeruex23  poster widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-dangeruex23.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -529,30 +718,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="poster">
+            <div class="card card-widget" data-search="genres mousa.a  poster widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Genres</h3>
                     <span class="card-author-inline">by mousa.a</span>
                     <span class="badge">poster</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/poster/mousa.a/action-poster.png');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/poster/mousa.a/comedy-poster.png');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/poster/mousa.a/crime-poster.png');">
-                    </div>
-                    <div class="thumb"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/poster/mousa.a/drama-poster.png');">
-                    </div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/mousa.a/action-poster.png');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/mousa.a/comedy-poster.png');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/mousa.a/crime-poster.png');"></div>
+                    <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/mousa.a/drama-poster.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">mousa.a poster</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/genres-poster-mousa.a.json', this)">
+                    <p class="card-author" style="display:none;">Genres mousa.a  poster widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-mousa.a.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -565,30 +745,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="square">
+            <div class="card card-widget" data-search="genres orangebyte  square widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Genres</h3>
                     <span class="card-author-inline">by orangebyte</span>
                     <span class="badge">square</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/action-square.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/adventure-square.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/anime-square.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/square/orangebyte/comedy-square.png');">
-                    </div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/action-square.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/adventure-square.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/anime-square.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/comedy-square.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">orangebyte square</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/genres-square-orangebyte.json', this)">
+                    <p class="card-author" style="display:none;">Genres orangebyte  square widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -601,30 +772,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="wide">
+            <div class="card card-widget" data-search="genres dannyrutledge  wide widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Genres</h3>
                     <span class="card-author-inline">by dannyrutledge</span>
                     <span class="badge">wide</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/wide/dannyrutledge/action-adventures-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/wide/dannyrutledge/action-thrillers-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/wide/dannyrutledge/action-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/wide/dannyrutledge/adult-animation-wide.png');">
-                    </div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/action-adventures-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/action-thrillers-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/action-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/adult-animation-wide.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">dannyrutledge wide</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/genres-wide-dannyrutledge.json', this)">
+                    <p class="card-author" style="display:none;">Genres dannyrutledge  wide widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-dannyrutledge.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -637,30 +799,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="wide">
+            <div class="card card-widget" data-search="genres mousa.a  wide widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Genres</h3>
                     <span class="card-author-inline">by mousa.a</span>
                     <span class="badge">wide</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/wide/mousa.a/action-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/wide/mousa.a/comedy-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/wide/mousa.a/crime-wide.png');">
-                    </div>
-                    <div class="thumb wide"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/genres/wide/mousa.a/drama-wide.png');">
-                    </div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/action-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/comedy-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/crime-wide.png');"></div>
+                    <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/drama-wide.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">mousa.a wide</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/genres-wide-mousa.a.json', this)">
+                    <p class="card-author" style="display:none;">Genres mousa.a  wide widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-mousa.a.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -673,30 +826,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="square">
+            <div class="card card-widget" data-search="streaming (color) orangebyte color square widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Streaming (Color)</h3>
                     <span class="card-author-inline">by orangebyte</span>
                     <span class="badge">square</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/streaming/square/orangebyte/color/appletv-square-color.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/streaming/square/orangebyte/color/bet-square-color.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/streaming/square/orangebyte/color/crunchyroll-square-color.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/streaming/square/orangebyte/color/curiositystream-square-color.png');">
-                    </div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/color/appletv-square-color.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/color/bet-square-color.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/color/crunchyroll-square-color.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/color/curiositystream-square-color.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">orangebyte color square</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/streaming-square-orangebyte-color.json', this)">
+                    <p class="card-author" style="display:none;">Streaming (Color) orangebyte color square widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-color.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -709,30 +853,21 @@
                 </div>
             </div>
 
-            <div class="card" data-type="square">
+            <div class="card card-widget" data-search="streaming (original) orangebyte original square widgets">
                 <div class="card-header-top">
                     <h3 class="card-title">Streaming (Original)</h3>
                     <span class="card-author-inline">by orangebyte</span>
                     <span class="badge">square</span>
                 </div>
                 <div class="card-preview">
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/streaming/square/orangebyte/original/appletv-square.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/streaming/square/orangebyte/original/bet-square.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/streaming/square/orangebyte/original/crunchyroll-square.png');">
-                    </div>
-                    <div class="thumb square"
-                        style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/streaming/square/orangebyte/original/curiositystream-square.png');">
-                    </div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/appletv-square.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/bet-square.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/crunchyroll-square.png');"></div>
+                    <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/curiositystream-square.png');"></div>
                 </div>
                 <div class="card-content">
-                    <p class="card-author" style="display:none;">orangebyte original square</p>
-                    <button class="copy-btn"
-                        onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/streaming-square-orangebyte.json', this)">
+                    <p class="card-author" style="display:none;">Streaming (Original) orangebyte original square widgets</p>
+                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte.json', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -745,48 +880,141 @@
                 </div>
             </div>
 
-        </div>
+            </div>
+        </section>
+
+        <section class="content-section" data-section="setup"
+            data-section-search="full setup setup">
+            <div class="section-header">
+                <h2>Full Setup</h2>
+                <p>Community full setups that apply a complete Fusion 2 configuration in one go.</p>
+            </div>
+            <div class="grid">
+
+            <div class="empty-state" data-empty-search="full setup setup coming soon">
+                <h3>Coming Soon</h3>
+                <p>No JSON files yet for Full Setup.</p>
+            </div>
+
+            </div>
+        </section>
+
+        <section class="content-section" data-section="aio-formatter"
+            data-section-search="aio formatter aio-formatter">
+            <div class="section-header">
+                <h2>AIO Formatter</h2>
+                <p>Community Formatter presets for AIOStreams.</p>
+            </div>
+            <div class="grid">
+
+            <div class="empty-state" data-empty-search="aio formatter aio-formatter coming soon">
+                <h3>Coming Soon</h3>
+                <p>No JSON files yet for AIO Formatter.</p>
+            </div>
+
+            </div>
+        </section>
+
     </main>
 
-    <footer
-        style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.875rem; font-family: 'Inter', sans-serif;">
+    <footer>
         <p>Created with 🤍 for 2usion</p>
     </footer>
 
     <script>
+        let activeTypeFilter = 'all';
+
         function copyToClipboard(text, btn) {
             navigator.clipboard.writeText(text).then(() => {
                 const originalContent = btn.innerHTML;
-
-                // Show copied state (no color change - same styling as before)
                 btn.innerHTML = '<span class="btn-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span class="btn-text">Copied!</span>';
-
                 setTimeout(() => {
                     btn.innerHTML = originalContent;
                 }, 2000);
             });
         }
 
-        function filterCards() {
-            const input = document.getElementById('searchInput');
-            const filter = input.value.toLowerCase();
-            const grid = document.getElementById('cardGrid');
-            const cards = grid.getElementsByClassName('card');
+        function setTypeFilter(type, btn, syncUrl = true) {
+            activeTypeFilter = type;
 
-            for (let i = 0; i < cards.length; i++) {
-                const title = cards[i].getElementsByClassName('card-title')[0].textContent;
-                const author = cards[i].getElementsByClassName('card-author')[0].textContent;
-                const shape = cards[i].getElementsByClassName('badge')[0].textContent;
+            const pills = document.querySelectorAll('.type-pill');
+            pills.forEach((pill) => {
+                pill.classList.toggle('active', pill.dataset.type === type);
+            });
 
-                const combinedText = (title + " " + author + " " + shape).toLowerCase();
-
-                if (combinedText.indexOf(filter) > -1) {
-                    cards[i].style.display = "";
+            if (syncUrl) {
+                const url = new URL(window.location.href);
+                if (type === 'all') {
+                    url.searchParams.delete('type');
                 } else {
-                    cards[i].style.display = "none";
+                    url.searchParams.set('type', type);
                 }
+                window.history.replaceState({}, '', url);
+            }
+
+            filterCards();
+        }
+
+        function initTypeFilterFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+            const typeParam = params.get('type');
+            if (!typeParam) {
+                filterCards();
+                return;
+            }
+
+            const targetPill = document.querySelector(`.type-pill[data-type="${typeParam}"]`);
+            if (targetPill) {
+                setTypeFilter(typeParam, targetPill, false);
+            } else {
+                filterCards();
             }
         }
+
+        function filterCards() {
+            const filter = document.getElementById('searchInput').value.toLowerCase().trim();
+            const sections = document.querySelectorAll('.content-section');
+
+            sections.forEach((section) => {
+                const sectionType = (section.getAttribute('data-section') || '').toLowerCase();
+                const typeMatched = activeTypeFilter === 'all' || sectionType === activeTypeFilter;
+                if (!typeMatched) {
+                    section.style.display = 'none';
+                    return;
+                }
+
+                const cards = section.querySelectorAll('.card');
+                const emptyState = section.querySelector('.empty-state');
+                const sectionSearch = (section.getAttribute('data-section-search') || '').toLowerCase();
+
+                if (cards.length > 0) {
+                    let visibleCards = 0;
+
+                    cards.forEach((card) => {
+                        const title = (card.querySelector('.card-title')?.textContent || '').toLowerCase();
+                        const hidden = (card.querySelector('.card-author')?.textContent || '').toLowerCase();
+                        const badge = (card.querySelector('.badge')?.textContent || '').toLowerCase();
+                        const dataSearch = (card.getAttribute('data-search') || '').toLowerCase();
+                        const combined = `${title} ${hidden} ${badge} ${dataSearch} ${sectionSearch}`;
+
+                        const matched = !filter || combined.includes(filter);
+                        card.style.display = matched ? '' : 'none';
+                        if (matched) {
+                            visibleCards += 1;
+                        }
+                    });
+
+                    section.style.display = (visibleCards > 0 || !filter) ? '' : 'none';
+                } else if (emptyState) {
+                    const emptySearch = (emptyState.getAttribute('data-empty-search') || '').toLowerCase();
+                    const combined = `${sectionSearch} ${emptySearch}`;
+                    const matched = !filter || combined.includes(filter);
+                    section.style.display = matched ? '' : 'none';
+                }
+            });
+        }
+
+        initTypeFilterFromUrl();
     </script>
 </body>
 
