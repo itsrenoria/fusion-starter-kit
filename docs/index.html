@@ -176,6 +176,11 @@
             margin: 1.25rem 0 2.5rem;
         }
 
+        .content-section[data-section="setup"] .grid {
+            grid-template-columns: repeat(auto-fill, minmax(230px, 260px));
+            justify-content: start;
+        }
+
         .section-header {
             margin-bottom: 1rem;
         }
@@ -302,25 +307,106 @@
             opacity: 0.9;
         }
 
-        .setup-stats {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 0 14px;
+        .card-setup .card-preview,
+        .card-setup-builder .card-preview {
+            height: auto;
+            aspect-ratio: 9 / 19.5;
+            padding: 4px;
+            overflow: hidden;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border-top: 0;
+            border-bottom: 0;
         }
 
-        .setup-stat {
-            font-size: 0.74rem;
-            font-weight: 600;
-            color: #d4d4d8;
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            background: rgba(255, 255, 255, 0.04);
+        .card-setup,
+        .card-setup-builder {
+            border-color: rgba(255, 255, 255, 0.07);
+        }
+
+        .card-setup .card-content,
+        .card-setup-builder .card-content {
+            padding: 10px 14px 12px;
+            gap: 0;
+            flex-grow: 0;
+        }
+
+        .card-setup .copy-btn,
+        .card-setup-builder .copy-btn {
+            margin-top: 0;
+        }
+
+        .setup-preview-video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000;
+            border-radius: 8px;
+            display: block;
+            cursor: pointer;
+        }
+
+        .setup-preview-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .setup-video-shell {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            background: #000;
+        }
+
+        .setup-video-shell .setup-preview-video {
+            border-radius: 0;
+        }
+
+        .setup-video-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            opacity: 1;
+            transition: opacity 0.2s ease;
+            background: radial-gradient(circle at center, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.36) 100%);
+        }
+
+        .setup-video-overlay-icon {
+            width: 52px;
+            height: 52px;
             border-radius: 999px;
-            padding: 0.34rem 0.56rem;
-            line-height: 1.2;
-            white-space: nowrap;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            background: rgba(0, 0, 0, 0.58);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            padding-left: 2px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+        }
+
+        .setup-video-shell.is-playing .setup-video-overlay {
+            opacity: 0;
+        }
+
+        .setup-preview-placeholder {
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            opacity: 0.95;
+            text-align: center;
+            padding: 0 1rem;
         }
 
         .icon-pack-preview {
@@ -829,17 +915,17 @@
             </div>
             <div class="grid">
 
-            <div class="card card-generic card-setup-builder" data-search="make your own full setup setup builder custom widgets paste json">
+            <div class="card card-generic card-setup card-setup-builder" data-search="byo make your own full setup setup builder custom widgets paste json">
                 <div class="card-header-top">
-                    <h3 class="card-title">Make your own</h3>
+                    <h3 class="card-title">BYO</h3>
                     <span class="badge">Full Setup</span>
                 </div>
                 <div class="card-preview generic-preview">
-                    <div class="generic-preview-content">Build from widget packs</div>
+
+                    <img class="setup-preview-image" src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-BYO.png" data-remote-src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-BYO.png" data-local-src="../preview/preview-BYO.png" alt="BYO preview" loading="lazy" />
                 </div>
                 <div class="card-content">
-                    <p class="generic-description">Generate a custom setup JSON from selected widgets.</p>
-                    <p class="card-author" style="display:none;">make your own full setup setup builder custom widgets paste json</p>
+                    <p class="card-author" style="display:none;">byo make your own full setup setup builder custom widgets paste json</p>
                     <button class="copy-btn" onclick="openSetupBuilder(this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -853,24 +939,24 @@
                 </div>
             </div>
 
-            <div class="card card-generic" data-search="callandt95   full setup setup 15 widgets 11 classic rows 2 numbered rows 2 collection rows">
+            <div class="card card-generic card-setup" data-search="callandt95   full setup setup">
                 <div class="card-header-top">
                     <h3 class="card-title">callandt95</h3>
                     <span class="badge">Full Setup</span>
                 </div>
                 <div class="card-preview generic-preview">
 
-                    <div class="setup-stats">
-                        <span class="setup-stat">15 Widgets</span>
-                        <span class="setup-stat">11 Classic Rows</span>
-                        <span class="setup-stat">2 Numbered Rows</span>
-                        <span class="setup-stat">2 Collection Rows</span>
+                    <div class="setup-video-shell">
+                        <video class="setup-preview-video" src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-callandt95.MP4" data-remote-src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-callandt95.MP4" data-local-src="../preview/preview-callandt95.MP4" loop muted playsinline preload="metadata"></video>
+                        <div class="setup-video-overlay" aria-hidden="true">
+                            <span class="setup-video-overlay-icon">▶</span>
+                        </div>
                     </div>
                 </div>
                 <div class="card-content">
                     
                     
-                    <p class="card-author" style="display:none;">callandt95   Full Setup setup 15 widgets 11 classic rows 2 numbered rows 2 collection rows</p>
+                    <p class="card-author" style="display:none;">callandt95   Full Setup setup</p>
                     <button class="copy-btn" onclick="copyTypeJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/setup/setup-callandt95.json', 'setup', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -884,23 +970,24 @@
                 </div>
             </div>
 
-            <div class="card card-generic" data-search="snoak 🐐   full setup setup 9 widgets 2 numbered rows 7 collection rows">
+            <div class="card card-generic card-setup" data-search="snoak 🐐   full setup setup">
                 <div class="card-header-top">
                     <h3 class="card-title">snoak 🐐</h3>
                     <span class="badge">Full Setup</span>
                 </div>
                 <div class="card-preview generic-preview">
 
-                    <div class="setup-stats">
-                        <span class="setup-stat">9 Widgets</span>
-                        <span class="setup-stat">2 Numbered Rows</span>
-                        <span class="setup-stat">7 Collection Rows</span>
+                    <div class="setup-video-shell">
+                        <video class="setup-preview-video" src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-snoak%20%F0%9F%90%90.MP4" data-remote-src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-snoak%20%F0%9F%90%90.MP4" data-local-src="../preview/preview-snoak%20%F0%9F%90%90.MP4" loop muted playsinline preload="metadata"></video>
+                        <div class="setup-video-overlay" aria-hidden="true">
+                            <span class="setup-video-overlay-icon">▶</span>
+                        </div>
                     </div>
                 </div>
                 <div class="card-content">
                     
                     
-                    <p class="card-author" style="display:none;">snoak 🐐   Full Setup setup 9 widgets 2 numbered rows 7 collection rows</p>
+                    <p class="card-author" style="display:none;">snoak 🐐   Full Setup setup</p>
                     <button class="copy-btn" onclick="copyTypeJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/setup/setup-snoak 🐐.json', 'setup', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -914,23 +1001,24 @@
                 </div>
             </div>
 
-            <div class="card card-generic" data-search="ttoadd   full setup setup 8 widgets 7 classic rows 1 collection row">
+            <div class="card card-generic card-setup" data-search="ttoadd   full setup setup">
                 <div class="card-header-top">
                     <h3 class="card-title">ttoadd</h3>
                     <span class="badge">Full Setup</span>
                 </div>
                 <div class="card-preview generic-preview">
 
-                    <div class="setup-stats">
-                        <span class="setup-stat">8 Widgets</span>
-                        <span class="setup-stat">7 Classic Rows</span>
-                        <span class="setup-stat">1 Collection Row</span>
+                    <div class="setup-video-shell">
+                        <video class="setup-preview-video" src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-ttoadd.MP4" data-remote-src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-ttoadd.MP4" data-local-src="../preview/preview-ttoadd.MP4" loop muted playsinline preload="metadata"></video>
+                        <div class="setup-video-overlay" aria-hidden="true">
+                            <span class="setup-video-overlay-icon">▶</span>
+                        </div>
                     </div>
                 </div>
                 <div class="card-content">
                     
                     
-                    <p class="card-author" style="display:none;">ttoadd   Full Setup setup 8 widgets 7 classic rows 1 collection row</p>
+                    <p class="card-author" style="display:none;">ttoadd   Full Setup setup</p>
                     <button class="copy-btn" onclick="copyTypeJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/setup/setup-ttoadd.json', 'setup', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1550,7 +1638,7 @@
     <div class="builder-overlay" id="setupBuilderOverlay" aria-hidden="true">
         <div class="builder-sheet" role="dialog" aria-modal="true" aria-labelledby="setupBuilderTitle">
             <div class="builder-header">
-                <h3 class="builder-title" id="setupBuilderTitle">Make your own full setup</h3>
+                <h3 class="builder-title" id="setupBuilderTitle">BYO full setup</h3>
                 <p class="builder-subtitle">Use with Widgets > Import Widgets > Paste JSON</p>
             </div>
             <div class="builder-controls">
@@ -1587,12 +1675,96 @@
         let setupBuilderState = { selectedIds: new Set(), triggerBtn: null };
 
         function copyToClipboard(text, btn) {
-            navigator.clipboard.writeText(text).then(() => {
+            const markCopied = () => {
                 const originalContent = btn.innerHTML;
                 btn.innerHTML = '<span class="btn-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span class="btn-text">Copied!</span>';
                 setTimeout(() => {
                     btn.innerHTML = originalContent;
                 }, 2000);
+            };
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(markCopied).catch(() => {
+                    window.prompt('Copy this value:', text);
+                });
+                return;
+            }
+
+            window.prompt('Copy this value:', text);
+            markCopied();
+        }
+
+        function resolveSetupPreviewSources() {
+            const useLocalPreview = window.location.protocol === 'file:';
+            const videos = document.querySelectorAll('video.setup-preview-video');
+            const images = document.querySelectorAll('img.setup-preview-image');
+
+            videos.forEach((video) => {
+                const localSrc = video.getAttribute('data-local-src');
+                const remoteSrc = video.getAttribute('data-remote-src') || video.getAttribute('src');
+                const nextSrc = (useLocalPreview && localSrc) ? localSrc : remoteSrc;
+                if (!nextSrc) {
+                    return;
+                }
+                if (video.getAttribute('src') !== nextSrc) {
+                    video.setAttribute('src', nextSrc);
+                    video.load();
+                }
+
+                video.removeAttribute('autoplay');
+
+                if (video.dataset.clickPlayBound !== '1') {
+                    video.dataset.clickPlayBound = '1';
+                    video.setAttribute('title', 'Click to play or pause');
+                    const shell = video.closest('.setup-video-shell');
+                    const syncShellState = () => {
+                        if (!shell) {
+                            return;
+                        }
+                        shell.classList.toggle('is-playing', !video.paused && !video.ended);
+                    };
+
+                    video.addEventListener('click', () => {
+                        if (video.paused) {
+                            video.play().catch(() => {});
+                        } else {
+                            video.pause();
+                        }
+                        syncShellState();
+                    });
+
+                    video.addEventListener('play', () => {
+                        videos.forEach((otherVideo) => {
+                            if (otherVideo !== video && !otherVideo.paused) {
+                                otherVideo.pause();
+                            }
+                        });
+                        syncShellState();
+                    });
+
+                    video.addEventListener('pause', () => {
+                        syncShellState();
+                    });
+
+                    video.addEventListener('ended', () => {
+                        syncShellState();
+                    });
+
+                    syncShellState();
+                }
+            });
+
+            images.forEach((image) => {
+                const localSrc = image.getAttribute('data-local-src');
+                const remoteSrc = image.getAttribute('data-remote-src') || image.getAttribute('src');
+                const nextSrc = (useLocalPreview && localSrc) ? localSrc : remoteSrc;
+                if (!nextSrc) {
+                    return;
+                }
+
+                if (image.getAttribute('src') !== nextSrc) {
+                    image.setAttribute('src', nextSrc);
+                }
             });
         }
 
@@ -2195,6 +2367,7 @@
 
         initCopyChoiceDialog();
         initSetupBuilder();
+        resolveSetupPreviewSources();
         initTypeFilterFromUrl();
     </script>
 </body>
