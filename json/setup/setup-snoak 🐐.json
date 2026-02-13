@@ -1,0 +1,1236 @@
+{
+  "exportType" : "fusionWidgets",
+  "exportVersion" : 1,
+  "widgets" : [
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top 10 Movies of the Day",
+          "listSlug" : "top-10-movies-of-the-day",
+          "traktId" : 33498091,
+          "username" : "snoak"
+        }
+      },
+      "id" : "trakt.DE7FAF98-8792-4E41-B147-3A4B2FC62F71",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top 10 Movies of the Day",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top 10 Shows of the Day",
+          "listSlug" : "top-10-shows-of-the-day",
+          "traktId" : 33498088,
+          "username" : "snoak"
+        }
+      },
+      "id" : "trakt.7CDEDF2C-B367-42D4-98F0-78E88D98F2C1",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top 10 Shows of the Day",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "dataSource" : {
+        "kind" : "collection",
+        "payload" : {
+          "items" : [
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Trending Movies",
+                    "listSlug" : "trending-movies",
+                    "traktId" : 33032593,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "70CCE1AE-3678-4F80-95FF-6A6B8D9F955A",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/8Pd080D6\/EBR_TVA_WW_TRENDINGMOVIES.png",
+              "title" : "Trending Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Trending Shows",
+                    "listSlug" : "trending-shows",
+                    "traktId" : 33032820,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "DE16E5BC-5FBB-443E-9AD2-D56AFFC3484A",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/Dw2Y7Py5\/EBR_TVA_WW_TRENDINGSHOWS.png",
+              "title" : "Trending Shows"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Movies (Digital Release)",
+                    "listSlug" : "latest-movies-digital-release",
+                    "traktId" : 33032845,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "AF273560-4D9B-40E7-8A9A-6239D415BEE1",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/FzFNK9r4\/447BA943_EBC6_47FE_8B34_31F34B28FD7C.png",
+              "title" : "Latest Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Shows",
+                    "listSlug" : "latest-shows",
+                    "traktId" : 33032842,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "68FD932D-93CA-4A73-99FB-02A9D058455D",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/pXN3kVbm\/FA2A6D2F_8DB1_4E31_9CAF_7B457FA27A29.png",
+              "title" : "Latest Shows"
+            }
+          ]
+        }
+      },
+      "id" : "collection.5AD963CC-B8A4-4A00-AE2E-4F51F86CCB0B",
+      "title" : "Trending \/ Latest",
+      "type" : "collection.row"
+    },
+    {
+      "dataSource" : {
+        "kind" : "collection",
+        "payload" : {
+          "items" : [
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Netflix Shows",
+                    "listSlug" : "latest-netflix-shows",
+                    "traktId" : 33032846,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Netflix Movies",
+                    "listSlug" : "latest-netflix-movies",
+                    "traktId" : 33032847,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "75663BC1-2750-4FE0-8822-8AC7723A4980",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/y8Vr7yYp\/EBR_TVA_WW_NETFLIX.png",
+              "title" : "Latest Netflix"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Amazon Prime Shows",
+                    "listSlug" : "latest-amazon-prime-shows",
+                    "traktId" : 33032850,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Amazon Prime Movies",
+                    "listSlug" : "latest-amazon-prime-movies",
+                    "traktId" : 33032854,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "97405D27-98FD-4382-86F9-699F0F780E3C",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/MK0FkFxn\/EBR_TVA_WW_PRIMEVIDEO.png",
+              "title" : "Latest Prime Video"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Disney+ Movies",
+                    "listSlug" : "latest-disney-movies",
+                    "traktId" : 33032861,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Disney+ Shows",
+                    "listSlug" : "latest-disney-shows",
+                    "traktId" : 33032860,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "50B979DC-0D0B-4BD4-8376-8719C7DA4A96",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/XYVDnk7D\/EBR_TVA_WW_DISNEYPLUS.png",
+              "title" : "Latest Disney+"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Apple TV+ Shows",
+                    "listSlug" : "latest-apple-tv-shows",
+                    "traktId" : 33032855,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Apple TV+ Movies",
+                    "listSlug" : "latest-apple-tv-movies",
+                    "traktId" : 33032858,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "5F755BC6-938E-412A-8716-F22359DA776A",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/Hs0hGhH7\/EBR_TVA_WW_APPLETV.png",
+              "title" : "Latest Apple TV"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest HBO Max Movies",
+                    "listSlug" : "latest-hbo-max-movies",
+                    "traktId" : 33032875,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest HBO Max Shows",
+                    "listSlug" : "latest-hbo-max-shows",
+                    "traktId" : 33032872,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "01802A84-06B5-42F6-8DC1-CBC8343D876B",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/jd6FVFKF\/EBR_TVA_WW_HBOMAX.png",
+              "title" : "Latest HBO Max"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Paramount+ Movies",
+                    "listSlug" : "latest-paramount-movies",
+                    "traktId" : 33032868,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Paramount+ Shows",
+                    "listSlug" : "latest-paramount-shows",
+                    "traktId" : 33032863,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "80C63B01-93BE-41D2-B420-1C5A41E7C0F8",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/L6kbdbRV\/EBR_TVA_WW_PARAMOUNTPLUS.png",
+              "title" : "Latest Paramount+"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Hulu Movies",
+                    "listSlug" : "latest-hulu-movies",
+                    "traktId" : 33118923,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Hulu Shows",
+                    "listSlug" : "latest-hulu-shows",
+                    "traktId" : 33118912,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "C8649248-F3D8-48A3-9EC8-76E7B2916331",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/65Vmsmwq\/EBR_TVA_WW_HULU.png",
+              "title" : "Latest Hulu"
+            }
+          ]
+        }
+      },
+      "id" : "collection.247240CC-B54C-47F1-92DF-0D7BB13F8649",
+      "title" : "Latest Streaming Services",
+      "type" : "collection.row"
+    },
+    {
+      "dataSource" : {
+        "kind" : "collection",
+        "payload" : {
+          "items" : [
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Action Movies",
+                    "listSlug" : "latest-action-movies",
+                    "traktId" : 33123064,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Action Shows",
+                    "listSlug" : "latest-action-shows",
+                    "traktId" : 33122883,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "DF288C76-42F3-4CEB-BC30-A88AD06F06EC",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/D06yHczT\/EBR_TVA_WW_ACTION.webp",
+              "title" : "Latest Action"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Animated Movies",
+                    "listSlug" : "latest-animated-movies",
+                    "traktId" : 33123038,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Animated Shows",
+                    "listSlug" : "latest-animated-shows",
+                    "traktId" : 33123032,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "C31601E0-6D97-4254-930A-82E22C53F20F",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/mkj2JSrf\/EBR_TVA_WW_ANIMATION.webp",
+              "title" : "Latest Animation"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Comedy Movies",
+                    "listSlug" : "latest-comedy-movies",
+                    "traktId" : 33123123,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Comedy Shows",
+                    "listSlug" : "latest-comedy-shows",
+                    "traktId" : 33123136,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "5038C87B-95B7-4017-8255-B199648D7C3E",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/Y0RqZxC5\/EBR_TVA_WW_COMEDY.webp",
+              "title" : "Latest Comedy"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Documentary Movies",
+                    "listSlug" : "latest-documentary-movies",
+                    "traktId" : 33122833,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Documentary Shows",
+                    "listSlug" : "latest-documentary-shows",
+                    "traktId" : 33122848,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "568EA4EF-33D6-4FDD-B709-979307E80F27",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/Fzps8xKt\/EBR_TVA_WW_DOCUMENTARY.webp",
+              "title" : "Latest Documentary"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Drama Movies",
+                    "listSlug" : "latest-drama-movies",
+                    "traktId" : 33123210,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Drama Shows",
+                    "listSlug" : "latest-drama-shows",
+                    "traktId" : 33123222,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "AA1055EC-3955-4095-A05E-EC9B896C64E9",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/6qc5ghpF\/EBR_TVA_WW_DRAMA_Final.webp",
+              "title" : "Latest Drama"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Horror Movies",
+                    "listSlug" : "latest-horror-movies",
+                    "traktId" : 33123250,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Horror Shows",
+                    "listSlug" : "latest-horror-shows",
+                    "traktId" : 33123257,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "F724D84B-8717-4C86-939D-38F842184D11",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/vTbZ0KGy\/EBR_TVA_WW_HORROR.webp",
+              "title" : "Horror"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Romance Movies",
+                    "listSlug" : "latest-romance-movies",
+                    "traktId" : 33132629,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Romance Shows",
+                    "listSlug" : "latest-romance-shows",
+                    "traktId" : 33132707,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "9DB2EE89-2C70-4F87-BBFD-37FAAAA0611E",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/d36tp9VS\/EBR_TVA_WW_ROMANCE.webp",
+              "title" : "Romance"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Sci-Fi Movies",
+                    "listSlug" : "latest-sci-fi-movies",
+                    "traktId" : 33123270,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Sci-Fi Shows",
+                    "listSlug" : "latest-sci-fi-shows",
+                    "traktId" : 33123276,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "4813871F-8A7A-48BD-A8E7-B83465E437CA",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/3NYxtq3T\/EBR_TVA_WW_SCIFI.webp",
+              "title" : "Science Fiction"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Thriller Movies",
+                    "listSlug" : "latest-thriller-movies",
+                    "traktId" : 33123316,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Thriller Shows",
+                    "listSlug" : "latest-thriller-shows",
+                    "traktId" : 33123324,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "EB8977E5-5F7C-41E3-BCD3-CFE497EABB94",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/QChdfzjr\/EBR_TVA_WW_THRILLER.webp",
+              "title" : "Thriller"
+            }
+          ]
+        }
+      },
+      "id" : "collection.0FF8AA84-CFF0-4E6B-A353-B4BF7FA944F8",
+      "title" : "Latest Movie Genres",
+      "type" : "collection.row"
+    },
+    {
+      "dataSource" : {
+        "kind" : "collection",
+        "payload" : {
+          "items" : [
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 2025 Movies",
+                    "listSlug" : "popular-2025-movies",
+                    "traktId" : 33032974,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "38DE1019-04CA-4C5D-9ABD-B1DFE214E315",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/bY9xqcDr\/EBR_TVA_WW_2025.png",
+              "title" : "Popular 2025"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 2020s Movies",
+                    "listSlug" : "popular-2020s-movies",
+                    "traktId" : 33032971,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "7C8BE8D8-89A8-4426-AF81-ED78261404FB",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/bY9xqcDt\/EBR_TVA_WW_2020s.png",
+              "title" : "2020 Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 2010s Movies",
+                    "listSlug" : "popular-2010s-movies",
+                    "traktId" : 33032968,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "5853BB60-5729-4270-B5EF-6407D3F26404",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/9FXGM8Zp\/EBR_TVA_WW_2010s.png",
+              "title" : "2010 Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 2000s Movies",
+                    "listSlug" : "popular-2000s-movies",
+                    "traktId" : 33032965,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "73199E41-B14B-4106-B2F0-FA831C90A6BA",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/c1BRdyg3\/EBR_TVA_WW_2000s.png",
+              "title" : "2000 Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 1990s Movies",
+                    "listSlug" : "popular-1990s-movies",
+                    "traktId" : 33032959,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "72991BC9-BC60-4E0B-B0DA-17E60E25B13C",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/44Q6Xk7t\/EBR_TVA_WW_1990s.png",
+              "title" : "1990 Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 1980s Movies",
+                    "listSlug" : "popular-1980s-movies",
+                    "traktId" : 33032956,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "8A4188AB-0568-4C0E-84E6-2842F7C20E69",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/bNYQJCkS\/EBR_TVA_WW_1980s.png",
+              "title" : "1980 Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 1970s Movies",
+                    "listSlug" : "popular-1970s-movies",
+                    "traktId" : 33119476,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "E80FA67B-A063-4595-AC45-4DBA18AF78C8",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/RCL7v56q\/EBR_TVA_WW_1970s_02.png",
+              "title" : "1970 Movies"
+            }
+          ]
+        }
+      },
+      "id" : "collection.369962D1-4553-4CCC-98E1-705340FC099E",
+      "title" : "Decades",
+      "type" : "collection.row"
+    },
+    {
+      "dataSource" : {
+        "kind" : "collection",
+        "payload" : {
+          "items" : [
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Netflix Movies",
+                    "listSlug" : "top-netflix-movies",
+                    "traktId" : 33032882,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Netflix Shows",
+                    "listSlug" : "top-netflix-shows",
+                    "traktId" : 33032878,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "D362D71E-4B0D-4C8A-9BD0-F4847E5505B8",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/y8Vr7yYp\/EBR_TVA_WW_NETFLIX.png",
+              "title" : "Top Netflix"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Amazon Prime Shows",
+                    "listSlug" : "top-amazon-prime-shows",
+                    "traktId" : 33032887,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Amazon Prime Movies",
+                    "listSlug" : "top-amazon-prime-movies",
+                    "traktId" : 33032892,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "76AD2011-9CF8-4C28-8B73-B3392DA19970",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/MK0FkFxn\/EBR_TVA_WW_PRIMEVIDEO.png",
+              "title" : "Top Prime Video"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Disney+ Movies",
+                    "listSlug" : "top-disney-movies",
+                    "traktId" : 33032904,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Disney+ Shows",
+                    "listSlug" : "top-disney-shows",
+                    "traktId" : 33032903,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "251E8CCF-782F-4057-B422-2DE8CA764B0B",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/XYVDnk7D\/EBR_TVA_WW_DISNEYPLUS.png",
+              "title" : "Top Disney+"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Apple TV+ Movies",
+                    "listSlug" : "top-apple-tv-movies",
+                    "traktId" : 33032900,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Apple TV+ Shows",
+                    "listSlug" : "top-apple-tv-shows",
+                    "traktId" : 33032894,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "3E6288B0-FEFE-4DDB-B75E-A7031A5F2584",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/Hs0hGhH7\/EBR_TVA_WW_APPLETV.png",
+              "title" : "Top Apple TV"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top HBO Max Movies",
+                    "listSlug" : "top-hbo-max-movies",
+                    "traktId" : 33032914,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top HBO Max Shows",
+                    "listSlug" : "top-hbo-max-shows",
+                    "traktId" : 33032911,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "74D0A799-C723-48E5-9015-6A9D31060C4F",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/jd6FVFKF\/EBR_TVA_WW_HBOMAX.png",
+              "title" : "Top HBO Max"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Paramount+ Movies",
+                    "listSlug" : "top-paramount-movies",
+                    "traktId" : 33032910,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Paramount+ Shows",
+                    "listSlug" : "top-paramount-shows",
+                    "traktId" : 33032908,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "B8417A22-0DF5-4D5E-834F-92982212AA7C",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/L6kbdbRV\/EBR_TVA_WW_PARAMOUNTPLUS.png",
+              "title" : "Top Paramount+"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Hulu Movies",
+                    "listSlug" : "top-hulu-movies",
+                    "traktId" : 33118941,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top Hulu Shows",
+                    "listSlug" : "top-hulu-shows",
+                    "traktId" : 33118956,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "D0C3DAEC-9CF1-4359-AE54-6AD649C9C5C4",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/65Vmsmwq\/EBR_TVA_WW_HULU.png",
+              "title" : "Top Hulu"
+            }
+          ]
+        }
+      },
+      "id" : "collection.304189DA-77D2-4D0F-946F-191F800FE129",
+      "title" : "Top Streaming Services",
+      "type" : "collection.row"
+    },
+    {
+      "dataSource" : {
+        "kind" : "collection",
+        "payload" : {
+          "items" : [
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Action Movies",
+                    "listSlug" : "popular-action-movies",
+                    "traktId" : 33032919,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Action Shows",
+                    "listSlug" : "popular-action-shows",
+                    "traktId" : 33032916,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "FEC2A55F-7556-4E60-A5AB-3DCC90F762BD",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/D06yHczT\/EBR_TVA_WW_ACTION.webp",
+              "title" : "Top Action"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Animated Shows",
+                    "listSlug" : "popular-animated-shows",
+                    "traktId" : 33032922,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Animated Movies",
+                    "listSlug" : "popular-animated-movies",
+                    "traktId" : 33032925,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "0A5E5118-24B0-4D87-B20D-55EBD8FE744E",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/mkj2JSrf\/EBR_TVA_WW_ANIMATION.webp",
+              "title" : "Top Animation"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Comedy Movies",
+                    "listSlug" : "popular-comedy-movies",
+                    "traktId" : 33032930,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Comedy Shows",
+                    "listSlug" : "popular-comedy-shows",
+                    "traktId" : 33032929,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "2C899C82-C9A1-413F-8D45-E8D5CBA5F4C5",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/Y0RqZxC5\/EBR_TVA_WW_COMEDY.webp",
+              "title" : "Top Comedy"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Documentary Movies",
+                    "listSlug" : "popular-documentary-movies",
+                    "traktId" : 33123349,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Documentary Shows",
+                    "listSlug" : "popular-documentary-shows",
+                    "traktId" : 33123359,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "769F2A37-3461-4A4C-9200-07A38525542F",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/Fzps8xKt\/EBR_TVA_WW_DOCUMENTARY.webp",
+              "title" : "Top Documentary"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Drama Movies",
+                    "listSlug" : "popular-drama-movies",
+                    "traktId" : 33032935,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Drama Shows",
+                    "listSlug" : "popular-drama-shows",
+                    "traktId" : 33032934,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "F8DDFDBD-951F-4D8C-BF0B-ECF0063E3485",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/6qc5ghpF\/EBR_TVA_WW_DRAMA_Final.webp",
+              "title" : "Top Drama"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Horror Movies",
+                    "listSlug" : "popular-horror-movies",
+                    "traktId" : 33032936,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Horror Shows",
+                    "listSlug" : "popular-horror-shows",
+                    "traktId" : 33032939,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "17EC5EDD-D8C4-4910-B2E8-9E1FF0A33FE0",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/vTbZ0KGy\/EBR_TVA_WW_HORROR.webp",
+              "title" : "Top Horror"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Romance Movies",
+                    "listSlug" : "popular-romance-movies",
+                    "traktId" : 33132644,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Romance Shows",
+                    "listSlug" : "popular-romance-shows",
+                    "traktId" : 33132723,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "4049D8D9-AF34-4F88-88FD-EAB3510C39BB",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/d36tp9VS\/EBR_TVA_WW_ROMANCE.webp",
+              "title" : "Top Romance"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Sci-Fi Movies",
+                    "listSlug" : "popular-sci-fi-movies",
+                    "traktId" : 33032944,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Sci-Fi Shows",
+                    "listSlug" : "popular-sci-fi-shows",
+                    "traktId" : 33032946,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "E97060BF-BD88-470E-AA63-2D7E6EFEB365",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/3NYxtq3T\/EBR_TVA_WW_SCIFI.webp",
+              "title" : "Top Sci-Fi"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Thriller Movies",
+                    "listSlug" : "popular-thriller-movies",
+                    "traktId" : 33032952,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Thriller Shows",
+                    "listSlug" : "popular-thriller-shows",
+                    "traktId" : 33032950,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "EB6B7918-6A0B-4AA5-ACF2-05E4406829DA",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/QChdfzjr\/EBR_TVA_WW_THRILLER.webp",
+              "title" : "Top Thriller"
+            }
+          ]
+        }
+      },
+      "id" : "collection.A1E80FDE-5CE6-4D3E-893F-7D1F754772CA",
+      "title" : "Top Genres",
+      "type" : "collection.row"
+    },
+    {
+      "dataSource" : {
+        "kind" : "collection",
+        "payload" : {
+          "items" : [
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top 250 Movies (iMDB)",
+                    "listSlug" : "top-250-movies-imdb",
+                    "traktId" : 33032976,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "0952B422-C70E-4CC1-9954-E0142C3EDF73",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/jqDGwcTW\/Imdb_Top_Movies.webp",
+              "title" : "IMDB Top Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Top 250 Shows (iMDB)",
+                    "listSlug" : "top-250-shows-imdb",
+                    "traktId" : 33032979,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "E54642F3-050A-4105-B5F9-15EFFC730327",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/y6DwgjK9\/Imdb_Top_Shows.webp",
+              "title" : "Top IMDB Shows"
+            }
+          ]
+        }
+      },
+      "id" : "collection.30D7D6CB-0AF8-4CBE-B748-313310B7233D",
+      "title" : "IMDB",
+      "type" : "collection.row"
+    }
+  ]
+}
