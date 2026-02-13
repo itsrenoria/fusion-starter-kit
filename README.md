@@ -1,155 +1,64 @@
-# Fusion Starter Kit Resources
+# Fusion Starter Kit
 
-A collection of resources for your Fusion configuration. Copy the **JSON Link** to use in your setup.
+A curated collection of resources for Fusion 2.
 
----
+## Live Catalog
 
-## Awards
+Browse the full catalog here:
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="20%" align="center">Preview</th>
-      <th width="20%" align="center">Title</th>
-      <th width="15%" align="center">Shape</th>
-      <th width="15%" align="center">Author</th>
-      <th width="30%" align="center">Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center"><img src='https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/bafta-poster.png' width='150' style='border-radius: 8px;' alt='Awards' /></td>
-      <td align="center"><strong>Awards</strong></td>
-      <td align="center">Poster</td>
-      <td align="center">mousa.a</td>
-      <td align="center"><a href="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json">Copy JSON URL</a></td>
-    </tr>
-  </tbody>
-</table>
+[https://itsrenoria.github.io/fusion-starter-kit/](https://itsrenoria.github.io/fusion-starter-kit/)
 
-## Decades
+Use the site as the source of truth for previews, available packs, and copy links.
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="20%" align="center">Preview</th>
-      <th width="20%" align="center">Title</th>
-      <th width="15%" align="center">Shape</th>
-      <th width="15%" align="center">Author</th>
-      <th width="30%" align="center">Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center"><img src='https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1960s-poster.png' width='150' style='border-radius: 8px;' alt='Decades' /></td>
-      <td align="center"><strong>Decades</strong></td>
-      <td align="center">Poster</td>
-      <td align="center">mousa.a</td>
-      <td align="center"><a href="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json">Copy JSON URL</a></td>
-    </tr>
-    <tr>
-      <td align="center"><img src='https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1960s-wide.png' width='150' style='border-radius: 8px;' alt='Decades' /></td>
-      <td align="center"><strong>Decades</strong></td>
-      <td align="center">Wide</td>
-      <td align="center">mousa.a</td>
-      <td align="center"><a href="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json">Copy JSON URL</a></td>
-    </tr>
-    <tr>
-      <td align="center"><img src='https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/1980s-wide.jpg' width='150' style='border-radius: 8px;' alt='Decades' /></td>
-      <td align="center"><strong>Decades</strong></td>
-      <td align="center">Wide</td>
-      <td align="center">rdnoni</td>
-      <td align="center"><a href="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json">Copy JSON URL</a></td>
-    </tr>
-  </tbody>
-</table>
+## Import in Fusion 2
 
-## Directors
+Use the following import paths by type:
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="20%" align="center">Preview</th>
-      <th width="20%" align="center">Title</th>
-      <th width="15%" align="center">Shape</th>
-      <th width="15%" align="center">Author</th>
-      <th width="30%" align="center">Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center"><img src='https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/anderson-wide.png' width='150' style='border-radius: 8px;' alt='Directors' /></td>
-      <td align="center"><strong>Directors</strong></td>
-      <td align="center">Wide</td>
-      <td align="center">fexm92</td>
-      <td align="center"><a href="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json">Copy JSON URL</a></td>
-    </tr>
-  </tbody>
-</table>
+| Type | Import Path |
+| --- | --- |
+| Full Setup | `Widgets > Import Widgets > JSON URL` |
+| BYO Full Setup | `Widgets > Import Widgets > Paste JSON` |
+| Widgets | `Widgets > Import Widgets > JSON URL` |
+| Collections | `Widgets > Add New > Collections Row > Import Collections > JSON URL` |
+| Icon Packs | `Settings > Icon Packs > Add Icon Pack` |
+| AIO Formatter | Import via your AIOStreams Formatter JSON import flow |
 
-## Genres
+## Repository Structure
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="20%" align="center">Preview</th>
-      <th width="20%" align="center">Title</th>
-      <th width="15%" align="center">Shape</th>
-      <th width="15%" align="center">Author</th>
-      <th width="30%" align="center">Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center"><img src='https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/action-poster.jpg' width='150' style='border-radius: 8px;' alt='Genres' /></td>
-      <td align="center"><strong>Genres</strong></td>
-      <td align="center">Poster</td>
-      <td align="center">dangeruex23</td>
-      <td align="center"><a href="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-dangeruex23.json">Copy JSON URL</a></td>
-    </tr>
-    <tr>
-      <td align="center"><img src='https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/mousa.a/action-poster.png' width='150' style='border-radius: 8px;' alt='Genres' /></td>
-      <td align="center"><strong>Genres</strong></td>
-      <td align="center">Poster</td>
-      <td align="center">mousa.a</td>
-      <td align="center"><a href="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-mousa.a.json">Copy JSON URL</a></td>
-    </tr>
-    <tr>
-      <td align="center"><img src='https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/action-square.png' width='150' style='border-radius: 8px;' alt='Genres' /></td>
-      <td align="center"><strong>Genres</strong></td>
-      <td align="center">Square</td>
-      <td align="center">orangebyte</td>
-      <td align="center"><a href="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte.json">Copy JSON URL</a></td>
-    </tr>
-    <tr>
-      <td align="center"><img src='https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/mousa.a/action-wide.png' width='150' style='border-radius: 8px;' alt='Genres' /></td>
-      <td align="center"><strong>Genres</strong></td>
-      <td align="center">Wide</td>
-      <td align="center">mousa.a</td>
-      <td align="center"><a href="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-mousa.a.json">Copy JSON URL</a></td>
-    </tr>
-  </tbody>
-</table>
+```text
+resources/
+  widgets/
+  setup/
+  aio-formatter/
+  icon-packs/
 
-## Streaming
+json/
+  widgets/
+  collections/
+  setup/
+  aio-formatter/
+  icon-packs/
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="20%" align="center">Preview</th>
-      <th width="20%" align="center">Title</th>
-      <th width="15%" align="center">Shape</th>
-      <th width="15%" align="center">Author</th>
-      <th width="30%" align="center">Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center"><img src='https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/appletv-square.png' width='150' style='border-radius: 8px;' alt='Streaming' /></td>
-      <td align="center"><strong>Streaming</strong></td>
-      <td align="center">Square</td>
-      <td align="center">orangebyte</td>
-      <td align="center"><a href="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte.json">Copy JSON URL</a></td>
-    </tr>
-  </tbody>
-</table>
+preview/
+docs/
+```
+
+Notes:
+
+- `resources/widgets` is the source asset library for both widget and collection JSON outputs.
+- `preview` stores setup/BYO preview media (videos and poster images) used by the site cards.
+- `docs/index.html` is the generated site.
+
+## Contributing
+
+Open an issue or PR for fixes/new packs, or reach out directly on Discord:
+
+[![Discord](https://img.shields.io/badge/Discord-itsrenoria-5865F2?logo=discord&logoColor=white)](https://discord.com)
+
+Discord: `itsrenoria`
+
+## Credits and Disclaimer
+
+This project is a community curation. Credit belongs to the original creators of artwork and assets.
+
+If anything needs correction (credits, attribution, links, or removals), contact me and I will update it.
