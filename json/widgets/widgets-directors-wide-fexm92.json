@@ -1,72 +1,88 @@
-[
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/anderson-wide.png",
-    "hideTitle": true,
-    "id": "10FD51B1-20AC-461E-B443-DAC39269D01B",
-    "layout": "Wide",
-    "name": "Anderson"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/carpenter-wide.png",
-    "hideTitle": true,
-    "id": "68FEAC89-F776-42BF-9A68-0A86D6667EB3",
-    "layout": "Wide",
-    "name": "Carpenter"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/depalma-wide.png",
-    "hideTitle": true,
-    "id": "01A59C62-3405-4E77-B054-6D9CCC5EAC42",
-    "layout": "Wide",
-    "name": "Depalma"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/fincher-wide.png",
-    "hideTitle": true,
-    "id": "E68151B3-4A2A-4AB1-B1D1-72EBEC3F2788",
-    "layout": "Wide",
-    "name": "Fincher"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/hitchcock-wide.png",
-    "hideTitle": true,
-    "id": "3D111468-D3BC-45E5-A174-C009756CF0D9",
-    "layout": "Wide",
-    "name": "Hitchcock"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/kubrick-wide.png",
-    "hideTitle": true,
-    "id": "380A1937-DAF2-4FA7-85D5-E8D4CC41AA69",
-    "layout": "Wide",
-    "name": "Kubrick"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/nolan-wide.png",
-    "hideTitle": true,
-    "id": "B551CB6E-AA08-4CA9-BF27-97AB2994D23A",
-    "layout": "Wide",
-    "name": "Nolan"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/scorsese-wide.png",
-    "hideTitle": true,
-    "id": "0BAF998E-EAF0-40E9-892B-3164DC8B80BE",
-    "layout": "Wide",
-    "name": "Scorsese"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/spielberg-wide.png",
-    "hideTitle": true,
-    "id": "734B4D4A-C5C6-4E87-99BE-4C2A273CC234",
-    "layout": "Wide",
-    "name": "Spielberg"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/villeneuve-wide.png",
-    "hideTitle": true,
-    "id": "7E4F67D3-2DFA-4435-9D01-88C090BAA65A",
-    "layout": "Wide",
-    "name": "Villeneuve"
-  }
-]
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "widgets": [
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "hideTitle": true,
+              "id": "D878AC2D-365E-40A7-AC37-80D8AF4A191A",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/anderson-wide.png",
+              "title": "Anderson"
+            },
+            {
+              "hideTitle": true,
+              "id": "DB44F257-AF21-48D0-BD40-35F3E08F2730",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/carpenter-wide.png",
+              "title": "Carpenter"
+            },
+            {
+              "hideTitle": true,
+              "id": "73C8B34E-4D26-498A-ABF6-D32481F04499",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/depalma-wide.png",
+              "title": "Depalma"
+            },
+            {
+              "hideTitle": true,
+              "id": "9B9404DB-B3C2-412F-A328-11C205368F72",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/fincher-wide.png",
+              "title": "Fincher"
+            },
+            {
+              "hideTitle": true,
+              "id": "8537A70C-1A9C-4D9A-BCC4-ACF97D17F41A",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/hitchcock-wide.png",
+              "title": "Hitchcock"
+            },
+            {
+              "hideTitle": true,
+              "id": "56DE5EEE-AEB6-47B5-B1E7-F73745EAD84C",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/kubrick-wide.png",
+              "title": "Kubrick"
+            },
+            {
+              "hideTitle": true,
+              "id": "53AF2FF5-EB4F-4F39-87CB-71E361C414FD",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/nolan-wide.png",
+              "title": "Nolan"
+            },
+            {
+              "hideTitle": true,
+              "id": "9D941039-859A-4865-9FF5-A6CAC55F69B4",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/scorsese-wide.png",
+              "title": "Scorsese"
+            },
+            {
+              "hideTitle": true,
+              "id": "58C68645-E11A-4DF5-8667-C627B4881B9C",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/spielberg-wide.png",
+              "title": "Spielberg"
+            },
+            {
+              "hideTitle": true,
+              "id": "53B6F0D8-20FB-4B86-880E-529D1001FCC3",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/villeneuve-wide.png",
+              "title": "Villeneuve"
+            }
+          ]
+        }
+      },
+      "id": "collection.D04A790F-C4CF-46CD-AC13-BE2AF51E231D",
+      "title": "Directors",
+      "type": "collection.row"
+    }
+  ]
+}

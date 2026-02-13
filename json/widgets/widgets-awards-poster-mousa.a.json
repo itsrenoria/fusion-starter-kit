@@ -1,44 +1,60 @@
-[
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/bafta-poster.png",
-    "hideTitle": true,
-    "id": "B2AE16B4-3263-4440-9805-823B9DFCA05F",
-    "layout": "Poster",
-    "name": "Bafta"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/fisa-poster.png",
-    "hideTitle": true,
-    "id": "2AD8EBB8-EFC3-40E7-AD8A-BF90B023215B",
-    "layout": "Poster",
-    "name": "Fisa"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/goldenglobes-poster.png",
-    "hideTitle": true,
-    "id": "0BFF0178-6744-4BCA-B435-AF5E7E00AFCA",
-    "layout": "Poster",
-    "name": "Goldenglobes"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/iff-poster.png",
-    "hideTitle": true,
-    "id": "08F10FC2-2B22-4D12-8B3E-2397B968F147",
-    "layout": "Poster",
-    "name": "Iff"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/oscars-poster.png",
-    "hideTitle": true,
-    "id": "847E83C8-F755-413D-8FE1-39EAE3C81C1C",
-    "layout": "Poster",
-    "name": "Oscars"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/viff-poster.png",
-    "hideTitle": true,
-    "id": "7B2D1C14-267B-41C1-8915-9C130716EAD5",
-    "layout": "Poster",
-    "name": "Viff"
-  }
-]
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "widgets": [
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "hideTitle": true,
+              "id": "8CDE91D5-44FE-4C0C-B81A-AEA98FDF3FC4",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/bafta-poster.png",
+              "title": "Bafta"
+            },
+            {
+              "hideTitle": true,
+              "id": "F11D28AB-C711-445D-AA4D-252101143B55",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/fisa-poster.png",
+              "title": "Fisa"
+            },
+            {
+              "hideTitle": true,
+              "id": "2F563EB8-A15D-4FD2-B7B8-83DAB0B7DA46",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/goldenglobes-poster.png",
+              "title": "Goldenglobes"
+            },
+            {
+              "hideTitle": true,
+              "id": "B41B8AD0-99A4-496C-9CAD-725E80AA7109",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/iff-poster.png",
+              "title": "Iff"
+            },
+            {
+              "hideTitle": true,
+              "id": "582DB72B-9CCE-426D-80DC-6A0925AE131D",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/oscars-poster.png",
+              "title": "Oscars"
+            },
+            {
+              "hideTitle": true,
+              "id": "8B867C1C-922D-4B36-B518-7C20B7C9B826",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/viff-poster.png",
+              "title": "Viff"
+            }
+          ]
+        }
+      },
+      "id": "collection.7796E052-1B4B-4B5A-9505-A479852EE047",
+      "title": "Awards",
+      "type": "collection.row"
+    }
+  ]
+}

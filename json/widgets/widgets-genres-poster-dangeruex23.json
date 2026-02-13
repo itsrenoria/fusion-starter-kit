@@ -1,149 +1,165 @@
-[
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/action-poster.jpg",
-    "hideTitle": true,
-    "id": "A6592BB4-F475-4328-8D97-87B6AD4835D0",
-    "layout": "Poster",
-    "name": "Action"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/animation-poster.jpg",
-    "hideTitle": true,
-    "id": "C32BFC25-61CF-435C-BF26-0BFC96181AB2",
-    "layout": "Poster",
-    "name": "Animation"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/animation2-poster.jpg",
-    "hideTitle": true,
-    "id": "DA76FC67-9358-4FF4-9FEE-38F78602ECF4",
-    "layout": "Poster",
-    "name": "Animation2"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/comedy-poster.jpg",
-    "hideTitle": true,
-    "id": "00669283-6D1E-4CA5-923C-D129669881E3",
-    "layout": "Poster",
-    "name": "Comedy"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/documentary-poster.jpg",
-    "hideTitle": true,
-    "id": "71826A07-0017-4357-B83A-D2CBEEAAC40B",
-    "layout": "Poster",
-    "name": "Documentary"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/drama-poster.jpg",
-    "hideTitle": true,
-    "id": "FDFA8876-5485-4B78-A4D7-AABCCBDE1BDC",
-    "layout": "Poster",
-    "name": "Drama"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/family-poster.jpg",
-    "hideTitle": true,
-    "id": "6DCE9EEE-452B-4E5A-8E44-3B0A7AC17E15",
-    "layout": "Poster",
-    "name": "Family"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/horror-poster.jpg",
-    "hideTitle": true,
-    "id": "2AD6142C-9C62-49AC-BEFB-7CE70EEF084D",
-    "layout": "Poster",
-    "name": "Horror"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/imdb-poster.jpg",
-    "hideTitle": true,
-    "id": "AD5E6494-6A50-4930-B449-6C0E69ADAA33",
-    "layout": "Poster",
-    "name": "Imdb"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/imdb2-poster.jpg",
-    "hideTitle": true,
-    "id": "05B1A311-6A93-4F4A-A124-FB0BEEAA1354",
-    "layout": "Poster",
-    "name": "Imdb2"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/imdb3-poster.jpg",
-    "hideTitle": true,
-    "id": "C4F87A4F-B60D-4349-9481-8A06287A2CCC",
-    "layout": "Poster",
-    "name": "Imdb3"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/korean-poster.jpg",
-    "hideTitle": true,
-    "id": "2F50D148-94A9-4EEF-B206-53790708C7A0",
-    "layout": "Poster",
-    "name": "Korean"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/korean2-poster.jpg",
-    "hideTitle": true,
-    "id": "CC9F170B-8C70-4036-8D34-6A66136816F6",
-    "layout": "Poster",
-    "name": "Korean2"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/miniseries-poster.jpg",
-    "hideTitle": true,
-    "id": "6B252E94-3E9C-4F2D-A2C2-B9BF0A571B64",
-    "layout": "Poster",
-    "name": "Miniseries"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/miniseries2-poster.jpg",
-    "hideTitle": true,
-    "id": "35A27077-906B-4C66-8F20-9ACF5624127A",
-    "layout": "Poster",
-    "name": "Miniseries2"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/miniseries3-poster.jpg",
-    "hideTitle": true,
-    "id": "418A6E56-2ACE-4740-AC70-EF34082F726D",
-    "layout": "Poster",
-    "name": "Miniseries3"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/narrative-poster.jpg",
-    "hideTitle": true,
-    "id": "8934F3C8-D1BE-47A3-AC53-46997B066848",
-    "layout": "Poster",
-    "name": "Narrative"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/narrative2-poster.jpg",
-    "hideTitle": true,
-    "id": "EB5ED4BB-DF63-4F04-B293-6E5DB237214A",
-    "layout": "Poster",
-    "name": "Narrative2"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/romance-poster.jpg",
-    "hideTitle": true,
-    "id": "178ED699-F9C3-44C2-9864-26BB944474C3",
-    "layout": "Poster",
-    "name": "Romance"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/scifi-poster.jpg",
-    "hideTitle": true,
-    "id": "E9CF2A30-5E95-41AA-A091-2B54381B1224",
-    "layout": "Poster",
-    "name": "Scifi"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/thriller-poster.jpg",
-    "hideTitle": true,
-    "id": "2BE86BAF-8A0F-4790-B3F0-E979BE01BF57",
-    "layout": "Poster",
-    "name": "Thriller"
-  }
-]
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "widgets": [
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "hideTitle": true,
+              "id": "678842BD-C2B5-4A4F-BFBC-94C279EE7998",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/action-poster.jpg",
+              "title": "Action"
+            },
+            {
+              "hideTitle": true,
+              "id": "F0FC8F3F-4259-4C8D-B341-7CFCE63DFE8F",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/animation-poster.jpg",
+              "title": "Animation"
+            },
+            {
+              "hideTitle": true,
+              "id": "C3D0813F-A4FC-4873-A14D-56ACC81610E0",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/animation2-poster.jpg",
+              "title": "Animation2"
+            },
+            {
+              "hideTitle": true,
+              "id": "0D43FF03-5DB3-4288-A6D1-3BC493EC1D4C",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/comedy-poster.jpg",
+              "title": "Comedy"
+            },
+            {
+              "hideTitle": true,
+              "id": "D2B8066A-1585-4ECF-AEA2-81B373481B68",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/documentary-poster.jpg",
+              "title": "Documentary"
+            },
+            {
+              "hideTitle": true,
+              "id": "AB238EA7-5B5F-47BF-8868-7F72C61D742F",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/drama-poster.jpg",
+              "title": "Drama"
+            },
+            {
+              "hideTitle": true,
+              "id": "77E8DECE-8ABC-4F58-8375-1EDF9560EA02",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/family-poster.jpg",
+              "title": "Family"
+            },
+            {
+              "hideTitle": true,
+              "id": "485CB3B5-D9B3-4FD7-8F7A-084015280503",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/horror-poster.jpg",
+              "title": "Horror"
+            },
+            {
+              "hideTitle": true,
+              "id": "1625D47D-61B0-4785-A37F-1747D23CE1DB",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/imdb-poster.jpg",
+              "title": "Imdb"
+            },
+            {
+              "hideTitle": true,
+              "id": "5CAE0921-EA38-4063-B6C6-AEF7FCC67A17",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/imdb2-poster.jpg",
+              "title": "Imdb2"
+            },
+            {
+              "hideTitle": true,
+              "id": "BB361159-41FE-489E-8E98-24D9CC131A6C",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/imdb3-poster.jpg",
+              "title": "Imdb3"
+            },
+            {
+              "hideTitle": true,
+              "id": "1C05ADD9-0C32-44D7-8631-17287B47072B",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/korean-poster.jpg",
+              "title": "Korean"
+            },
+            {
+              "hideTitle": true,
+              "id": "71BF66AF-B920-4A64-8761-D25B443C6B06",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/korean2-poster.jpg",
+              "title": "Korean2"
+            },
+            {
+              "hideTitle": true,
+              "id": "29C5E0C3-544A-4FB3-AB88-745A4D044383",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/miniseries-poster.jpg",
+              "title": "Miniseries"
+            },
+            {
+              "hideTitle": true,
+              "id": "38A823FB-94BF-4559-836D-1F43E3AFB389",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/miniseries2-poster.jpg",
+              "title": "Miniseries2"
+            },
+            {
+              "hideTitle": true,
+              "id": "0C45D289-ADFC-4FE5-B599-7EFC235109EF",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/miniseries3-poster.jpg",
+              "title": "Miniseries3"
+            },
+            {
+              "hideTitle": true,
+              "id": "9EFFD923-A4CD-45C7-B389-92215526FFE7",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/narrative-poster.jpg",
+              "title": "Narrative"
+            },
+            {
+              "hideTitle": true,
+              "id": "B70347B1-0B4F-4D4F-9B17-76ACF2DAB2E5",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/narrative2-poster.jpg",
+              "title": "Narrative2"
+            },
+            {
+              "hideTitle": true,
+              "id": "74F7629E-1E9C-47F0-8754-7C7151773628",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/romance-poster.jpg",
+              "title": "Romance"
+            },
+            {
+              "hideTitle": true,
+              "id": "813067D4-B714-4D58-BD48-BAB83D3A0257",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/scifi-poster.jpg",
+              "title": "Scifi"
+            },
+            {
+              "hideTitle": true,
+              "id": "9A6581F7-6094-4C8B-9B95-49029BD20220",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/poster/dangeruex23/thriller-poster.jpg",
+              "title": "Thriller"
+            }
+          ]
+        }
+      },
+      "id": "collection.0AF19F02-68C4-4E55-997D-6A282FB6966D",
+      "title": "Genres",
+      "type": "collection.row"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1960s-wide.png",
+    "hideTitle": true,
+    "id": "4C1AEB93-D9CB-4DB7-BADD-CC441E88EBA6",
+    "layout": "Wide",
+    "name": "1960s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1970s-wide.png",
+    "hideTitle": true,
+    "id": "584773DB-E575-4415-811D-6C91D7F553B0",
+    "layout": "Wide",
+    "name": "1970s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1980s-wide.png",
+    "hideTitle": true,
+    "id": "EDC656AF-C161-4ADC-A890-420FB98F85E8",
+    "layout": "Wide",
+    "name": "1980s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1990s-wide.png",
+    "hideTitle": true,
+    "id": "D6BB19CA-0F91-4903-BFD7-1DB1B0198865",
+    "layout": "Wide",
+    "name": "1990s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/2000s-wide.png",
+    "hideTitle": true,
+    "id": "A7AD1CBE-B959-4187-8749-297979DC79CF",
+    "layout": "Wide",
+    "name": "2000s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/2010s-wide.png",
+    "hideTitle": true,
+    "id": "BA2501FA-1168-4FC3-8B02-9C7861F56743",
+    "layout": "Wide",
+    "name": "2010s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/2020s-wide.png",
+    "hideTitle": true,
+    "id": "A4795552-1249-4CEE-B490-C4DDC0EA3261",
+    "layout": "Wide",
+    "name": "2020s"
+  }
+]

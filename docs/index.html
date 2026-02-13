@@ -302,6 +302,27 @@
             opacity: 0.9;
         }
 
+        .setup-stats {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 0 14px;
+        }
+
+        .setup-stat {
+            font-size: 0.74rem;
+            font-weight: 600;
+            color: #d4d4d8;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 999px;
+            padding: 0.34rem 0.56rem;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
         .icon-pack-preview {
             height: auto;
             overflow: hidden;
@@ -386,6 +407,345 @@
             align-items: center;
         }
 
+        .copy-choice-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.62);
+            backdrop-filter: blur(6px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            z-index: 100;
+        }
+
+        .copy-choice-overlay.active {
+            display: flex;
+        }
+
+        .copy-choice-sheet {
+            width: min(460px, 100%);
+            background: #101013;
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .copy-choice-header {
+            padding: 1rem 1rem 0.35rem;
+        }
+
+        .copy-choice-title {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .copy-choice-subtitle {
+            margin-top: 0.35rem;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .copy-choice-actions {
+            padding: 0.9rem 1rem 0.6rem;
+            display: grid;
+            gap: 0.65rem;
+        }
+
+        .choice-option {
+            width: 100%;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-main);
+            text-align: left;
+            padding: 0.85rem 0.95rem;
+            cursor: pointer;
+            transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .choice-option:hover {
+            border-color: rgba(255, 255, 255, 0.32);
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-1px);
+        }
+
+        .choice-option:focus-visible {
+            border-color: rgba(255, 255, 255, 0.55);
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+        }
+
+        .choice-option:disabled {
+            opacity: 0.45;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .choice-option-title {
+            display: block;
+            font-size: 0.92rem;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .choice-option-desc {
+            display: block;
+            margin-top: 0.25rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            line-height: 1.35;
+        }
+
+        .copy-choice-footer {
+            padding: 0 1rem 1rem;
+        }
+
+        .choice-cancel {
+            width: 100%;
+            border: 1px solid var(--border-card);
+            border-radius: 10px;
+            background: transparent;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 0.7rem 0.8rem;
+            cursor: pointer;
+            transition: border-color 0.2s ease, color 0.2s ease;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .choice-cancel:hover {
+            border-color: rgba(255, 255, 255, 0.24);
+            color: var(--text-main);
+        }
+
+        .choice-cancel:focus-visible {
+            border-color: rgba(255, 255, 255, 0.55);
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+        }
+
+        .builder-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.62);
+            backdrop-filter: blur(6px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            z-index: 110;
+        }
+
+        .builder-overlay.active {
+            display: flex;
+        }
+
+        .builder-sheet {
+            width: min(760px, 100%);
+            max-height: 90vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background: #101013;
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            box-shadow: 0 20px 48px rgba(0, 0, 0, 0.52);
+        }
+
+        .builder-header {
+            padding: 1rem 1rem 0.5rem;
+        }
+
+        .builder-title {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .builder-subtitle {
+            margin-top: 0.35rem;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .builder-controls {
+            padding: 0.7rem 1rem 0.75rem;
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            gap: 0.55rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .builder-search {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-card);
+            border-radius: 10px;
+            color: var(--text-main);
+            padding: 0.66rem 0.78rem;
+            font-size: 0.84rem;
+            outline: none;
+        }
+
+        .builder-search::placeholder {
+            color: var(--text-muted);
+        }
+
+        .builder-search:focus {
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .builder-mini-btn {
+            border: 1px solid var(--border-card);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-main);
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 0.64rem 0.8rem;
+            cursor: pointer;
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .builder-mini-btn:hover {
+            border-color: rgba(255, 255, 255, 0.28);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .builder-list {
+            overflow: auto;
+            padding: 0.55rem 1rem 0.7rem;
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        .builder-option {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: start;
+            gap: 0.7rem;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 0.72rem 0.78rem;
+            background: rgba(255, 255, 255, 0.02);
+            cursor: pointer;
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .builder-option:hover {
+            border-color: rgba(255, 255, 255, 0.24);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .builder-option input[type="checkbox"] {
+            margin-top: 0.14rem;
+            width: 16px;
+            height: 16px;
+            accent-color: #f4f4f5;
+            cursor: pointer;
+        }
+
+        .builder-option-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-main);
+            line-height: 1.3;
+        }
+
+        .builder-option-meta {
+            margin-top: 0.26rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            line-height: 1.35;
+        }
+
+        .builder-empty {
+            border: 1px dashed var(--border-card);
+            border-radius: 12px;
+            padding: 1rem;
+            color: var(--text-muted);
+            font-size: 0.84rem;
+            text-align: center;
+        }
+
+        .builder-footer {
+            padding: 0.75rem 1rem 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .builder-count {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        .builder-primary-btn {
+            margin-top: 0;
+            width: auto;
+            min-width: 152px;
+            transition: opacity 0.2s ease;
+        }
+
+        .builder-primary-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 680px) {
+            .copy-choice-overlay {
+                align-items: flex-end;
+                padding: 0;
+            }
+
+            .copy-choice-sheet {
+                width: 100%;
+                border-radius: 18px 18px 0 0;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                max-height: 88vh;
+                overflow-y: auto;
+            }
+
+            .builder-overlay {
+                align-items: flex-end;
+                padding: 0;
+            }
+
+            .builder-sheet {
+                width: 100%;
+                max-height: 92vh;
+                border-radius: 18px 18px 0 0;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+            }
+
+            .builder-controls {
+                grid-template-columns: 1fr;
+            }
+
+            .builder-footer {
+                grid-template-columns: 1fr;
+            }
+
+            .builder-primary-btn,
+            .builder-mini-btn,
+            .choice-cancel {
+                width: 100%;
+            }
+        }
+
         .empty-state {
             border: 1px dashed var(--border-card);
             border-radius: 16px;
@@ -445,14 +805,14 @@
                     <button class="type-pill active" data-type="all" onclick="setTypeFilter('all', this)">
                         All
                     </button>
-                    <button class="type-pill" data-type="icon-packs" onclick="setTypeFilter('icon-packs', this)">
-                        Icon Packs
+                    <button class="type-pill" data-type="setup" onclick="setTypeFilter('setup', this)">
+                        Full Setup
                     </button>
                     <button class="type-pill" data-type="widgets" onclick="setTypeFilter('widgets', this)">
                         Widgets
                     </button>
-                    <button class="type-pill" data-type="setup" onclick="setTypeFilter('setup', this)">
-                        Full Setup
+                    <button class="type-pill" data-type="icon-packs" onclick="setTypeFilter('icon-packs', this)">
+                        Icon Packs
                     </button>
                     <button class="type-pill" data-type="aio-formatter" onclick="setTypeFilter('aio-formatter', this)">
                         AIO Formatter
@@ -461,51 +821,87 @@
         </div>
 
 
-        <section class="content-section" data-section="icon-packs"
-            data-section-search="icon packs icon-packs">
+        <section class="content-section" data-section="setup"
+            data-section-search="full setup setup">
             <div class="section-header">
-                <h2>Icon Packs</h2>
-                <p>Community icon packs that add ratings icons.</p>
+                <h2>Full Setup</h2>
+                <p>Community full setups in one go.</p>
             </div>
             <div class="grid">
 
-            <div class="card card-icon-pack" data-search="itsrenoria imdb letterboxd mdblist metacritic popcornmeter tmdb tomatometer trakt icon packs icon-packs icons">
+            <div class="card card-generic card-setup-builder" data-search="make your own full setup setup builder custom widgets paste json">
                 <div class="card-header-top">
-                    <h3 class="card-title">itsrenoria</h3>
-                    <span class="badge">Icon Packs</span>
+                    <h3 class="card-title">Make your own</h3>
+                    <span class="badge">Full Setup</span>
                 </div>
-                <div class="card-preview icon-pack-preview">
-                    <div class="icon-grid">
-                        <div class="icon-cell">
-                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/IMDB.png" alt="IMDB" loading="lazy" />
-                        </div>
-                        <div class="icon-cell">
-                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Letterboxd.png" alt="Letterboxd" loading="lazy" />
-                        </div>
-                        <div class="icon-cell">
-                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/MDBList.png" alt="MDBList" loading="lazy" />
-                        </div>
-                        <div class="icon-cell">
-                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Metacritic.png" alt="Metacritic" loading="lazy" />
-                        </div>
-                        <div class="icon-cell">
-                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Popcornmeter.png" alt="Popcornmeter" loading="lazy" />
-                        </div>
-                        <div class="icon-cell">
-                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/TMDB.png" alt="TMDB" loading="lazy" />
-                        </div>
-                        <div class="icon-cell">
-                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Tomatometer.png" alt="Tomatometer" loading="lazy" />
-                        </div>
-                        <div class="icon-cell">
-                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Trakt.png" alt="Trakt" loading="lazy" />
-                        </div>
+                <div class="card-preview generic-preview">
+                    <div class="generic-preview-content">Build from widget packs</div>
+                </div>
+                <div class="card-content">
+                    <p class="generic-description">Generate a custom setup JSON from selected widgets.</p>
+                    <p class="card-author" style="display:none;">make your own full setup setup builder custom widgets paste json</p>
+                    <button class="copy-btn" onclick="openSetupBuilder(this)">
+                        <span class="btn-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 5v14"></path>
+                                <path d="M5 12h14"></path>
+                            </svg>
+                        </span>
+                        <span class="btn-text">Build JSON</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card card-generic" data-search="callandt95   full setup setup 15 widgets 11 classic rows 2 numbered rows 2 collection rows">
+                <div class="card-header-top">
+                    <h3 class="card-title">callandt95</h3>
+                    <span class="badge">Full Setup</span>
+                </div>
+                <div class="card-preview generic-preview">
+
+                    <div class="setup-stats">
+                        <span class="setup-stat">15 Widgets</span>
+                        <span class="setup-stat">11 Classic Rows</span>
+                        <span class="setup-stat">2 Numbered Rows</span>
+                        <span class="setup-stat">2 Collection Rows</span>
                     </div>
                 </div>
                 <div class="card-content">
-                    <p class="generic-description">8 icons</p>
-                    <p class="card-author" style="display:none;">itsrenoria IMDB Letterboxd MDBList Metacritic Popcornmeter TMDB Tomatometer Trakt Icon Packs icon-packs icons</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/icon-packs/icon-packs-itsrenoria.json', this)">
+                    
+                    
+                    <p class="card-author" style="display:none;">callandt95   Full Setup setup 15 widgets 11 classic rows 2 numbered rows 2 collection rows</p>
+                    <button class="copy-btn" onclick="copyTypeJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/setup/setup-callandt95.json', 'setup', this)">
+                        <span class="btn-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </span>
+                        <span class="btn-text">Copy JSON URL</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card card-generic" data-search="ttoadd   full setup setup 8 widgets 7 classic rows 1 collection row">
+                <div class="card-header-top">
+                    <h3 class="card-title">ttoadd</h3>
+                    <span class="badge">Full Setup</span>
+                </div>
+                <div class="card-preview generic-preview">
+
+                    <div class="setup-stats">
+                        <span class="setup-stat">8 Widgets</span>
+                        <span class="setup-stat">7 Classic Rows</span>
+                        <span class="setup-stat">1 Collection Row</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    
+                    
+                    <p class="card-author" style="display:none;">ttoadd   Full Setup setup 8 widgets 7 classic rows 1 collection row</p>
+                    <button class="copy-btn" onclick="copyTypeJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/setup/setup-ttoadd.json', 'setup', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -545,7 +941,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Awards mousa.a  poster widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-awards-poster-mousa.a.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -575,7 +971,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Decades mousa.a  poster widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-poster-mousa.a.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -608,7 +1004,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Decades orangebyte  square widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-square-orangebyte.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-square-orangebyte.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-square-orangebyte.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -638,7 +1034,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Decades mousa.a  wide widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-wide-mousa.a.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -666,7 +1062,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Decades rdnoni  wide widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-wide-rdnoni.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -699,7 +1095,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Directors fexm92  wide widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-directors-wide-fexm92.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -743,7 +1139,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Genres dangeruex23  poster widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-dangeruex23.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-dangeruex23.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-genres-poster-dangeruex23.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -776,7 +1172,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Genres mousa.a  poster widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-mousa.a.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-genres-poster-mousa.a.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -813,7 +1209,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Genres orangebyte  square widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-genres-square-orangebyte.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -892,7 +1288,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Genres dannyrutledge  wide widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-dannyrutledge.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-dannyrutledge.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-genres-wide-dannyrutledge.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -925,7 +1321,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Genres mousa.a  wide widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-mousa.a.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-genres-wide-mousa.a.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -965,7 +1361,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Streaming (Color) orangebyte color square widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-color.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-color.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-streaming-square-orangebyte-color.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1005,7 +1401,7 @@
                 </div>
                 <div class="card-content">
                     <p class="card-author" style="display:none;">Streaming (Original) orangebyte original square widgets</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte.json', this)">
+                    <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-streaming-square-orangebyte.json', true, this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1021,52 +1417,51 @@
             </div>
         </section>
 
-        <section class="content-section" data-section="setup"
-            data-section-search="full setup setup">
+        <section class="content-section" data-section="icon-packs"
+            data-section-search="icon packs icon-packs">
             <div class="section-header">
-                <h2>Full Setup</h2>
-                <p>Community full setups in one go.</p>
+                <h2>Icon Packs</h2>
+                <p>Community icon packs that add ratings icons.</p>
             </div>
             <div class="grid">
 
-            <div class="card card-generic" data-search="callandt95   full setup setup">
+            <div class="card card-icon-pack" data-search="itsrenoria imdb letterboxd mdblist metacritic popcornmeter tmdb tomatometer trakt icon packs icon-packs icons">
                 <div class="card-header-top">
-                    <h3 class="card-title">callandt95</h3>
-                    <span class="badge">Full Setup</span>
+                    <h3 class="card-title">itsrenoria</h3>
+                    <span class="badge">Icon Packs</span>
                 </div>
-                <div class="card-preview generic-preview">
-                    <div class="generic-preview-content">3 fields</div>
+                <div class="card-preview icon-pack-preview">
+                    <div class="icon-grid">
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/IMDB.png" alt="IMDB" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Letterboxd.png" alt="Letterboxd" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/MDBList.png" alt="MDBList" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Metacritic.png" alt="Metacritic" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Popcornmeter.png" alt="Popcornmeter" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/TMDB.png" alt="TMDB" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Tomatometer.png" alt="Tomatometer" loading="lazy" />
+                        </div>
+                        <div class="icon-cell">
+                            <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/Trakt.png" alt="Trakt" loading="lazy" />
+                        </div>
+                    </div>
                 </div>
                 <div class="card-content">
-                    
-                    
-                    <p class="card-author" style="display:none;">callandt95   Full Setup setup</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/setup/setup-callandt95.json', this)">
-                        <span class="btn-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                            </svg>
-                        </span>
-                        <span class="btn-text">Copy JSON URL</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="card card-generic" data-search="ttoadd   full setup setup">
-                <div class="card-header-top">
-                    <h3 class="card-title">ttoadd</h3>
-                    <span class="badge">Full Setup</span>
-                </div>
-                <div class="card-preview generic-preview">
-                    <div class="generic-preview-content">3 fields</div>
-                </div>
-                <div class="card-content">
-                    
-                    
-                    <p class="card-author" style="display:none;">ttoadd   Full Setup setup</p>
-                    <button class="copy-btn" onclick="copyToClipboard('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/setup/setup-ttoadd.json', this)">
+                    <p class="generic-description">8 icons</p>
+                    <p class="card-author" style="display:none;">itsrenoria IMDB Letterboxd MDBList Metacritic Popcornmeter TMDB Tomatometer Trakt Icon Packs icon-packs icons</p>
+                    <button class="copy-btn" onclick="copyTypeJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/icon-packs/icon-packs-itsrenoria.json', 'icon-packs', this)">
                         <span class="btn-icon">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1100,12 +1495,66 @@
 
     </main>
 
+    <div class="copy-choice-overlay" id="copyChoiceOverlay" aria-hidden="true">
+        <div class="copy-choice-sheet" role="dialog" aria-modal="true" aria-labelledby="copyChoiceTitle">
+            <div class="copy-choice-header">
+                <h3 class="copy-choice-title" id="copyChoiceTitle">Copy JSON URL</h3>
+                <p class="copy-choice-subtitle">Choose the format you want to import in Fusion 2.</p>
+            </div>
+            <div class="copy-choice-actions">
+                <button class="choice-option" id="copyChoiceWidgetBtn" type="button">
+                    <span class="choice-option-title" id="copyChoiceWidgetTitle">Widget</span>
+                    <span class="choice-option-desc" id="copyChoiceWidgetHint">Use with `Widgets > Import Widgets > JSON URL`.</span>
+                </button>
+                <button class="choice-option" id="copyChoiceCollectionBtn" type="button">
+                    <span class="choice-option-title" id="copyChoiceCollectionTitle">Collection</span>
+                    <span class="choice-option-desc" id="copyChoiceCollectionHint">Use with `Widgets > Add New > Collections Row > Import Collections > JSON URL`.</span>
+                </button>
+            </div>
+            <div class="copy-choice-footer">
+                <button class="choice-cancel" id="copyChoiceCancelBtn" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="builder-overlay" id="setupBuilderOverlay" aria-hidden="true">
+        <div class="builder-sheet" role="dialog" aria-modal="true" aria-labelledby="setupBuilderTitle">
+            <div class="builder-header">
+                <h3 class="builder-title" id="setupBuilderTitle">Make your own full setup</h3>
+                <p class="builder-subtitle">Use with Widgets > Import Widgets > Paste JSON</p>
+            </div>
+            <div class="builder-controls">
+                <input type="text" class="builder-search" id="builderSearchInput" placeholder="Search widget packs" />
+                <button type="button" class="builder-mini-btn" id="builderSelectAllBtn">Select all</button>
+                <button type="button" class="builder-mini-btn" id="builderClearBtn">Clear</button>
+            </div>
+            <div class="builder-list" id="builderList"></div>
+            <div class="builder-footer">
+                <span class="builder-count" id="builderSelectionCount">0 selected</span>
+                <button type="button" class="copy-btn builder-primary-btn" id="builderCopyBtn" disabled>
+                    <span class="btn-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </span>
+                    <span class="btn-text" id="builderCopyBtnText">Copy JSON</span>
+                </button>
+                <button type="button" class="choice-cancel" id="builderCloseBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>Created with 🤍 for 2usion</p>
     </footer>
 
     <script>
+        const WIDGET_BUILDER_SOURCES = [{"id": "widgets-awards-poster-mousa.a.json", "title": "Awards", "author": "mousa.a", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json", "search": "awards mousa.a poster  widgets-awards-poster-mousa.a.json widgets"}, {"id": "widgets-decades-poster-mousa.a.json", "title": "Decades", "author": "mousa.a", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json", "search": "decades mousa.a poster  widgets-decades-poster-mousa.a.json widgets"}, {"id": "widgets-decades-square-orangebyte.json", "title": "Decades", "author": "orangebyte", "shape": "square", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-square-orangebyte.json", "search": "decades orangebyte square  widgets-decades-square-orangebyte.json widgets"}, {"id": "widgets-decades-wide-mousa.a.json", "title": "Decades", "author": "mousa.a", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json", "search": "decades mousa.a wide  widgets-decades-wide-mousa.a.json widgets"}, {"id": "widgets-decades-wide-rdnoni.json", "title": "Decades", "author": "rdnoni", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json", "search": "decades rdnoni wide  widgets-decades-wide-rdnoni.json widgets"}, {"id": "widgets-directors-wide-fexm92.json", "title": "Directors", "author": "fexm92", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json", "search": "directors fexm92 wide  widgets-directors-wide-fexm92.json widgets"}, {"id": "widgets-genres-poster-dangeruex23.json", "title": "Genres", "author": "dangeruex23", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-dangeruex23.json", "search": "genres dangeruex23 poster  widgets-genres-poster-dangeruex23.json widgets"}, {"id": "widgets-genres-poster-mousa.a.json", "title": "Genres", "author": "mousa.a", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-mousa.a.json", "search": "genres mousa.a poster  widgets-genres-poster-mousa.a.json widgets"}, {"id": "widgets-genres-square-orangebyte.json", "title": "Genres", "author": "orangebyte", "shape": "square", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte.json", "search": "genres orangebyte square  widgets-genres-square-orangebyte.json widgets"}, {"id": "widgets-genres-wide-dannyrutledge.json", "title": "Genres", "author": "dannyrutledge", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-dannyrutledge.json", "search": "genres dannyrutledge wide  widgets-genres-wide-dannyrutledge.json widgets"}, {"id": "widgets-genres-wide-mousa.a.json", "title": "Genres", "author": "mousa.a", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-mousa.a.json", "search": "genres mousa.a wide  widgets-genres-wide-mousa.a.json widgets"}, {"id": "widgets-streaming-square-orangebyte-color.json", "title": "Streaming (Color)", "author": "orangebyte", "shape": "square", "variant": "color", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-color.json", "search": "streaming (color) orangebyte square color widgets-streaming-square-orangebyte-color.json widgets"}, {"id": "widgets-streaming-square-orangebyte.json", "title": "Streaming (Original)", "author": "orangebyte", "shape": "square", "variant": "original", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte.json", "search": "streaming (original) orangebyte square original widgets-streaming-square-orangebyte.json widgets"}];
         let activeTypeFilter = 'all';
+        let copyChoiceState = null;
+        let setupBuilderState = { selectedIds: new Set(), triggerBtn: null };
 
         function copyToClipboard(text, btn) {
             navigator.clipboard.writeText(text).then(() => {
@@ -1114,6 +1563,523 @@
                 setTimeout(() => {
                     btn.innerHTML = originalContent;
                 }, 2000);
+            });
+        }
+
+        function closeCopyChoice() {
+            const overlay = document.getElementById('copyChoiceOverlay');
+            if (!overlay) {
+                copyChoiceState = null;
+                return;
+            }
+
+            overlay.classList.remove('active');
+            overlay.setAttribute('aria-hidden', 'true');
+
+            const triggerBtn = copyChoiceState?.triggerBtn;
+            copyChoiceState = null;
+            if (triggerBtn) {
+                triggerBtn.focus({ preventScroll: true });
+            }
+        }
+
+        function initCopyChoiceDialog() {
+            const overlay = document.getElementById('copyChoiceOverlay');
+            const widgetBtn = document.getElementById('copyChoiceWidgetBtn');
+            const collectionBtn = document.getElementById('copyChoiceCollectionBtn');
+            const cancelBtn = document.getElementById('copyChoiceCancelBtn');
+            const widgetTitle = document.getElementById('copyChoiceWidgetTitle');
+            const widgetHint = document.getElementById('copyChoiceWidgetHint');
+            const collectionTitle = document.getElementById('copyChoiceCollectionTitle');
+            const collectionHint = document.getElementById('copyChoiceCollectionHint');
+
+            if (!overlay || !widgetBtn || !collectionBtn || !cancelBtn || !widgetTitle || !widgetHint || !collectionTitle || !collectionHint) {
+                return;
+            }
+
+            overlay.addEventListener('click', (event) => {
+                if (event.target === overlay) {
+                    closeCopyChoice();
+                }
+            });
+
+            cancelBtn.addEventListener('click', () => {
+                closeCopyChoice();
+            });
+
+            widgetBtn.addEventListener('click', () => {
+                if (!copyChoiceState || !copyChoiceState.primary) {
+                    return;
+                }
+                if (!copyChoiceState.primary.enabled) {
+                    return;
+                }
+                copyToClipboard(copyChoiceState.primary.url, copyChoiceState.triggerBtn);
+                closeCopyChoice();
+            });
+
+            collectionBtn.addEventListener('click', () => {
+                if (!copyChoiceState || !copyChoiceState.secondary) {
+                    return;
+                }
+                if (!copyChoiceState.secondary.enabled) {
+                    return;
+                }
+                copyToClipboard(copyChoiceState.secondary.url, copyChoiceState.triggerBtn);
+                closeCopyChoice();
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && overlay.classList.contains('active')) {
+                    closeCopyChoice();
+                }
+            });
+        }
+
+        function openCopyChoiceDialog(primary, secondary, btn) {
+            const overlay = document.getElementById('copyChoiceOverlay');
+            const widgetBtn = document.getElementById('copyChoiceWidgetBtn');
+            const collectionBtn = document.getElementById('copyChoiceCollectionBtn');
+            const widgetTitle = document.getElementById('copyChoiceWidgetTitle');
+            const widgetHint = document.getElementById('copyChoiceWidgetHint');
+            const collectionTitle = document.getElementById('copyChoiceCollectionTitle');
+            const collectionHint = document.getElementById('copyChoiceCollectionHint');
+
+            if (!overlay || !widgetBtn || !collectionBtn || !widgetTitle || !widgetHint || !collectionTitle || !collectionHint) {
+                copyToClipboard(primary.url, btn);
+                return;
+            }
+
+            copyChoiceState = {
+                primary,
+                secondary: secondary || null,
+                triggerBtn: btn,
+            };
+
+            widgetTitle.textContent = primary.label;
+            widgetHint.textContent = primary.hint;
+            widgetBtn.disabled = !primary.enabled;
+            widgetBtn.style.display = '';
+
+            if (secondary) {
+                collectionTitle.textContent = secondary.label;
+                collectionHint.textContent = secondary.hint;
+                collectionBtn.disabled = !secondary.enabled;
+                collectionBtn.style.display = '';
+            } else {
+                collectionBtn.style.display = 'none';
+            }
+
+            overlay.classList.add('active');
+            overlay.setAttribute('aria-hidden', 'false');
+        }
+
+        function copyWidgetJsonChoice(widgetUrl, collectionUrl, hasCollection, btn) {
+            openCopyChoiceDialog(
+                {
+                    label: 'Widget',
+                    hint: 'Use with `Widgets > Import Widgets > JSON URL`.',
+                    url: widgetUrl,
+                    enabled: true,
+                },
+                {
+                    label: 'Collection',
+                    hint: hasCollection
+                        ? 'Use with `Widgets > Add New > Collections Row > Import Collections > JSON URL`.'
+                        : 'Collection JSON is not available for this card yet.',
+                    url: collectionUrl,
+                    enabled: hasCollection,
+                },
+                btn
+            );
+        }
+
+        function copyTypeJsonChoice(jsonUrl, typeKey, btn) {
+            if (typeKey === 'setup') {
+                openCopyChoiceDialog(
+                    {
+                        label: 'Full Setup',
+                        hint: 'Use with Widgets > Import Widgets > JSON URL',
+                        url: jsonUrl,
+                        enabled: true,
+                    },
+                    null,
+                    btn
+                );
+                return;
+            }
+
+            if (typeKey === 'icon-packs') {
+                openCopyChoiceDialog(
+                    {
+                        label: 'Icon Pack',
+                        hint: 'Use with Settings > Icon Packs > Add Icon Pack',
+                        url: jsonUrl,
+                        enabled: true,
+                    },
+                    null,
+                    btn
+                );
+                return;
+            }
+
+            copyToClipboard(jsonUrl, btn);
+        }
+
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function mapLayoutToAspect(layout) {
+            const normalized = String(layout || '').toLowerCase();
+            if (normalized.includes('wide')) {
+                return 'wide';
+            }
+            if (normalized.includes('square')) {
+                return 'square';
+            }
+            return 'poster';
+        }
+
+        function generateUpperUuid() {
+            if (window.crypto && typeof window.crypto.randomUUID === 'function') {
+                return window.crypto.randomUUID().toUpperCase();
+            }
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (ch) => {
+                const random = Math.floor(Math.random() * 16);
+                const value = ch === 'x' ? random : ((random & 0x3) | 0x8);
+                return value.toString(16);
+            }).toUpperCase();
+        }
+
+        function deepClone(value) {
+            return JSON.parse(JSON.stringify(value));
+        }
+
+        function collectWidgetsFromSource(data, source) {
+            if (data && typeof data === 'object' && Array.isArray(data.widgets)) {
+                return data.widgets
+                    .filter((widget) => widget && typeof widget === 'object')
+                    .map((widget) => deepClone(widget));
+            }
+
+            if (!Array.isArray(data)) {
+                return [];
+            }
+
+            const items = data
+                .filter((entry) => entry && typeof entry === 'object')
+                .map((entry) => {
+                    const imageUrl = entry.backgroundImageURL || entry.imageURL || '';
+                    if (!imageUrl) {
+                        return null;
+                    }
+
+                    return {
+                        hideTitle: entry.hideTitle !== false,
+                        id: typeof entry.id === 'string' ? entry.id : generateUpperUuid(),
+                        imageAspect: entry.imageAspect || mapLayoutToAspect(entry.layout),
+                        imageURL: imageUrl,
+                        title: entry.name || entry.title || '',
+                    };
+                })
+                .filter(Boolean);
+
+            if (!items.length) {
+                return [];
+            }
+
+            return [{
+                dataSource: {
+                    kind: 'collection',
+                    payload: { items },
+                },
+                id: `collection.${generateUpperUuid()}`,
+                title: source.title || 'Collection',
+                type: 'collection.row',
+            }];
+        }
+
+        function ensureUniqueIds(root) {
+            const seenIds = new Set();
+            const uuidPattern = /^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$/;
+
+            function nextUniqueId(currentValue) {
+                let candidate = (typeof currentValue === 'string' && currentValue) ? currentValue : generateUpperUuid();
+
+                while (seenIds.has(candidate)) {
+                    if (candidate.includes('.')) {
+                        const parts = candidate.split('.');
+                        const suffix = parts[parts.length - 1];
+                        if (uuidPattern.test(suffix)) {
+                            parts[parts.length - 1] = generateUpperUuid();
+                            candidate = parts.join('.');
+                        } else {
+                            candidate = `${candidate}.${generateUpperUuid()}`;
+                        }
+                    } else {
+                        candidate = generateUpperUuid();
+                    }
+                }
+
+                seenIds.add(candidate);
+                return candidate;
+            }
+
+            function walk(node) {
+                if (Array.isArray(node)) {
+                    node.forEach((child) => walk(child));
+                    return;
+                }
+
+                if (!node || typeof node !== 'object') {
+                    return;
+                }
+
+                Object.keys(node).forEach((key) => {
+                    if (key === 'id') {
+                        node[key] = nextUniqueId(node[key]);
+                        return;
+                    }
+                    walk(node[key]);
+                });
+            }
+
+            walk(root);
+        }
+
+        function getBuilderElements() {
+            return {
+                overlay: document.getElementById('setupBuilderOverlay'),
+                searchInput: document.getElementById('builderSearchInput'),
+                list: document.getElementById('builderList'),
+                count: document.getElementById('builderSelectionCount'),
+                copyBtn: document.getElementById('builderCopyBtn'),
+                selectAllBtn: document.getElementById('builderSelectAllBtn'),
+                clearBtn: document.getElementById('builderClearBtn'),
+                closeBtn: document.getElementById('builderCloseBtn'),
+            };
+        }
+
+        function getFilteredBuilderSources() {
+            const elements = getBuilderElements();
+            const query = (elements.searchInput?.value || '').toLowerCase().trim();
+            if (!query) {
+                return WIDGET_BUILDER_SOURCES;
+            }
+            return WIDGET_BUILDER_SOURCES.filter((source) => (source.search || '').includes(query));
+        }
+
+        function updateBuilderSelectionCount() {
+            const elements = getBuilderElements();
+            const selectedCount = setupBuilderState.selectedIds.size;
+
+            if (elements.count) {
+                elements.count.textContent = `${selectedCount} selected`;
+            }
+            if (elements.copyBtn) {
+                elements.copyBtn.disabled = selectedCount === 0;
+            }
+        }
+
+        function setBuilderCopyButtonText(label) {
+            const textElement = document.getElementById('builderCopyBtnText');
+            const copyButton = document.getElementById('builderCopyBtn');
+
+            if (textElement) {
+                textElement.textContent = label;
+            } else if (copyButton) {
+                copyButton.textContent = label;
+            }
+        }
+
+        function renderSetupBuilderList() {
+            const elements = getBuilderElements();
+            if (!elements.list) {
+                return;
+            }
+
+            const sources = getFilteredBuilderSources();
+            if (!sources.length) {
+                elements.list.innerHTML = '<div class="builder-empty">No widget packs found.</div>';
+                return;
+            }
+
+            elements.list.innerHTML = sources.map((source) => {
+                const checked = setupBuilderState.selectedIds.has(source.id) ? 'checked' : '';
+                const metaParts = [];
+                if (source.author) {
+                    metaParts.push(`by ${source.author}`);
+                }
+                if (source.shape) {
+                    metaParts.push(source.shape);
+                }
+                if (source.variant) {
+                    metaParts.push(source.variant);
+                }
+                const meta = metaParts.join(' · ');
+                return `
+                    <label class="builder-option">
+                        <input type="checkbox" data-source-id="${escapeHtml(source.id)}" ${checked} />
+                        <div>
+                            <div class="builder-option-title">${escapeHtml(source.title || source.id)}</div>
+                            <div class="builder-option-meta">${escapeHtml(meta)}</div>
+                        </div>
+                    </label>
+                `;
+            }).join('');
+
+            elements.list.querySelectorAll('input[type="checkbox"][data-source-id]').forEach((checkbox) => {
+                checkbox.addEventListener('change', () => {
+                    const sourceId = checkbox.getAttribute('data-source-id');
+                    if (!sourceId) {
+                        return;
+                    }
+                    if (checkbox.checked) {
+                        setupBuilderState.selectedIds.add(sourceId);
+                    } else {
+                        setupBuilderState.selectedIds.delete(sourceId);
+                    }
+                    updateBuilderSelectionCount();
+                });
+            });
+        }
+
+        function openSetupBuilder(btn) {
+            const elements = getBuilderElements();
+            if (!elements.overlay) {
+                return;
+            }
+
+            setupBuilderState.triggerBtn = btn || null;
+
+            if (elements.searchInput) {
+                elements.searchInput.value = '';
+            }
+            renderSetupBuilderList();
+            updateBuilderSelectionCount();
+
+            elements.overlay.classList.add('active');
+            elements.overlay.setAttribute('aria-hidden', 'false');
+        }
+
+        function closeSetupBuilder() {
+            const elements = getBuilderElements();
+            if (!elements.overlay) {
+                setupBuilderState.triggerBtn = null;
+                return;
+            }
+
+            elements.overlay.classList.remove('active');
+            elements.overlay.setAttribute('aria-hidden', 'true');
+
+            const triggerBtn = setupBuilderState.triggerBtn;
+            setupBuilderState.triggerBtn = null;
+            if (triggerBtn) {
+                triggerBtn.focus({ preventScroll: true });
+            }
+        }
+
+        async function copyGeneratedSetupJson() {
+            const elements = getBuilderElements();
+            if (!elements.copyBtn) {
+                return;
+            }
+
+            const selectedSources = WIDGET_BUILDER_SOURCES.filter((source) => setupBuilderState.selectedIds.has(source.id));
+            if (!selectedSources.length) {
+                window.alert('Select at least one widget pack.');
+                return;
+            }
+
+            const originalLabel = 'Copy JSON';
+            elements.copyBtn.disabled = true;
+            setBuilderCopyButtonText('Building...');
+
+            try {
+                const mergedWidgets = [];
+
+                for (const source of selectedSources) {
+                    const response = await fetch(source.url, { cache: 'no-store' });
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${source.id} (${response.status})`);
+                    }
+
+                    const sourceData = await response.json();
+                    const widgetsFromSource = collectWidgetsFromSource(sourceData, source);
+                    mergedWidgets.push(...widgetsFromSource);
+                }
+
+                const output = {
+                    exportType: 'fusionWidgets',
+                    exportVersion: 1,
+                    widgets: mergedWidgets,
+                };
+
+                ensureUniqueIds(output);
+                await navigator.clipboard.writeText(JSON.stringify(output, null, 2));
+
+                setBuilderCopyButtonText('Copied!');
+                setTimeout(() => {
+                    setBuilderCopyButtonText(originalLabel);
+                    updateBuilderSelectionCount();
+                }, 1600);
+            } catch (error) {
+                console.error(error);
+                window.alert(`Could not build JSON: ${error.message}`);
+                setBuilderCopyButtonText(originalLabel);
+                updateBuilderSelectionCount();
+            }
+        }
+
+        function initSetupBuilder() {
+            const elements = getBuilderElements();
+            if (!elements.overlay || !elements.list || !elements.searchInput || !elements.selectAllBtn ||
+                !elements.clearBtn || !elements.closeBtn || !elements.copyBtn) {
+                return;
+            }
+
+            elements.overlay.addEventListener('click', (event) => {
+                if (event.target === elements.overlay) {
+                    closeSetupBuilder();
+                }
+            });
+
+            elements.searchInput.addEventListener('input', () => {
+                renderSetupBuilderList();
+            });
+
+            elements.selectAllBtn.addEventListener('click', () => {
+                getFilteredBuilderSources().forEach((source) => {
+                    setupBuilderState.selectedIds.add(source.id);
+                });
+                renderSetupBuilderList();
+                updateBuilderSelectionCount();
+            });
+
+            elements.clearBtn.addEventListener('click', () => {
+                setupBuilderState.selectedIds.clear();
+                renderSetupBuilderList();
+                updateBuilderSelectionCount();
+            });
+
+            elements.copyBtn.addEventListener('click', () => {
+                copyGeneratedSetupJson();
+            });
+
+            elements.closeBtn.addEventListener('click', () => {
+                closeSetupBuilder();
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && elements.overlay.classList.contains('active')) {
+                    closeSetupBuilder();
+                }
             });
         }
 
@@ -1197,6 +2163,8 @@
             });
         }
 
+        initCopyChoiceDialog();
+        initSetupBuilder();
         initTypeFilterFromUrl();
     </script>
 </body>

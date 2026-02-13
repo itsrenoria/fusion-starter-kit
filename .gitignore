@@ -2,5 +2,6 @@
 generate_site.py
 generate_json.py
 generate_widgets_json.py
+generate_collections_json.py
 generate_icon_packs_json.py
 assets/

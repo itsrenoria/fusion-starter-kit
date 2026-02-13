@@ -1,100 +1,116 @@
-[
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/action-square.png",
-    "hideTitle": true,
-    "id": "393F0EA1-EAFD-4FF4-B241-931A9EA29401",
-    "layout": "Square",
-    "name": "Action"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/adventure-square.png",
-    "hideTitle": true,
-    "id": "0910890B-585A-4AC5-8C1F-BB7A5C9DB315",
-    "layout": "Square",
-    "name": "Adventure"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/anime-square.png",
-    "hideTitle": true,
-    "id": "1AEC8F4F-9619-4EDA-9773-7AC573AD599D",
-    "layout": "Square",
-    "name": "Anime"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/comedy-square.png",
-    "hideTitle": true,
-    "id": "B8A02918-BD22-460D-9F7B-1616B8DDF8EF",
-    "layout": "Square",
-    "name": "Comedy"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/documentary-square.png",
-    "hideTitle": true,
-    "id": "F7C52CC3-ACC4-4545-B3DF-475D041B645E",
-    "layout": "Square",
-    "name": "Documentary"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/drama-square.png",
-    "hideTitle": true,
-    "id": "2CE09D53-57FF-4D2E-9014-AA8CDF575368",
-    "layout": "Square",
-    "name": "Drama"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/family-square.png",
-    "hideTitle": true,
-    "id": "E0300E51-906D-4BC1-88C6-E95F054A1A65",
-    "layout": "Square",
-    "name": "Family"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/history-square.png",
-    "hideTitle": true,
-    "id": "B1EABE31-05DC-4243-A912-EBA1E4CED720",
-    "layout": "Square",
-    "name": "History"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/horror-square.png",
-    "hideTitle": true,
-    "id": "C9756701-EBFF-4463-9FC4-A7DD22C274C8",
-    "layout": "Square",
-    "name": "Horror"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/nature-square.png",
-    "hideTitle": true,
-    "id": "ECE78E2F-8EF1-48E1-9F55-A5CC19C84597",
-    "layout": "Square",
-    "name": "Nature"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/reality-square.png",
-    "hideTitle": true,
-    "id": "570D28F7-0719-4545-870D-9FE3494FAE7C",
-    "layout": "Square",
-    "name": "Reality"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/romance-square.png",
-    "hideTitle": true,
-    "id": "1189A2A8-57F5-4E73-9CCB-9908DCF6F210",
-    "layout": "Square",
-    "name": "Romance"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/scifi-square.png",
-    "hideTitle": true,
-    "id": "D4DFFB34-9975-4679-A8CA-1A48E4ECF76E",
-    "layout": "Square",
-    "name": "Scifi"
-  },
-  {
-    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/thriller-square.png",
-    "hideTitle": true,
-    "id": "8EADF064-87DF-432A-8AB4-58FC1DDD970A",
-    "layout": "Square",
-    "name": "Thriller"
-  }
-]
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "widgets": [
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "hideTitle": true,
+              "id": "1F4A8035-324F-466E-A03D-ED6C9104115B",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/action-square.png",
+              "title": "Action"
+            },
+            {
+              "hideTitle": true,
+              "id": "3DAD20F9-6CFA-4148-8C04-68F8EA22D896",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/adventure-square.png",
+              "title": "Adventure"
+            },
+            {
+              "hideTitle": true,
+              "id": "F2C7279E-67F0-4663-80D4-1D47EC00265F",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/anime-square.png",
+              "title": "Anime"
+            },
+            {
+              "hideTitle": true,
+              "id": "F1CACCB7-4E86-434B-84EB-071384A218CC",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/comedy-square.png",
+              "title": "Comedy"
+            },
+            {
+              "hideTitle": true,
+              "id": "93637EA6-2490-4AD5-9634-DBAC7C91D90C",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/documentary-square.png",
+              "title": "Documentary"
+            },
+            {
+              "hideTitle": true,
+              "id": "DE39D546-2709-4ABC-A7D7-FB06AA9045BA",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/drama-square.png",
+              "title": "Drama"
+            },
+            {
+              "hideTitle": true,
+              "id": "6DAC0D12-396F-49AB-9441-06C844BDF04E",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/family-square.png",
+              "title": "Family"
+            },
+            {
+              "hideTitle": true,
+              "id": "0839273C-6087-4A97-9171-12B3C19AF2AE",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/history-square.png",
+              "title": "History"
+            },
+            {
+              "hideTitle": true,
+              "id": "565EE22E-7F4A-454B-BD12-9D4040CBAB69",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/horror-square.png",
+              "title": "Horror"
+            },
+            {
+              "hideTitle": true,
+              "id": "94EC4036-0021-4EC9-AA51-A19447E2BB05",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/nature-square.png",
+              "title": "Nature"
+            },
+            {
+              "hideTitle": true,
+              "id": "3EF60260-EFA4-4B52-A199-C6EB49F7E615",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/reality-square.png",
+              "title": "Reality"
+            },
+            {
+              "hideTitle": true,
+              "id": "C83FAAD5-D198-4A4D-8D83-AE4556E85688",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/romance-square.png",
+              "title": "Romance"
+            },
+            {
+              "hideTitle": true,
+              "id": "E8A60D9B-6D3D-4CD0-B261-EDFC7FAC15AF",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/scifi-square.png",
+              "title": "Scifi"
+            },
+            {
+              "hideTitle": true,
+              "id": "AADEF347-B38B-4161-A3B2-14BD6A51BD24",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/thriller-square.png",
+              "title": "Thriller"
+            }
+          ]
+        }
+      },
+      "id": "collection.1926FFF7-6A10-4200-B55D-4D9F5284CFF7",
+      "title": "Genres",
+      "type": "collection.row"
+    }
+  ]
+}

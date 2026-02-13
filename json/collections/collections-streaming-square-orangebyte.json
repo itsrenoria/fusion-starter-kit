@@ -1,0 +1,121 @@
+[
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/appletv-square.png",
+    "hideTitle": true,
+    "id": "917568BD-B317-4C17-B815-E9A508094C64",
+    "layout": "Square",
+    "name": "Appletv"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/bet-square.png",
+    "hideTitle": true,
+    "id": "2D5C6597-DDB0-4E84-A2D3-BFBDD5F43F3D",
+    "layout": "Square",
+    "name": "Bet"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/crunchyroll-square.png",
+    "hideTitle": true,
+    "id": "9A5E48E5-B898-4698-A272-3BDF567E9AEF",
+    "layout": "Square",
+    "name": "Crunchyroll"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/curiositystream-square.png",
+    "hideTitle": true,
+    "id": "75A19DB2-0A57-4AA5-B75E-461D3EC7F63F",
+    "layout": "Square",
+    "name": "Curiositystream"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/discoveryplus-square.png",
+    "hideTitle": true,
+    "id": "F641402F-3183-4A10-9295-8470FF041396",
+    "layout": "Square",
+    "name": "Discoveryplus"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/disney-square.png",
+    "hideTitle": true,
+    "id": "7EACA804-297F-4889-9E98-DFE60060DD95",
+    "layout": "Square",
+    "name": "Disney"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/hbomax-square.png",
+    "hideTitle": true,
+    "id": "D151A2E4-B127-46FC-BBA8-E4B59150E6BD",
+    "layout": "Square",
+    "name": "Hbomax"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/hulu-square.png",
+    "hideTitle": true,
+    "id": "65C1ED1D-2DC4-4BB3-8B2C-05B953D55984",
+    "layout": "Square",
+    "name": "Hulu"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/livetv-square.png",
+    "hideTitle": true,
+    "id": "ADC6A2F2-C8A9-4B73-9EF0-03C4B68BE912",
+    "layout": "Square",
+    "name": "Livetv"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/magllentv-square.png",
+    "hideTitle": true,
+    "id": "CEB8BBD3-DBD5-4310-B97F-EED570EF46C7",
+    "layout": "Square",
+    "name": "Magllentv"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/max-square.png",
+    "hideTitle": true,
+    "id": "A3C7ED48-AC3A-4556-9771-CC88A23B033B",
+    "layout": "Square",
+    "name": "Max"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/netflix-square.png",
+    "hideTitle": true,
+    "id": "8698B95F-94EC-403A-A403-940D966E3DF4",
+    "layout": "Square",
+    "name": "Netflix"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/paramount-square.png",
+    "hideTitle": true,
+    "id": "FF1C0E84-0161-4729-B077-CECF70BD39B9",
+    "layout": "Square",
+    "name": "Paramount"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/peacock-square.png",
+    "hideTitle": true,
+    "id": "B524078A-9CE5-4977-A942-97C763EA51B3",
+    "layout": "Square",
+    "name": "Peacock"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/primevideo-square.png",
+    "hideTitle": true,
+    "id": "11459627-A2E9-4481-91A9-64C41C66E9CE",
+    "layout": "Square",
+    "name": "Primevideo"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/skyshowtime-square.png",
+    "hideTitle": true,
+    "id": "E5B1E42C-D610-42E5-A584-91A2485B33A9",
+    "layout": "Square",
+    "name": "Skyshowtime"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/original/videoland-square.png",
+    "hideTitle": true,
+    "id": "3CC0A356-6FF2-4462-A478-00EC1D235E18",
+    "layout": "Square",
+    "name": "Videoland"
+  }
+]

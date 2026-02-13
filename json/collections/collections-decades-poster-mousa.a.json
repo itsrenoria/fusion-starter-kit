@@ -1,0 +1,51 @@
+[
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1960s-poster.png",
+    "hideTitle": true,
+    "id": "A46EAB15-11FF-4E5E-B499-667838C5ED00",
+    "layout": "Poster",
+    "name": "1960s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1970s-poster.png",
+    "hideTitle": true,
+    "id": "90331D74-6D58-45F2-9BE7-6DF19E419176",
+    "layout": "Poster",
+    "name": "1970s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1980s-poster.png",
+    "hideTitle": true,
+    "id": "277DE0F5-BBD7-4F2C-A61C-FC230542F4BB",
+    "layout": "Poster",
+    "name": "1980s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1990s-poster.png",
+    "hideTitle": true,
+    "id": "3139F295-0F89-4E40-ADFA-4CB73744D7EF",
+    "layout": "Poster",
+    "name": "1990s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2000s-poster.png",
+    "hideTitle": true,
+    "id": "185305C7-269A-46AE-A8F2-E0BE35ED1336",
+    "layout": "Poster",
+    "name": "2000s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2010s-poster.png",
+    "hideTitle": true,
+    "id": "D5F77ECB-250B-4E51-9A48-54291D4C1F5C",
+    "layout": "Poster",
+    "name": "2010s"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2020s-poster.png",
+    "hideTitle": true,
+    "id": "7B43AD3B-10DD-48A8-BDA9-80986ED43845",
+    "layout": "Poster",
+    "name": "2020s"
+  }
+]
