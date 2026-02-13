@@ -2,392 +2,392 @@
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/action-adventures-wide.png",
     "hideTitle": true,
-    "id": "8B67A188-DDA0-4F36-A5BC-01455094317E",
+    "id": "C553AB32-D6AA-4CA1-8F6E-7406E3EFA829",
     "layout": "Wide",
     "name": "Action-adventures"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/action-thrillers-wide.png",
     "hideTitle": true,
-    "id": "8DA11FE8-03F5-42F9-89F0-60E74D1E7487",
+    "id": "B24E6B5E-B20A-4D67-8BDD-1661DA55524A",
     "layout": "Wide",
     "name": "Action-thrillers"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/action-wide.png",
     "hideTitle": true,
-    "id": "0CCD3908-D53A-43D8-AFD3-B2FC0503C702",
+    "id": "1040C221-6070-47B5-A365-78D52E58892D",
     "layout": "Wide",
     "name": "Action"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/adult-animation-wide.png",
     "hideTitle": true,
-    "id": "D84E6501-0AFC-4756-946C-0E3B55BABB2A",
+    "id": "3C9CAFAB-FDF9-46A1-8860-2010F1E5E87B",
     "layout": "Wide",
     "name": "Adult-animation"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/adventure-wide.png",
     "hideTitle": true,
-    "id": "17CFED39-26FB-4047-8956-B13E0D8489E3",
+    "id": "B092020F-C930-4A53-B15B-BA2C20B616D9",
     "layout": "Wide",
     "name": "Adventure"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/aliens-wide.png",
     "hideTitle": true,
-    "id": "2DDE8914-2BE6-4AF6-92DD-147DD4765399",
+    "id": "C4A7D838-EC1B-4CBD-B9B1-02682FBF27FC",
     "layout": "Wide",
     "name": "Aliens"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/animated-comedies-wide.png",
     "hideTitle": true,
-    "id": "D24EDC2A-865C-4AE0-93D3-FC24601FC15F",
+    "id": "2F6399E8-B259-4419-AA7D-A950FEB17652",
     "layout": "Wide",
     "name": "Animated-comedies"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/animation-wide.png",
     "hideTitle": true,
-    "id": "E6587694-D58A-456E-B20E-29D5A31C1009",
+    "id": "0BABE9B0-53AF-463A-9DA8-04C27C143F89",
     "layout": "Wide",
     "name": "Animation"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/anime-wide.png",
     "hideTitle": true,
-    "id": "95601833-E71F-403E-894C-13487029A5F8",
+    "id": "42A53CE0-A902-4029-8CF6-34EAB797933A",
     "layout": "Wide",
     "name": "Anime"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/arthouse-animation-wide.png",
     "hideTitle": true,
-    "id": "4204EC8E-0978-4EC5-B76C-544268C2F5A4",
+    "id": "7AEF1DE2-99C0-402F-8B01-F24E79FCE781",
     "layout": "Wide",
     "name": "Arthouse-animation"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/classics-wide.png",
     "hideTitle": true,
-    "id": "E7BD1E71-53AA-4C42-B049-542D487CFCF9",
+    "id": "7484E9EC-4A95-4CC0-8947-CDC9EDF2B081",
     "layout": "Wide",
     "name": "Classics"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/comedy-wide.png",
     "hideTitle": true,
-    "id": "E5EE3D52-30CE-4A86-B9F4-21BE33AFDC0C",
+    "id": "C9791540-9EA7-479E-BEAF-590119BCCD9B",
     "layout": "Wide",
     "name": "Comedy"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/creature-features-wide.png",
     "hideTitle": true,
-    "id": "FDB65949-5574-4B5D-9DBB-86F5E745E268",
+    "id": "8B7FD695-20F5-4849-9DAB-3A93757EDB2B",
     "layout": "Wide",
     "name": "Creature-features"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/crime-wide.png",
     "hideTitle": true,
-    "id": "7A30823E-2B69-4FD8-8103-90F55C7BF3CB",
+    "id": "61954A67-54AA-4B46-8D0D-97557F53CACF",
     "layout": "Wide",
     "name": "Crime"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/dark-fantasy-wide.png",
     "hideTitle": true,
-    "id": "850CDF55-1C48-42FF-855D-8F8378D0E66D",
+    "id": "0C2E5439-956E-468C-96C0-31D928E4C9CE",
     "layout": "Wide",
     "name": "Dark-fantasy"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/disaster-epics-wide.png",
     "hideTitle": true,
-    "id": "00FFEE28-631D-4B7A-81B4-B2FAC8629010",
+    "id": "169E545A-9ADA-4F7A-86AC-1A5C8DC5F537",
     "layout": "Wide",
     "name": "Disaster-epics"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/documentary-wide.png",
     "hideTitle": true,
-    "id": "E4EB343F-1C43-496C-96CD-E2027D0BD9FE",
+    "id": "34873E19-2C71-499F-89E2-504205887BFC",
     "layout": "Wide",
     "name": "Documentary"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/drama-wide.png",
     "hideTitle": true,
-    "id": "B3293A93-69C2-4574-9961-71741375FDC7",
+    "id": "FBD19BA6-3AB0-490D-A089-02E2C38F10EE",
     "layout": "Wide",
     "name": "Drama"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/dystopian-futures-wide.png",
     "hideTitle": true,
-    "id": "C93E436C-6379-4848-A7C9-64219431925A",
+    "id": "123C83D1-B154-4C8B-B772-8091ED9C407E",
     "layout": "Wide",
     "name": "Dystopian-futures"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/family-movie-night-wide.png",
     "hideTitle": true,
-    "id": "7CA9F6CA-04C1-456A-838B-652634A91B5A",
+    "id": "A5F74D5D-B455-4473-8C67-055A40539BA3",
     "layout": "Wide",
     "name": "Family-movie-night"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/fantasy-adventures-wide.png",
     "hideTitle": true,
-    "id": "05E34702-A652-46DE-9319-4094657743AF",
+    "id": "42658B08-726A-4E7C-9441-B24D9A2AB9A1",
     "layout": "Wide",
     "name": "Fantasy-adventures"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/fantasy-wide.png",
     "hideTitle": true,
-    "id": "FCE737AA-700C-4EF7-924E-7DC825E546BD",
+    "id": "23D0E342-1064-4366-914E-0FED642C889E",
     "layout": "Wide",
     "name": "Fantasy"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/favorite-cartoons-wide.png",
     "hideTitle": true,
-    "id": "63F1A6E7-11B9-408B-9C6C-478119F3A7C8",
+    "id": "C45B1F8E-E243-4293-AF06-415620EFD905",
     "layout": "Wide",
     "name": "Favorite-cartoons"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/frontier-grit-wide.png",
     "hideTitle": true,
-    "id": "B55E8F7A-F655-48AC-AFB1-B8380AF9BA0B",
+    "id": "5C0ED2E8-9D0C-419A-AC23-8DE99AE2CA95",
     "layout": "Wide",
     "name": "Frontier-grit"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/high-seas-heroics-wide.png",
     "hideTitle": true,
-    "id": "E2047144-D719-4DA0-808A-69BEB622E601",
+    "id": "EE4BE45D-5E64-4F51-A216-DC305E79D258",
     "layout": "Wide",
     "name": "High-seas-heroics"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/historical-blockbusters-wide.png",
     "hideTitle": true,
-    "id": "3F35247B-F5A8-4990-8DB0-2EA256609CD6",
+    "id": "CECA28E3-517D-43CC-98C7-65DA4056CAE1",
     "layout": "Wide",
     "name": "Historical-blockbusters"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/horror-wide.png",
     "hideTitle": true,
-    "id": "2CA627ED-0E6F-4CE7-8A30-BAE75D64DCBA",
+    "id": "F788E85F-BCD5-42D7-85F3-F6638E9FA549",
     "layout": "Wide",
     "name": "Horror"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/independent-wide.png",
     "hideTitle": true,
-    "id": "845015B6-4B39-4A88-AC1C-3967AD627284",
+    "id": "AAF17873-81EC-41E5-8E3C-7259F0BB0184",
     "layout": "Wide",
     "name": "Independent"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/international-wide.png",
     "hideTitle": true,
-    "id": "C7DDF50A-E195-4B8C-8BE8-8F94F3DA8444",
+    "id": "CB1465FD-CC2B-4530-9C4F-AF9BD6D522BE",
     "layout": "Wide",
     "name": "International"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/kids-wide.png",
     "hideTitle": true,
-    "id": "2348AB5C-C2B9-45F8-8AD6-9E79F57A5E24",
+    "id": "B387EEC8-9CD4-4805-842F-11A069118DC8",
     "layout": "Wide",
     "name": "Kids"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/learning-corner-wide.png",
     "hideTitle": true,
-    "id": "00A5AFC1-9CDD-4979-9709-9D024B87241A",
+    "id": "7451EEEF-DC19-46E7-9C60-68DD89EB3D4A",
     "layout": "Wide",
     "name": "Learning-corner"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/lovable-monsters-wide.png",
     "hideTitle": true,
-    "id": "2515F4A5-A695-4640-8367-E1A49596B137",
+    "id": "767CFF56-7DE6-4259-AB99-B9865EDC9960",
     "layout": "Wide",
     "name": "Lovable-monsters"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/music-movies-wide.png",
     "hideTitle": true,
-    "id": "7BD6CF23-E817-437E-AB47-5AFA5A68BB12",
+    "id": "1130D9BF-2331-49A1-A036-BB8C1B1B50D9",
     "layout": "Wide",
     "name": "Music-movies"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/music-wide.png",
     "hideTitle": true,
-    "id": "FC9144A4-60A3-4F80-BAC3-5F56BB3FBE7B",
+    "id": "7F2FE244-AE66-4EAA-8C9E-A19807342F21",
     "layout": "Wide",
     "name": "Music"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/myths-and-legends-wide.png",
     "hideTitle": true,
-    "id": "1B45483A-86D4-4B8A-B53E-CF49300C1578",
+    "id": "293B4959-0E37-4B42-AD34-D8BD8FD937B7",
     "layout": "Wide",
     "name": "Myths-and-legends"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/nature-wide.png",
     "hideTitle": true,
-    "id": "B28DADE1-0031-4C35-B28D-C8EBFBC63278",
+    "id": "E2D07863-E784-4A07-9334-126BC7EC71A1",
     "layout": "Wide",
     "name": "Nature"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/psychological-terror-wide.png",
     "hideTitle": true,
-    "id": "09FA5BB0-DE21-46A6-8E1D-94BBFF41FD89",
+    "id": "2E4EE41E-2240-4AA0-BB47-1A89A31BA00A",
     "layout": "Wide",
     "name": "Psychological-terror"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/reality-wide.png",
     "hideTitle": true,
-    "id": "8603197A-CF4D-4B2E-AB1A-E24E907B9FD3",
+    "id": "8E41AF1F-7B2C-4B17-95B2-52B83CF5D0B5",
     "layout": "Wide",
     "name": "Reality"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/robots-and-ai-wide.png",
     "hideTitle": true,
-    "id": "23DC63F3-752F-400F-98A8-AD7E32EE4C8E",
+    "id": "7F9156AF-DA37-4F84-BCCC-B4F40C47058F",
     "layout": "Wide",
     "name": "Robots-and-ai"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/romance-wide.png",
     "hideTitle": true,
-    "id": "79849E06-C477-4650-BEA9-222F062D90EA",
+    "id": "CA8FF6B7-5C32-4EFC-AD77-95A8F663B292",
     "layout": "Wide",
     "name": "Romance"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/sci-fi-wide.png",
     "hideTitle": true,
-    "id": "5EA8F347-3F53-419D-AB97-2DB582BDE827",
+    "id": "799D1BB5-F87E-4EDA-BAE7-5F3265BA355C",
     "layout": "Wide",
     "name": "Sci-fi"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/short-films-wide.png",
     "hideTitle": true,
-    "id": "ED8AB691-0571-4D43-A690-A709D4D97AE0",
+    "id": "730F70E6-EBA9-41FC-84E3-0FEF6B2F86A9",
     "layout": "Wide",
     "name": "Short-films"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/space-epics-wide.png",
     "hideTitle": true,
-    "id": "DB1352AE-07E9-4F7C-95B4-A475237584D2",
+    "id": "8FB2B31C-1C92-44CD-ABBB-064FE8244B19",
     "layout": "Wide",
     "name": "Space-epics"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/spies-wide.png",
     "hideTitle": true,
-    "id": "9B0CC063-604C-4D62-ADB4-2EFDB9CB1258",
+    "id": "7AC7DD76-DCD6-498E-84FD-B66AD6653B09",
     "layout": "Wide",
     "name": "Spies"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/super-shocks-wide.png",
     "hideTitle": true,
-    "id": "D73AD8CE-C7D1-498D-9ABA-3951CFE06E70",
+    "id": "E1B459F7-8B73-4B7B-9C78-69F8B1A676F0",
     "layout": "Wide",
     "name": "Super-shocks"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/superheroes-wide.png",
     "hideTitle": true,
-    "id": "BA8D9329-98DA-4F6E-AD9B-B2D333B1602C",
+    "id": "B01D6D11-F949-4E68-B7A0-2B202227679E",
     "layout": "Wide",
     "name": "Superheroes"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/tearjerkers-wide.png",
     "hideTitle": true,
-    "id": "AA96D5D3-8BD3-4A84-B250-721053CC951F",
+    "id": "96D2CDA7-1E15-48A3-A7D3-4A784489DD5E",
     "layout": "Wide",
     "name": "Tearjerkers"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/techno-thrillers-wide.png",
     "hideTitle": true,
-    "id": "664A075C-3AD4-417D-86A1-A957BE37070B",
+    "id": "04C250FF-04EA-4362-BC87-28E67147168D",
     "layout": "Wide",
     "name": "Techno-thrillers"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/thriller-wide.png",
     "hideTitle": true,
-    "id": "FB543497-1A0D-48FD-ACD5-13659BD93442",
+    "id": "A63B89A1-DBA2-4CCA-A81C-6F6526F49669",
     "layout": "Wide",
     "name": "Thriller"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/treasure-hunts-wide.png",
     "hideTitle": true,
-    "id": "491A3D48-1027-4780-993A-6DADBFFD1A69",
+    "id": "303FF724-6156-4856-8141-C25A640FE2D4",
     "layout": "Wide",
     "name": "Treasure-hunts"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/vhs-era-frightmares-wide.png",
     "hideTitle": true,
-    "id": "2609C97C-60F4-466D-ACB7-0ECD9354E2D1",
+    "id": "623A24DD-2D03-499F-BFB0-EBB9CE1A1999",
     "layout": "Wide",
     "name": "Vhs-era-frightmares"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/war-stories-wide.png",
     "hideTitle": true,
-    "id": "E4793FAF-4F45-46B6-9059-0EC080A0DBB3",
+    "id": "BE89F2F3-095C-498A-9A4C-1F7CB5C3412E",
     "layout": "Wide",
     "name": "War-stories"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/westerns-wide.png",
     "hideTitle": true,
-    "id": "240D8400-AD69-4D0F-82B6-6A2540E55FAC",
+    "id": "9CF4375F-718A-469F-8BAD-2295454E5BC9",
     "layout": "Wide",
     "name": "Westerns"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/whodunits-wide.png",
     "hideTitle": true,
-    "id": "83DBDD64-599C-4743-9D39-F8973CBF4C28",
+    "id": "35EE2382-7A97-4A2F-A7EB-407D4EB05598",
     "layout": "Wide",
     "name": "Whodunits"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/workplace-comedies-wide.png",
     "hideTitle": true,
-    "id": "FB213F3C-F129-414B-B5E1-D593CFB148CD",
+    "id": "0F6CAE13-37AE-4F9E-BD89-2BCEC970648D",
     "layout": "Wide",
     "name": "Workplace-comedies"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/wide/dannyrutledge/zombie-orama-wide.png",
     "hideTitle": true,
-    "id": "E3E6BE03-BA5B-42CA-9190-BCBA032316D1",
+    "id": "EC41D582-DB54-4D44-B2E7-F2F40DEE0BBE",
     "layout": "Wide",
     "name": "Zombie-orama"
   }
