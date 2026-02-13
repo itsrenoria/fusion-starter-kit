@@ -947,7 +947,7 @@
                 <div class="card-preview generic-preview">
 
                     <div class="setup-video-shell">
-                        <video class="setup-preview-video" src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-callandt95.MP4" data-remote-src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-callandt95.MP4" data-local-src="../preview/preview-callandt95.MP4" loop muted playsinline preload="metadata"></video>
+                        <video class="setup-preview-video" src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-callandt95.MP4" data-remote-src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-callandt95.MP4" data-local-src="../preview/preview-callandt95.MP4" poster="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-callandt95.png" data-remote-poster="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-callandt95.png" data-local-poster="../preview/preview-callandt95.png" loop muted playsinline preload="auto"></video>
                         <div class="setup-video-overlay" aria-hidden="true">
                             <span class="setup-video-overlay-icon">▶</span>
                         </div>
@@ -978,7 +978,7 @@
                 <div class="card-preview generic-preview">
 
                     <div class="setup-video-shell">
-                        <video class="setup-preview-video" src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-snoak%20%F0%9F%90%90.MP4" data-remote-src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-snoak%20%F0%9F%90%90.MP4" data-local-src="../preview/preview-snoak%20%F0%9F%90%90.MP4" loop muted playsinline preload="metadata"></video>
+                        <video class="setup-preview-video" src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-snoak%20%F0%9F%90%90.MP4" data-remote-src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-snoak%20%F0%9F%90%90.MP4" data-local-src="../preview/preview-snoak%20%F0%9F%90%90.MP4" poster="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-snoak%20%F0%9F%90%90.png" data-remote-poster="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-snoak%20%F0%9F%90%90.png" data-local-poster="../preview/preview-snoak%20%F0%9F%90%90.png" loop muted playsinline preload="auto"></video>
                         <div class="setup-video-overlay" aria-hidden="true">
                             <span class="setup-video-overlay-icon">▶</span>
                         </div>
@@ -1009,7 +1009,7 @@
                 <div class="card-preview generic-preview">
 
                     <div class="setup-video-shell">
-                        <video class="setup-preview-video" src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-ttoadd.MP4" data-remote-src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-ttoadd.MP4" data-local-src="../preview/preview-ttoadd.MP4" loop muted playsinline preload="metadata"></video>
+                        <video class="setup-preview-video" src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-ttoadd.MP4" data-remote-src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-ttoadd.MP4" data-local-src="../preview/preview-ttoadd.MP4" poster="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-ttoadd.png" data-remote-poster="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/preview/preview-ttoadd.png" data-local-poster="../preview/preview-ttoadd.png" loop muted playsinline preload="auto"></video>
                         <div class="setup-video-overlay" aria-hidden="true">
                             <span class="setup-video-overlay-icon">▶</span>
                         </div>
@@ -1703,12 +1703,18 @@
                 const localSrc = video.getAttribute('data-local-src');
                 const remoteSrc = video.getAttribute('data-remote-src') || video.getAttribute('src');
                 const nextSrc = (useLocalPreview && localSrc) ? localSrc : remoteSrc;
+                const localPoster = video.getAttribute('data-local-poster');
+                const remotePoster = video.getAttribute('data-remote-poster') || video.getAttribute('poster');
+                const nextPoster = (useLocalPreview && localPoster) ? localPoster : remotePoster;
                 if (!nextSrc) {
                     return;
                 }
                 if (video.getAttribute('src') !== nextSrc) {
                     video.setAttribute('src', nextSrc);
                     video.load();
+                }
+                if (nextPoster && video.getAttribute('poster') !== nextPoster) {
+                    video.setAttribute('poster', nextPoster);
                 }
 
                 video.removeAttribute('autoplay');
