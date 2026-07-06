@@ -9,10 +9,24 @@
           "items": [
             {
               "hideTitle": true,
+              "id": "CAA436BE-67BF-4194-A8FF-3BB1F0D4A012",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/wide/rdnoni/color/angel-wide-color.jpg",
+              "title": "Angel"
+            },
+            {
+              "hideTitle": true,
               "id": "D49CFA72-5749-4FC0-8606-2AAF8E1F7281",
               "imageAspect": "wide",
               "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/wide/rdnoni/color/appletv-wide-color.jpg",
               "title": "Appletv"
+            },
+            {
+              "hideTitle": true,
+              "id": "3B825250-A2A2-4900-A51C-3879ECA3B13D",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/wide/rdnoni/color/bbc-wide-color.jpg",
+              "title": "Bbc"
             },
             {
               "hideTitle": true,

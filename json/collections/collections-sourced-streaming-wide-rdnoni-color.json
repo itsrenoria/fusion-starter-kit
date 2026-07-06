@@ -1,5 +1,12 @@
 [
   {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/wide/rdnoni/color/angel-wide-color.jpg",
+    "hideTitle": true,
+    "id": "1B2EFD58-CB47-49CE-9B77-0D0ED4CFA4C7",
+    "layout": "Wide",
+    "name": "Angel"
+  },
+  {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/wide/rdnoni/color/appletv-wide-color.jpg",
     "hideTitle": true,
     "id": "CBEA2A59-3CA4-4E2F-9549-5C2CBE641D31",
@@ -34,6 +41,13 @@
         "username": "snoak"
       }
     }
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/wide/rdnoni/color/bbc-wide-color.jpg",
+    "hideTitle": true,
+    "id": "CF4EE6B5-B956-46F0-BF28-63FAD1BCED50",
+    "layout": "Wide",
+    "name": "Bbc"
   },
   {
     "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/wide/rdnoni/color/crunchyroll-wide-color.jpg",
