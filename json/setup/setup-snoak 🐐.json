@@ -1,20 +1,20 @@
-﻿{
+{
   "exportType" : "fusionWidgets",
   "exportVersion" : 1,
   "widgets" : [
     {
-      "cacheTTL" : 3600,
+      "cacheTTL" : 1800,
       "dataSource" : {
         "kind" : "traktList",
         "payload" : {
-          "listName" : "Today's Most Popular Movies",
-          "listSlug" : "today-s-most-popular-movies",
+          "listName" : "Today's Most Popular Movies on JustWatch",
+          "listSlug" : "today-s-most-popular-movies-on-justwatch",
           "traktId" : 34359945,
           "username" : "snoak"
         }
       },
-      "id" : "trakt.17D26C45-591A-4287-801E-E5E511A15B5E",
-      "limit" : 50,
+      "id" : "catalog.B1A86B98-B61D-4F7A-9EA6-8777365AA041",
+      "limit" : 20,
       "presentation" : {
         "aspectRatio" : "poster",
         "badges" : {
@@ -27,18 +27,18 @@
       "type" : "row.classic.numbered"
     },
     {
-      "cacheTTL" : 3600,
+      "cacheTTL" : 1800,
       "dataSource" : {
         "kind" : "traktList",
         "payload" : {
-          "listName" : "Today's Most Popular Shows",
-          "listSlug" : "today-s-most-popular-shows",
+          "listName" : "Today's Most Popular Shows on JustWatch",
+          "listSlug" : "today-s-most-popular-shows-on-justwatch",
           "traktId" : 34359955,
           "username" : "snoak"
         }
       },
-      "id" : "trakt.A0EE5348-8AD8-41BC-9851-0114A049871F",
-      "limit" : 50,
+      "id" : "catalog.DE83B1A9-A2D9-417E-A8EC-E96DACD937B3",
+      "limit" : 20,
       "presentation" : {
         "aspectRatio" : "poster",
         "badges" : {
@@ -51,438 +51,6 @@
       "type" : "row.classic.numbered"
     },
     {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Trending Movies",
-          "listSlug" : "trending-movies",
-          "traktId" : 33032593,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.0846DB25-38C1-463A-961B-F20D951DD9D3",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Trending Movies",
-      "type" : "row.classic"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Trending Shows",
-          "listSlug" : "trending-shows",
-          "traktId" : 33032820,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.35EE9E49-C342-430B-935B-0566B12DADC9",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Trending Shows",
-      "type" : "row.classic"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Latest Streaming Movies",
-          "listSlug" : "latest-streaming-movies",
-          "traktId" : 33032845,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.8BDD249A-0A3D-43FC-8627-0BDCD8517760",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Latest Streaming Movies",
-      "type" : "row.classic"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Latest Shows",
-          "listSlug" : "latest-shows",
-          "traktId" : 33032842,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.5FCD0C56-70D2-4A59-80CB-E5CF738F9A1A",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Latest Shows",
-      "type" : "row.classic"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Netflix Movies",
-          "listSlug" : "top-netflix-movies",
-          "traktId" : 33032882,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.30BDB180-C550-4A70-8A42-F9A5B6B77EBF",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Netflix Movies",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Netflix Shows",
-          "listSlug" : "top-netflix-shows",
-          "traktId" : 33032878,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.C831C4AC-A98E-4E5A-8593-44EB3F065F03",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Netflix Shows",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Amazon Prime Movies",
-          "listSlug" : "top-amazon-prime-movies",
-          "traktId" : 33032892,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.C929C25C-521E-4B24-85F3-2ABE5F374520",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Amazon Prime Movies",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Amazon Prime Shows",
-          "listSlug" : "top-amazon-prime-shows",
-          "traktId" : 33032887,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.FCF8385A-96F2-4AA9-99AA-821B71E344EF",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Amazon Prime Shows",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Apple TV+ Movies",
-          "listSlug" : "top-apple-tv-movies",
-          "traktId" : 33032900,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.1393BAC1-3A39-4BD4-8738-259EC75D7ADD",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Apple TV+ Movies",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Apple TV+ Shows",
-          "listSlug" : "top-apple-tv-shows",
-          "traktId" : 33032894,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.F52791B4-1775-43D9-8A5E-8929F1BD0CB1",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Apple TV+ Shows",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Disney+ Movies",
-          "listSlug" : "top-disney-movies",
-          "traktId" : 33032904,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.B70D3D13-97CD-4802-B75F-77BF86C732D2",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Disney+ Movies",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Disney+ Shows",
-          "listSlug" : "top-disney-shows",
-          "traktId" : 33032903,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.0BEC5593-4956-48B5-BFA5-7EEEF07D996C",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Disney+ Shows",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Paramount+ Movies",
-          "listSlug" : "top-paramount-movies",
-          "traktId" : 33032910,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.22F379B9-E41E-40CA-A539-285F72C21937",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Paramount+ Movies",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Paramount+ Shows",
-          "listSlug" : "top-paramount-shows",
-          "traktId" : 33032908,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.DC4186BD-8832-45EB-BE7D-18DD58726135",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Paramount+ Shows",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top HBO Max Movies",
-          "listSlug" : "top-hbo-max-movies",
-          "traktId" : 33032914,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.339F1215-E9D5-4739-B740-35A87EE84A8E",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top HBO Max Movies",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top HBO Max Shows",
-          "listSlug" : "top-hbo-max-shows",
-          "traktId" : 33032911,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.E57526DB-A1BC-425D-B952-154631CE3F0D",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top HBO Max Shows",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Hulu Movies",
-          "listSlug" : "top-hulu-movies",
-          "traktId" : 33118941,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.6D01011C-9454-4EE5-9FE3-99889D8F99B7",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Hulu Movies",
-      "type" : "row.classic.numbered"
-    },
-    {
-      "cacheTTL" : 3600,
-      "dataSource" : {
-        "kind" : "traktList",
-        "payload" : {
-          "listName" : "Top Hulu Shows",
-          "listSlug" : "top-hulu-shows",
-          "traktId" : 33118956,
-          "username" : "snoak"
-        }
-      },
-      "id" : "trakt.99443937-743A-4AAD-A8AD-4AF69735E5AC",
-      "limit" : 50,
-      "presentation" : {
-        "aspectRatio" : "poster",
-        "badges" : {
-          "providers" : false,
-          "ratings" : true
-        },
-        "cardStyle" : "medium"
-      },
-      "title" : "Top Hulu Shows",
-      "type" : "row.classic.numbered"
-    },
-    {
       "dataSource" : {
         "kind" : "collection",
         "payload" : {
@@ -492,249 +60,96 @@
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Popular Action Movies",
-                    "listSlug" : "popular-action-movies",
-                    "traktId" : 33032919,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Action Shows",
-                    "listSlug" : "popular-action-shows",
-                    "traktId" : 33032916,
-                    "username" : "snoak"
+                    "listName" : "Watchlist",
+                    "listSlug" : "__watchlist_all__",
+                    "traktId" : -10,
+                    "username" : "__me__"
                   }
                 }
               ],
               "hideTitle" : true,
-              "id" : "FEC2A55F-7556-4E60-A5AB-3DCC90F762BD",
+              "id" : "148cb5bf-ae71-40c1-980d-942805dd9e92",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/D06yHczT\/EBR_TVA_WW_ACTION.webp",
-              "title" : "Top Action"
+              "imageURL" : "https:\/\/i.postimg.cc\/vH9k7TLG\/watchlist.png",
+              "title" : "Watchlist"
             },
             {
               "dataSources" : [
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Popular Animated Shows",
-                    "listSlug" : "popular-animated-shows",
-                    "traktId" : 33032922,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Animated Movies",
-                    "listSlug" : "popular-animated-movies",
-                    "traktId" : 33032925,
+                    "listName" : "Trakt's Trending Movies",
+                    "listSlug" : "trakt-s-trending-movies",
+                    "traktId" : 33032593,
                     "username" : "snoak"
                   }
                 }
               ],
               "hideTitle" : true,
-              "id" : "0A5E5118-24B0-4D87-B20D-55EBD8FE744E",
+              "id" : "434c98a3-ceb5-48d8-a9b3-06bd5d278594",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/mkj2JSrf\/EBR_TVA_WW_ANIMATION.webp",
-              "title" : "Top Animation"
+              "imageURL" : "https:\/\/i.postimg.cc\/gkHRm77c\/trending-movies.png",
+              "title" : "Trending Movies"
             },
             {
               "dataSources" : [
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Popular Comedy Movies",
-                    "listSlug" : "popular-comedy-movies",
-                    "traktId" : 33032930,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Comedy Shows",
-                    "listSlug" : "popular-comedy-shows",
-                    "traktId" : 33032929,
+                    "listName" : "Trakt's Trending Shows",
+                    "listSlug" : "trakt-s-trending-shows",
+                    "traktId" : 33032820,
                     "username" : "snoak"
                   }
                 }
               ],
               "hideTitle" : true,
-              "id" : "2C899C82-C9A1-413F-8D45-E8D5CBA5F4C5",
+              "id" : "4fbc85c9-79cf-4b94-a2aa-7cce17888124",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/Y0RqZxC5\/EBR_TVA_WW_COMEDY.webp",
-              "title" : "Top Comedy"
+              "imageURL" : "https:\/\/i.postimg.cc\/nhVmzk8c\/trending-shows.png",
+              "title" : "Trending Shows"
             },
             {
               "dataSources" : [
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Popular Documentary Movies",
-                    "listSlug" : "popular-documentary-movies",
-                    "traktId" : 33123349,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Documentary Shows",
-                    "listSlug" : "popular-documentary-shows",
-                    "traktId" : 33123359,
+                    "listName" : "Latest Streaming Movies",
+                    "listSlug" : "latest-streaming-movies",
+                    "traktId" : 33032845,
                     "username" : "snoak"
                   }
                 }
               ],
               "hideTitle" : true,
-              "id" : "769F2A37-3461-4A4C-9200-07A38525542F",
+              "id" : "fb5c8586-d4c9-471d-ab66-10a73ce80433",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/Fzps8xKt\/EBR_TVA_WW_DOCUMENTARY.webp",
-              "title" : "Top Documentary"
+              "imageURL" : "https:\/\/i.postimg.cc\/sD4SsLLj\/latest-movies.png",
+              "title" : "Latest Movies"
             },
             {
               "dataSources" : [
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Popular Drama Movies",
-                    "listSlug" : "popular-drama-movies",
-                    "traktId" : 33032935,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Drama Shows",
-                    "listSlug" : "popular-drama-shows",
-                    "traktId" : 33032934,
+                    "listName" : "Latest Shows",
+                    "listSlug" : "latest-shows",
+                    "traktId" : 33032842,
                     "username" : "snoak"
                   }
                 }
               ],
               "hideTitle" : true,
-              "id" : "F8DDFDBD-951F-4D8C-BF0B-ECF0063E3485",
+              "id" : "0c54e7f6-4363-4120-b86d-3e1a243db378",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/6qc5ghpF\/EBR_TVA_WW_DRAMA_Final.webp",
-              "title" : "Top Drama"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Horror Movies",
-                    "listSlug" : "popular-horror-movies",
-                    "traktId" : 33032936,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Horror Shows",
-                    "listSlug" : "popular-horror-shows",
-                    "traktId" : 33032939,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "17EC5EDD-D8C4-4910-B2E8-9E1FF0A33FE0",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/vTbZ0KGy\/EBR_TVA_WW_HORROR.webp",
-              "title" : "Top Horror"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Romance Movies",
-                    "listSlug" : "popular-romance-movies",
-                    "traktId" : 33132644,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Romance Shows",
-                    "listSlug" : "popular-romance-shows",
-                    "traktId" : 33132723,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "4049D8D9-AF34-4F88-88FD-EAB3510C39BB",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/d36tp9VS\/EBR_TVA_WW_ROMANCE.webp",
-              "title" : "Top Romance"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Sci-Fi Movies",
-                    "listSlug" : "popular-sci-fi-movies",
-                    "traktId" : 33032944,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Sci-Fi Shows",
-                    "listSlug" : "popular-sci-fi-shows",
-                    "traktId" : 33032946,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "E97060BF-BD88-470E-AA63-2D7E6EFEB365",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/3NYxtq3T\/EBR_TVA_WW_SCIFI.webp",
-              "title" : "Top Sci-Fi"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Thriller Movies",
-                    "listSlug" : "popular-thriller-movies",
-                    "traktId" : 33032952,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular Thriller Shows",
-                    "listSlug" : "popular-thriller-shows",
-                    "traktId" : 33032950,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "EB6B7918-6A0B-4AA5-ACF2-05E4406829DA",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/QChdfzjr\/EBR_TVA_WW_THRILLER.webp",
-              "title" : "Top Thriller"
+              "imageURL" : "https:\/\/i.postimg.cc\/TYJmfssR\/latest-shows.png",
+              "title" : "Latest Shows"
             }
           ]
         }
       },
-      "id" : "collection.A1E80FDE-5CE6-4D3E-893F-7D1F754772CA",
-      "title" : "Top Genres",
+      "id" : "collection.5f7fd468-028f-4db5-b057-3f11e98a04c4",
+      "title" : "Discover",
       "type" : "collection.row"
     },
     {
@@ -747,39 +162,30 @@
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Latest Netflix Shows",
-                    "listSlug" : "latest-netflix-shows",
-                    "traktId" : 33032846,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
                     "listName" : "Latest Netflix Movies",
                     "listSlug" : "latest-netflix-movies",
                     "traktId" : 33032847,
                     "username" : "snoak"
                   }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "75663BC1-2750-4FE0-8822-8AC7723A4980",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/y8Vr7yYp\/EBR_TVA_WW_NETFLIX.png",
-              "title" : "Latest Netflix"
-            },
-            {
-              "dataSources" : [
+                },
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Latest Amazon Prime Shows",
-                    "listSlug" : "latest-amazon-prime-shows",
-                    "traktId" : 33032850,
+                    "listName" : "Latest Netflix Shows",
+                    "listSlug" : "latest-netflix-shows",
+                    "traktId" : 33032846,
                     "username" : "snoak"
                   }
-                },
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "cbb658e2-ae39-4d51-b3fa-afadc21d0aa4",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/3R9D8yrK\/netflix.png",
+              "title" : "Netflix"
+            },
+            {
+              "dataSources" : [
                 {
                   "kind" : "traktList",
                   "payload" : {
@@ -788,13 +194,49 @@
                     "traktId" : 33032854,
                     "username" : "snoak"
                   }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Amazon Prime Shows",
+                    "listSlug" : "latest-amazon-prime-shows",
+                    "traktId" : 33032850,
+                    "username" : "snoak"
+                  }
                 }
               ],
               "hideTitle" : true,
-              "id" : "97405D27-98FD-4382-86F9-699F0F780E3C",
+              "id" : "c8176946-6e54-4462-87cf-6760b32d2971",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/MK0FkFxn\/EBR_TVA_WW_PRIMEVIDEO.png",
-              "title" : "Latest Prime Video"
+              "imageURL" : "https:\/\/i.postimg.cc\/JzkSVMTy\/prime-video.png",
+              "title" : "Prime Video"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Apple TV+ Movies",
+                    "listSlug" : "latest-apple-tv-movies",
+                    "traktId" : 33032858,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest Apple TV+ Shows",
+                    "listSlug" : "latest-apple-tv-shows",
+                    "traktId" : 33032855,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "40b2ebc1-7cf8-4a0f-96b2-433edbe4d52a",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/j5vJxWqT\/apple-tv.png",
+              "title" : "Apple TV"
             },
             {
               "dataSources" : [
@@ -818,64 +260,10 @@
                 }
               ],
               "hideTitle" : true,
-              "id" : "50B979DC-0D0B-4BD4-8376-8719C7DA4A96",
+              "id" : "0c376b34-e281-41a9-8176-7aed8f9dd606",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/XYVDnk7D\/EBR_TVA_WW_DISNEYPLUS.png",
-              "title" : "Latest Disney+"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Latest Apple TV+ Shows",
-                    "listSlug" : "latest-apple-tv-shows",
-                    "traktId" : 33032855,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Latest Apple TV+ Movies",
-                    "listSlug" : "latest-apple-tv-movies",
-                    "traktId" : 33032858,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "5F755BC6-938E-412A-8716-F22359DA776A",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/Hs0hGhH7\/EBR_TVA_WW_APPLETV.png",
-              "title" : "Latest Apple TV"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Latest HBO Max Movies",
-                    "listSlug" : "latest-hbo-max-movies",
-                    "traktId" : 33032875,
-                    "username" : "snoak"
-                  }
-                },
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Latest HBO Max Shows",
-                    "listSlug" : "latest-hbo-max-shows",
-                    "traktId" : 33032872,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "01802A84-06B5-42F6-8DC1-CBC8343D876B",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/jd6FVFKF\/EBR_TVA_WW_HBOMAX.png",
-              "title" : "Latest HBO Max"
+              "imageURL" : "https:\/\/i.postimg.cc\/pTknW9VP\/disney.png",
+              "title" : "Disney+"
             },
             {
               "dataSources" : [
@@ -899,10 +287,37 @@
                 }
               ],
               "hideTitle" : true,
-              "id" : "80C63B01-93BE-41D2-B420-1C5A41E7C0F8",
+              "id" : "c33aff93-382c-4c79-940d-d0cfa1b69d80",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/L6kbdbRV\/EBR_TVA_WW_PARAMOUNTPLUS.png",
-              "title" : "Latest Paramount+"
+              "imageURL" : "https:\/\/i.postimg.cc\/gJ46zwcm\/paramount.png",
+              "title" : "Paramount+"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest HBO Max Movies",
+                    "listSlug" : "latest-hbo-max-movies",
+                    "traktId" : 33032875,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Latest HBO Max Shows",
+                    "listSlug" : "latest-hbo-max-shows",
+                    "traktId" : 33032872,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "0656de84-b29d-4009-9965-b63e58234977",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/3R9D8yr8\/hbo-max.png",
+              "title" : "HBO Max"
             },
             {
               "dataSources" : [
@@ -926,154 +341,16 @@
                 }
               ],
               "hideTitle" : true,
-              "id" : "C8649248-F3D8-48A3-9EC8-76E7B2916331",
+              "id" : "58eeaeed-0f1a-4d89-b1a0-e83e21d9e5e3",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/65Vmsmwq\/EBR_TVA_WW_HULU.png",
-              "title" : "Latest Hulu"
+              "imageURL" : "https:\/\/i.postimg.cc\/bNM4BsR1\/hulu.png",
+              "title" : "Hulu"
             }
           ]
         }
       },
-      "id" : "collection.247240CC-B54C-47F1-92DF-0D7BB13F8649",
+      "id" : "collection.fc5f7b84-1b79-4952-81e1-cbdfff292aa8",
       "title" : "Latest Streaming Services",
-      "type" : "collection.row"
-    },
-    {
-      "dataSource" : {
-        "kind" : "collection",
-        "payload" : {
-          "items" : [
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular 2025 Movies",
-                    "listSlug" : "popular-2025-movies",
-                    "traktId" : 33032974,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "38DE1019-04CA-4C5D-9ABD-B1DFE214E315",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/bY9xqcDr\/EBR_TVA_WW_2025.png",
-              "title" : "Popular 2025"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular 2020s Movies",
-                    "listSlug" : "popular-2020s-movies",
-                    "traktId" : 33032971,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "7C8BE8D8-89A8-4426-AF81-ED78261404FB",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/bY9xqcDt\/EBR_TVA_WW_2020s.png",
-              "title" : "2020 Movies"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular 2010s Movies",
-                    "listSlug" : "popular-2010s-movies",
-                    "traktId" : 33032968,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "5853BB60-5729-4270-B5EF-6407D3F26404",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/9FXGM8Zp\/EBR_TVA_WW_2010s.png",
-              "title" : "2010 Movies"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular 2000s Movies",
-                    "listSlug" : "popular-2000s-movies",
-                    "traktId" : 33032965,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "73199E41-B14B-4106-B2F0-FA831C90A6BA",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/c1BRdyg3\/EBR_TVA_WW_2000s.png",
-              "title" : "2000 Movies"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular 1990s Movies",
-                    "listSlug" : "popular-1990s-movies",
-                    "traktId" : 33032959,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "72991BC9-BC60-4E0B-B0DA-17E60E25B13C",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/44Q6Xk7t\/EBR_TVA_WW_1990s.png",
-              "title" : "1990 Movies"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular 1980s Movies",
-                    "listSlug" : "popular-1980s-movies",
-                    "traktId" : 33032956,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "8A4188AB-0568-4C0E-84E6-2842F7C20E69",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/bNYQJCkS\/EBR_TVA_WW_1980s.png",
-              "title" : "1980 Movies"
-            },
-            {
-              "dataSources" : [
-                {
-                  "kind" : "traktList",
-                  "payload" : {
-                    "listName" : "Popular 1970s Movies",
-                    "listSlug" : "popular-1970s-movies",
-                    "traktId" : 33119476,
-                    "username" : "snoak"
-                  }
-                }
-              ],
-              "hideTitle" : true,
-              "id" : "E80FA67B-A063-4595-AC45-4DBA18AF78C8",
-              "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/RCL7v56q\/EBR_TVA_WW_1970s_02.png",
-              "title" : "1970 Movies"
-            }
-          ]
-        }
-      },
-      "id" : "collection.369962D1-4553-4CCC-98E1-705340FC099E",
-      "title" : "Decades",
       "type" : "collection.row"
     },
     {
@@ -1103,37 +380,37 @@
                 }
               ],
               "hideTitle" : true,
-              "id" : "DF288C76-42F3-4CEB-BC30-A88AD06F06EC",
+              "id" : "9877C63C-072D-4CEF-9CEE-57C8FFAC072F",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/D06yHczT\/EBR_TVA_WW_ACTION.webp",
-              "title" : "Latest Action"
+              "imageURL" : "https:\/\/i.postimg.cc\/D06yHczT\/EBR-TVA-WW-ACTION.webp",
+              "title" : "Action"
             },
             {
               "dataSources" : [
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Latest Animated Movies",
-                    "listSlug" : "latest-animated-movies",
-                    "traktId" : 33123038,
+                    "listName" : "Latest Animation\/Anime Movies",
+                    "listSlug" : "latest-animation-anime-movies",
+                    "traktId" : 33123094,
                     "username" : "snoak"
                   }
                 },
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Latest Animated Shows",
-                    "listSlug" : "latest-animated-shows",
-                    "traktId" : 33123032,
+                    "listName" : "Latest Animation\/Anime Shows",
+                    "listSlug" : "latest-animation-anime-shows",
+                    "traktId" : 33123092,
                     "username" : "snoak"
                   }
                 }
               ],
               "hideTitle" : true,
-              "id" : "C31601E0-6D97-4254-930A-82E22C53F20F",
+              "id" : "ECD50011-D94E-443D-BC00-18AA772D20FA",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/mkj2JSrf\/EBR_TVA_WW_ANIMATION.webp",
-              "title" : "Latest Animation"
+              "imageURL" : "https:\/\/i.postimg.cc\/mkj2JSrf\/EBR-TVA-WW-ANIMATION.webp",
+              "title" : "Animation"
             },
             {
               "dataSources" : [
@@ -1156,11 +433,11 @@
                   }
                 }
               ],
-              "hideTitle" : true,
-              "id" : "5038C87B-95B7-4017-8255-B199648D7C3E",
+              "hideTitle" : false,
+              "id" : "14D1F1A3-6231-4004-A6D2-6C91EC71129E",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/Y0RqZxC5\/EBR_TVA_WW_COMEDY.webp",
-              "title" : "Latest Comedy"
+              "imageURL" : "https:\/\/i.postimg.cc\/Y0RqZxC5\/EBR-TVA-WW-COMEDY.webp",
+              "title" : "Comedy"
             },
             {
               "dataSources" : [
@@ -1183,11 +460,11 @@
                   }
                 }
               ],
-              "hideTitle" : true,
-              "id" : "568EA4EF-33D6-4FDD-B709-979307E80F27",
+              "hideTitle" : false,
+              "id" : "DBEAC001-FA86-4683-A468-B896BBC5D540",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/Fzps8xKt\/EBR_TVA_WW_DOCUMENTARY.webp",
-              "title" : "Latest Documentary"
+              "imageURL" : "https:\/\/i.postimg.cc\/Fzps8xKt\/EBR-TVA-WW-DOCUMENTARY.webp",
+              "title" : "Documentary"
             },
             {
               "dataSources" : [
@@ -1211,10 +488,10 @@
                 }
               ],
               "hideTitle" : true,
-              "id" : "AA1055EC-3955-4095-A05E-EC9B896C64E9",
+              "id" : "3B47A83E-D6FE-4547-8392-65A46B23BE9E",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/6qc5ghpF\/EBR_TVA_WW_DRAMA_Final.webp",
-              "title" : "Latest Drama"
+              "imageURL" : "https:\/\/i.postimg.cc\/6qc5ghpF\/EBR-TVA-WW-DRAMA-Final.webp",
+              "title" : "Drama"
             },
             {
               "dataSources" : [
@@ -1238,9 +515,9 @@
                 }
               ],
               "hideTitle" : true,
-              "id" : "F724D84B-8717-4C86-939D-38F842184D11",
+              "id" : "063AEB45-AEAD-4747-BC62-E868270906ED",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/vTbZ0KGy\/EBR_TVA_WW_HORROR.webp",
+              "imageURL" : "https:\/\/i.postimg.cc\/vTbZ0KGy\/EBR-TVA-WW-HORROR.webp",
               "title" : "Horror"
             },
             {
@@ -1265,9 +542,9 @@
                 }
               ],
               "hideTitle" : true,
-              "id" : "9DB2EE89-2C70-4F87-BBFD-37FAAAA0611E",
+              "id" : "EFF2315D-65B7-4FC7-B99F-4EA8808E009D",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/d36tp9VS\/EBR_TVA_WW_ROMANCE.webp",
+              "imageURL" : "https:\/\/i.postimg.cc\/d36tp9VS\/EBR-TVA-WW-ROMANCE.webp",
               "title" : "Romance"
             },
             {
@@ -1292,10 +569,10 @@
                 }
               ],
               "hideTitle" : true,
-              "id" : "4813871F-8A7A-48BD-A8E7-B83465E437CA",
+              "id" : "F98912E6-4DA7-4473-84BC-886F3E82DB75",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/3NYxtq3T\/EBR_TVA_WW_SCIFI.webp",
-              "title" : "Science Fiction"
+              "imageURL" : "https:\/\/i.postimg.cc\/3NYxtq3T\/EBR-TVA-WW-SCIFI.webp",
+              "title" : "Sci-Fi"
             },
             {
               "dataSources" : [
@@ -1319,16 +596,511 @@
                 }
               ],
               "hideTitle" : true,
-              "id" : "EB8977E5-5F7C-41E3-BCD3-CFE497EABB94",
+              "id" : "BAE1B48F-9E7A-4D0D-AC0F-396397885EDE",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/QChdfzjr\/EBR_TVA_WW_THRILLER.webp",
+              "imageURL" : "https:\/\/i.postimg.cc\/QChdfzjr\/EBR-TVA-WW-THRILLER.webp",
               "title" : "Thriller"
             }
           ]
         }
       },
-      "id" : "collection.0FF8AA84-CFF0-4E6B-A353-B4BF7FA944F8",
+      "id" : "collection.EB7548B6-224C-47F6-B9CE-36C6F0973DA0",
       "title" : "Latest Genres",
+      "type" : "collection.row"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top Netflix Movies",
+          "listSlug" : "top-netflix-movies",
+          "traktId" : 33032882,
+          "username" : "snoak"
+        }
+      },
+      "id" : "catalog.7736CB51-ABBB-4924-AF8A-C3C2C1C4B084",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top Netflix Movies",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top Netflix Shows",
+          "listSlug" : "top-netflix-shows",
+          "traktId" : 33032878,
+          "username" : "snoak"
+        }
+      },
+      "id" : "catalog.A79F8086-8AE2-4153-8D02-D4EBED638D69",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top Netflix Shows",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top Amazon Prime Movies",
+          "listSlug" : "top-amazon-prime-movies",
+          "traktId" : 33032892,
+          "username" : "snoak"
+        }
+      },
+      "id" : "catalog.4F992624-BA95-440A-BFFF-41181476F61A",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top Amazon Prime Movies",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top Amazon Prime Shows",
+          "listSlug" : "top-amazon-prime-shows",
+          "traktId" : 33032887,
+          "username" : "snoak"
+        }
+      },
+      "id" : "catalog.FAE4CA2B-6B06-4C1B-AA6E-FDD60A91FDF8",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top Amazon Prime Shows",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top Apple TV+ Movies",
+          "listSlug" : "top-apple-tv-movies",
+          "traktId" : 33032900,
+          "username" : "snoak"
+        }
+      },
+      "id" : "catalog.4A25FED6-DBD2-4A6D-A8BC-9DBB9AF33ACB",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top Apple TV+ Movies",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top Apple TV+ Shows",
+          "listSlug" : "top-apple-tv-shows",
+          "traktId" : 33032894,
+          "username" : "snoak"
+        }
+      },
+      "id" : "catalog.8C207089-725E-464D-9DE0-FFACEECDD24B",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top Apple TV+ Shows",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top Disney+ Movies",
+          "listSlug" : "top-disney-movies",
+          "traktId" : 33032904,
+          "username" : "snoak"
+        }
+      },
+      "id" : "catalog.8D175481-117D-47A1-8045-153C4F569E81",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top Disney+ Movies",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top Disney+ Shows",
+          "listSlug" : "top-disney-shows",
+          "traktId" : 33032903,
+          "username" : "snoak"
+        }
+      },
+      "id" : "catalog.78959089-0BEE-42A8-B704-C4F5B5C130C9",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top Disney+ Shows",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top Paramount+ Movies",
+          "listSlug" : "top-paramount-movies",
+          "traktId" : 33032910,
+          "username" : "snoak"
+        }
+      },
+      "id" : "catalog.EC770193-B9A1-4770-80BB-1E9F0602D7B2",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top Paramount+ Movies",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "traktList",
+        "payload" : {
+          "listName" : "Top Paramount+ Shows",
+          "listSlug" : "top-paramount-shows",
+          "traktId" : 33032908,
+          "username" : "snoak"
+        }
+      },
+      "id" : "catalog.41BD45C4-9334-403C-8FE6-EBBE13756ABA",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Top Paramount+ Shows",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "dataSource" : {
+        "kind" : "collection",
+        "payload" : {
+          "items" : [
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Action Movies",
+                    "listSlug" : "popular-action-movies",
+                    "traktId" : 33032919,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Action Shows",
+                    "listSlug" : "popular-action-shows",
+                    "traktId" : 33032916,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "5fb8095e-d7b8-42b8-ba1c-1c4a82cee899",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/D06yHczT\/EBR-TVA-WW-ACTION.webp",
+              "title" : "Action"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Animation\/Anime Movies",
+                    "listSlug" : "popular-animation-anime-movies",
+                    "traktId" : 33032928,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Animation\/Anime Shows",
+                    "listSlug" : "popular-animation-anime-shows",
+                    "traktId" : 33032927,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "c379a941-015e-4468-a566-16d4fe58ddf4",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/mkj2JSrf\/EBR-TVA-WW-ANIMATION.webp",
+              "title" : "Animation"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Comedy Movies",
+                    "listSlug" : "popular-comedy-movies",
+                    "traktId" : 33032930,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Comedy Shows",
+                    "listSlug" : "popular-comedy-shows",
+                    "traktId" : 33032929,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "f42363a1-b40d-4577-9729-90b2569ce8b4",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/Y0RqZxC5\/EBR-TVA-WW-COMEDY.webp",
+              "title" : "Comedy"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Documentary Movies",
+                    "listSlug" : "popular-documentary-movies",
+                    "traktId" : 33123349,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Documentary Shows",
+                    "listSlug" : "popular-documentary-shows",
+                    "traktId" : 33123359,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "e8c4f0eb-14dc-42fc-b682-7a3620f4416b",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/Fzps8xKt\/EBR-TVA-WW-DOCUMENTARY.webp",
+              "title" : "Documentary"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Drama Movies",
+                    "listSlug" : "popular-drama-movies",
+                    "traktId" : 33032935,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Drama Shows",
+                    "listSlug" : "popular-drama-shows",
+                    "traktId" : 33032934,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "a2b75798-ebdc-434a-925c-5bc621c1df57",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/6qc5ghpF\/EBR-TVA-WW-DRAMA-Final.webp",
+              "title" : "Drama"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Horror Movies",
+                    "listSlug" : "popular-horror-movies",
+                    "traktId" : 33032936,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Horror Shows",
+                    "listSlug" : "popular-horror-shows",
+                    "traktId" : 33032939,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "d70e69c1-fd38-4566-8e29-f664497b94e9",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/vTbZ0KGy\/EBR-TVA-WW-HORROR.webp",
+              "title" : "Horror"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Romance Movies",
+                    "listSlug" : "popular-romance-movies",
+                    "traktId" : 33132644,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Romance Shows",
+                    "listSlug" : "popular-romance-shows",
+                    "traktId" : 33132723,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "30353d13-4418-46a5-b0e6-d25bf182be52",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/d36tp9VS\/EBR-TVA-WW-ROMANCE.webp",
+              "title" : "Romance"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Sci-Fi Movies",
+                    "listSlug" : "popular-sci-fi-movies",
+                    "traktId" : 33032944,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Sci-Fi Shows",
+                    "listSlug" : "popular-sci-fi-shows",
+                    "traktId" : 33032946,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "e45513c9-fd57-4acd-9556-92e6902818d6",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/3NYxtq3T\/EBR-TVA-WW-SCIFI.webp",
+              "title" : "Sci-Fi"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Thriller Movies",
+                    "listSlug" : "popular-thriller-movies",
+                    "traktId" : 33032952,
+                    "username" : "snoak"
+                  }
+                },
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular Thriller Shows",
+                    "listSlug" : "popular-thriller-shows",
+                    "traktId" : 33032950,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "4da74c56-cf60-4fdd-8d21-3d84458dd79e",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/QChdfzjr\/EBR-TVA-WW-THRILLER.webp",
+              "title" : "Thriller"
+            }
+          ]
+        }
+      },
+      "id" : "collection.5e8801d8-00d7-4562-88c9-29fe002b2138",
+      "title" : "Popular Genres",
       "type" : "collection.row"
     },
     {
@@ -1341,42 +1113,114 @@
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Top 250 Movies (iMDB)",
-                    "listSlug" : "top-250-movies-imdb",
-                    "traktId" : 33032976,
+                    "listName" : "Popular 2020s Movies",
+                    "listSlug" : "popular-2020s-movies",
+                    "traktId" : 33032971,
                     "username" : "snoak"
                   }
                 }
               ],
               "hideTitle" : true,
-              "id" : "0952B422-C70E-4CC1-9954-E0142C3EDF73",
+              "id" : "e9b3ec09-7613-4193-ad25-41b9261178ae",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/jqDGwcTW\/Imdb_Top_Movies.webp",
-              "title" : "IMDB Top Movies"
+              "imageURL" : "https:\/\/i.postimg.cc\/L5jnk6gT\/20s.png",
+              "title" : "20s Movies"
             },
             {
               "dataSources" : [
                 {
                   "kind" : "traktList",
                   "payload" : {
-                    "listName" : "Top 250 Shows (iMDB)",
-                    "listSlug" : "top-250-shows-imdb",
-                    "traktId" : 33032979,
+                    "listName" : "Popular 2010s Movies",
+                    "listSlug" : "popular-2010s-movies",
+                    "traktId" : 33032968,
                     "username" : "snoak"
                   }
                 }
               ],
               "hideTitle" : true,
-              "id" : "E54642F3-050A-4105-B5F9-15EFFC730327",
+              "id" : "22667ac4-87c9-4ef1-961f-6a1898681669",
               "imageAspect" : "wide",
-              "imageURL" : "https:\/\/i.postimg.cc\/y6DwgjK9\/Imdb_Top_Shows.webp",
-              "title" : "Top IMDB Shows"
+              "imageURL" : "https:\/\/i.postimg.cc\/br1s0NSR\/10s.png",
+              "title" : "10s Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 2000s Movies",
+                    "listSlug" : "popular-2000s-movies",
+                    "traktId" : 33032965,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "c72e3bd7-0ad6-425b-936c-97c583b441ba",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/RhwN1VJK\/00s.png",
+              "title" : "00s Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 1990s Movies",
+                    "listSlug" : "popular-1990s-movies",
+                    "traktId" : 33032959,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "2dd74771-006e-40d1-9db3-819447299076",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/J7XDCKYH\/90s.png",
+              "title" : "90s Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 1980s Movies",
+                    "listSlug" : "popular-1980s-movies",
+                    "traktId" : 33032956,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "3f830227-d7f5-4d55-b435-295b8db76d09",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/qBKhHQDz\/80s.png",
+              "title" : "80s Movies"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Popular 1970s Movies",
+                    "listSlug" : "popular-1970s-movies",
+                    "traktId" : 33119476,
+                    "username" : "snoak"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "00fd8a01-cba8-4166-a0aa-08b5ddd2083a",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/VvXd9L0j\/70s.png",
+              "title" : "70s Movies"
             }
           ]
         }
       },
-      "id" : "collection.30D7D6CB-0AF8-4CBE-B748-313310B7233D",
-      "title" : "IMDB",
+      "id" : "collection.c8e9a69b-c67d-48f8-88d5-dfd1bae54c3c",
+      "title" : "Popular Decades",
       "type" : "collection.row"
     }
   ]

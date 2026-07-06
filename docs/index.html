@@ -1342,11 +1342,26 @@
 
         @media (max-width: 640px) {
             .kit-header {
-                padding-top: 84px;
+                padding-top: 76px;
+                padding-bottom: 40px;
             }
 
             .search-wrapper {
                 max-width: 100%;
+            }
+
+            .type-filter {
+                flex-wrap: wrap;
+                overflow-x: visible;
+                white-space: normal;
+            }
+
+            .type-pill {
+                padding: 9px 12px;
+            }
+
+            .content-section {
+                scroll-margin-top: 132px;
             }
 
             .content-section[data-section="setup"] .grid {
@@ -3650,6 +3665,7 @@
             }
 
             filterCards();
+            revealActiveTypeSections();
         }
 
         function initTypeFilterFromUrl() {
@@ -3714,6 +3730,20 @@
                     const matched = !filter || combined.includes(filter);
                     section.style.display = matched ? '' : 'none';
                 }
+            });
+        }
+
+        function revealActiveTypeSections() {
+            if (activeTypeFilter === 'all') {
+                return;
+            }
+
+            window.requestAnimationFrame(() => {
+                document.querySelectorAll('.content-section').forEach((section) => {
+                    if (section.style.display !== 'none') {
+                        section.classList.add('v');
+                    }
+                });
             });
         }
 
