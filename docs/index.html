@@ -63,6 +63,26 @@
             margin-top: 0;
         }
 
+        .card-setup .card-header-top,
+        .card-setup-builder .card-header-top {
+            padding: 16px 16px 12px;
+            gap: 8px;
+        }
+
+        .card-setup .card-title,
+        .card-setup-builder .card-title {
+            font-size: 16px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-setup .badge,
+        .card-setup-builder .badge {
+            font-size: 10px;
+            padding: 3px 8px;
+        }
+
         .setup-preview-video {
             width: 100%;
             height: 100%;
@@ -608,20 +628,17 @@
 
         @media (max-width: 680px) {
             .content-section[data-section="setup"] .grid {
-                display: flex;
-                grid-template-columns: none;
-                overflow-x: auto;
-                overflow-y: hidden;
+                display: grid;
+                grid-template-columns: minmax(0, min(100%, 280px));
                 gap: 0.9rem;
-                padding-bottom: 0.3rem;
-                scroll-snap-type: x proximity;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
+                justify-content: start;
+                overflow: visible;
+                padding-bottom: 0;
             }
 
             .content-section[data-section="setup"] .card {
-                flex: 0 0 clamp(220px, 72vw, 260px);
-                scroll-snap-align: start;
+                min-width: 0;
+                width: 100%;
             }
 
             .copy-choice-overlay {
@@ -964,6 +981,7 @@
         }
 
         .type-pill {
+            flex: 0 0 auto;
             border: 1px solid var(--line-h);
             background: transparent;
             color: var(--g);
@@ -1008,15 +1026,11 @@
         }
 
         .content-section[data-section="setup"] .grid {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            overflow-y: hidden;
-            gap: 1.25rem;
-            padding-bottom: 0.35rem;
-            scroll-snap-type: x proximity;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+            overflow: visible;
+            gap: 18px;
+            padding-bottom: 0;
             justify-content: flex-start;
         }
 
@@ -1025,8 +1039,8 @@
         }
 
         .content-section[data-section="setup"] .card {
-            flex: 0 0 clamp(230px, 24vw, 260px);
-            scroll-snap-align: start;
+            min-width: 0;
+            width: 100%;
         }
 
         .sh {
@@ -1097,13 +1111,15 @@
             }
 
             .sh-desc-inline-guide .section-guide {
+                display: flex;
+                width: fit-content;
                 margin-top: 12px;
             }
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
             gap: 18px;
         }
 
@@ -1131,6 +1147,7 @@
             align-items: center;
             gap: 10px;
             padding: 18px 20px 14px;
+            min-width: 0;
         }
 
         .card-title {
@@ -1138,6 +1155,8 @@
             font-weight: 600;
             color: var(--w);
             letter-spacing: -.01em;
+            min-width: 0;
+            overflow-wrap: anywhere;
         }
 
         .card-author-inline {
@@ -1149,6 +1168,7 @@
         }
 
         .badge {
+            flex: 0 0 auto;
             margin-left: auto;
             font-family: var(--mono);
             font-size: 11px;
@@ -1327,6 +1347,11 @@
 
             .search-wrapper {
                 max-width: 100%;
+            }
+
+            .content-section[data-section="setup"] .grid {
+                grid-template-columns: minmax(0, min(100%, 280px));
+                justify-content: start;
             }
 
             footer {
@@ -2239,7 +2264,7 @@
                     <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/PC (Popcornmeter).png" alt="PC (Popcornmeter)" loading="lazy" />
                 </div>
                 <div class="icon-cell">
-                    <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/RE (RogerEbert).png" alt="RE (RogerEbert)" loading="lazy" />
+                    <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/RE (RogerEbert).png?v=66f9435018" alt="RE (RogerEbert)" loading="lazy" />
                 </div>
                 <div class="icon-cell">
                     <img src="https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/icon-packs/itsrenoria/RT (Tomatometer).png" alt="RT (Tomatometer)" loading="lazy" />
@@ -2449,7 +2474,7 @@
     <footer>
         <span class="fb">itsrenoria</span>
         <div class="footer-meta">
-            <span>Updated May 15, 2026</span>
+            <span>Updated Jul 6, 2026</span>
             <div class="footer-links" aria-label="External links">
                 <a class="footer-link" href="https://github.com/itsrenoria/fusion-starter-kit" target="_blank" rel="noreferrer" aria-label="GitHub repository">
                     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
