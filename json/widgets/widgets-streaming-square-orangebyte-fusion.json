@@ -1,0 +1,95 @@
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "widgets": [
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "hideTitle": true,
+              "id": "7B129E66-55B3-41B3-9151-D329BBD3630E",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/appletv-square-fusion.png",
+              "title": "Appletv"
+            },
+            {
+              "hideTitle": true,
+              "id": "6F0F0D5F-161B-4C82-A5C0-5034D7766673",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/crunchyroll-square-fusion.png",
+              "title": "Crunchyroll"
+            },
+            {
+              "hideTitle": true,
+              "id": "297B3AB7-743B-4B40-AED2-28C796D1828A",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/disney-square-fusion.png",
+              "title": "Disney"
+            },
+            {
+              "hideTitle": true,
+              "id": "1DC36354-26C3-4D12-895D-4C4AD6E97DED",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/hbomax-square-fusion.png",
+              "title": "Hbomax"
+            },
+            {
+              "hideTitle": true,
+              "id": "BBAA5931-1577-44FA-8F5C-58EE0CE7A5CB",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/hidive-square-fusion.png",
+              "title": "Hidive"
+            },
+            {
+              "hideTitle": true,
+              "id": "A57CCE0D-784E-4B2B-A55C-2838E1BEC1EB",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/hulu-square-fusion.png",
+              "title": "Hulu"
+            },
+            {
+              "hideTitle": true,
+              "id": "AC3FE417-E6D6-4BDA-8B4A-B351BCB04462",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/netflix-square-fusion.png",
+              "title": "Netflix"
+            },
+            {
+              "hideTitle": true,
+              "id": "9E8D8520-6AAB-431F-895C-19B0A67E228F",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/paramount-square-fusion.png",
+              "title": "Paramount"
+            },
+            {
+              "hideTitle": true,
+              "id": "0F1822E9-15F1-46DD-970D-A8AA74168A51",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/plex-square-fusion.png",
+              "title": "Plex"
+            },
+            {
+              "hideTitle": true,
+              "id": "006F95AC-CE35-4729-B4A2-C01F87E4B051",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/prime-square-fusion.png",
+              "title": "Prime"
+            },
+            {
+              "hideTitle": true,
+              "id": "15D6471E-364A-4706-A92E-875B2FFCB2F6",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/skyshowtime-square-fusion.png",
+              "title": "Skyshowtime"
+            }
+          ]
+        }
+      },
+      "id": "collection.09149F4E-8C3C-4F62-8111-188174B437B2",
+      "title": "Streaming (Fusion)",
+      "type": "collection.row"
+    }
+  ]
+}

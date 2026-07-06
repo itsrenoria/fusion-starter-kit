@@ -1,0 +1,342 @@
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "widgets": [
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "hideTitle": true,
+              "id": "F30CF147-BB0E-4CB5-988A-D6FA9C4D1969",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/action-square-fusion.png",
+              "title": "Action",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Action Movies",
+                    "listSlug": "popular-action-movies",
+                    "traktId": 33032919,
+                    "username": "snoak"
+                  }
+                },
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Action Shows",
+                    "listSlug": "popular-action-shows",
+                    "traktId": 33032916,
+                    "username": "snoak"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "6C304D94-D467-4536-A41E-D6E4EABE764E",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/adventure-square-fusion.png",
+              "title": "Adventure",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Adventures",
+                    "listSlug": "adventures",
+                    "traktId": 22032399,
+                    "username": "rizreflects"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "5F67ED86-60DC-4F38-894A-4937183B2FC9",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/anime-square-fusion.png",
+              "title": "Anime",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Animation/Anime Movies",
+                    "listSlug": "popular-animation-anime-movies",
+                    "traktId": 33032928,
+                    "username": "snoak"
+                  }
+                },
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Animation/Anime Shows",
+                    "listSlug": "popular-animation-anime-shows",
+                    "traktId": 33032927,
+                    "username": "snoak"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "50D2D80C-7318-4A2A-B234-58D06FC0AB2A",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/comedy-square-fusion.png",
+              "title": "Comedy",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Comedy Movies",
+                    "listSlug": "popular-comedy-movies",
+                    "traktId": 33032930,
+                    "username": "snoak"
+                  }
+                },
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Comedy Shows",
+                    "listSlug": "popular-comedy-shows",
+                    "traktId": 33032929,
+                    "username": "snoak"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "FE4699AD-84E2-44F4-AEEE-C195E711CC21",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/crime-square-fusion.png",
+              "title": "Crime",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Crime",
+                    "listSlug": "crime",
+                    "traktId": 20770341,
+                    "username": "garycrawfordgc"
+                  }
+                },
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Crime Shows",
+                    "listSlug": "crime-shows",
+                    "traktId": 20772104,
+                    "username": "garycrawfordgc"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "FC93D4F7-77A1-46C9-A447-C3C880DED7E9",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/documentary-square-fusion.png",
+              "title": "Documentary",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Documentary Movies",
+                    "listSlug": "popular-documentary-movies",
+                    "traktId": 33123349,
+                    "username": "snoak"
+                  }
+                },
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Documentary Shows",
+                    "listSlug": "popular-documentary-shows",
+                    "traktId": 33123359,
+                    "username": "snoak"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "DCFD4B23-B410-40EF-8229-4D166ACD8F4A",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/drama-square-fusion.png",
+              "title": "Drama",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Drama Movies",
+                    "listSlug": "popular-drama-movies",
+                    "traktId": 33032935,
+                    "username": "snoak"
+                  }
+                },
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Drama Shows",
+                    "listSlug": "popular-drama-shows",
+                    "traktId": 33032934,
+                    "username": "snoak"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "A1F342FA-0C4E-433C-8040-E07639A7B673",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/family-square-fusion.png",
+              "title": "Family",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Family Movies",
+                    "listSlug": "family-movies",
+                    "traktId": 22032854,
+                    "username": "rizreflects"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "1614FD83-1D5D-44A4-A557-7D11518AE11E",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/history-square-fusion.png",
+              "title": "History",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "History",
+                    "listSlug": "history",
+                    "traktId": 20770352,
+                    "username": "garycrawfordgc"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "A8F28D39-ED6E-4C13-96B0-C54BF420FC41",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/horror-square-fusion.png",
+              "title": "Horror",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Horror Movies",
+                    "listSlug": "popular-horror-movies",
+                    "traktId": 33032936,
+                    "username": "snoak"
+                  }
+                },
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Horror Shows",
+                    "listSlug": "popular-horror-shows",
+                    "traktId": 33032939,
+                    "username": "snoak"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "4F68497A-AE86-4C0A-8E7E-5FC73AF22DCE",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/romance-square-fusion.png",
+              "title": "Romance",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Romance Movies",
+                    "listSlug": "popular-romance-movies",
+                    "traktId": 33132644,
+                    "username": "snoak"
+                  }
+                },
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Romance Shows",
+                    "listSlug": "popular-romance-shows",
+                    "traktId": 33132723,
+                    "username": "snoak"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "B239D502-A515-4B21-950E-79D498236537",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/scifi-square-fusion.png",
+              "title": "Scifi",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Sci-Fi Movies",
+                    "listSlug": "popular-sci-fi-movies",
+                    "traktId": 33032944,
+                    "username": "snoak"
+                  }
+                },
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Sci-Fi Shows",
+                    "listSlug": "popular-sci-fi-shows",
+                    "traktId": 33032946,
+                    "username": "snoak"
+                  }
+                }
+              ]
+            },
+            {
+              "hideTitle": true,
+              "id": "AD2404A1-9C5A-4A38-8AAD-5670A9906BD7",
+              "imageAspect": "square",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/genres/square/orangebyte/fusion/thriller-square-fusion.png",
+              "title": "Thriller",
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Thriller Movies",
+                    "listSlug": "popular-thriller-movies",
+                    "traktId": 33032952,
+                    "username": "snoak"
+                  }
+                },
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular Thriller Shows",
+                    "listSlug": "popular-thriller-shows",
+                    "traktId": 33032950,
+                    "username": "snoak"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "id": "collection.2B2E7F4A-14DE-4DB6-9273-ECE713E7628B",
+      "title": "Genres (Fusion)",
+      "type": "collection.row"
+    }
+  ]
+}

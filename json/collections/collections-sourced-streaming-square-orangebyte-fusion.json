@@ -1,0 +1,331 @@
+[
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/appletv-square-fusion.png",
+    "hideTitle": true,
+    "id": "0B20D964-F5CE-45EF-A9C7-59B18F1110E1",
+    "layout": "Square",
+    "name": "Appletv",
+    "dataSources": [
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Apple TV+ Movies",
+          "listSlug": "top-apple-tv-movies",
+          "traktId": 33032900,
+          "username": "snoak"
+        }
+      },
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Apple TV+ Shows",
+          "listSlug": "top-apple-tv-shows",
+          "traktId": 33032894,
+          "username": "snoak"
+        }
+      }
+    ],
+    "dataSource": {
+      "kind": "traktList",
+      "payload": {
+        "listName": "Top Apple TV+ Movies",
+        "listSlug": "top-apple-tv-movies",
+        "traktId": 33032900,
+        "username": "snoak"
+      }
+    }
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/crunchyroll-square-fusion.png",
+    "hideTitle": true,
+    "id": "4B8EC371-DB3A-4251-AC26-60EA63404614",
+    "layout": "Square",
+    "name": "Crunchyroll",
+    "dataSources": [
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Crunchyroll - Movies",
+          "listSlug": "crunchyroll-movies",
+          "traktId": 31454433,
+          "username": "Frostypolicia"
+        }
+      },
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Crunchyroll - Shows",
+          "listSlug": "crunchyroll-shows",
+          "traktId": 31475824,
+          "username": "Frostypolicia"
+        }
+      }
+    ],
+    "dataSource": {
+      "kind": "traktList",
+      "payload": {
+        "listName": "Crunchyroll - Movies",
+        "listSlug": "crunchyroll-movies",
+        "traktId": 31454433,
+        "username": "Frostypolicia"
+      }
+    }
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/disney-square-fusion.png",
+    "hideTitle": true,
+    "id": "5E9D3CCA-B364-48D0-B0ED-8B18251550D4",
+    "layout": "Square",
+    "name": "Disney",
+    "dataSources": [
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Disney+ Movies",
+          "listSlug": "top-disney-movies",
+          "traktId": 33032904,
+          "username": "snoak"
+        }
+      },
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Disney+ Shows",
+          "listSlug": "top-disney-shows",
+          "traktId": 33032903,
+          "username": "snoak"
+        }
+      }
+    ],
+    "dataSource": {
+      "kind": "traktList",
+      "payload": {
+        "listName": "Top Disney+ Movies",
+        "listSlug": "top-disney-movies",
+        "traktId": 33032904,
+        "username": "snoak"
+      }
+    }
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/hbomax-square-fusion.png",
+    "hideTitle": true,
+    "id": "709542A6-8621-4A59-B660-7B81A2C3E093",
+    "layout": "Square",
+    "name": "Hbomax",
+    "dataSources": [
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top HBO Max Movies",
+          "listSlug": "top-hbo-max-movies",
+          "traktId": 33032914,
+          "username": "snoak"
+        }
+      },
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top HBO Max Shows",
+          "listSlug": "top-hbo-max-shows",
+          "traktId": 33032911,
+          "username": "snoak"
+        }
+      }
+    ],
+    "dataSource": {
+      "kind": "traktList",
+      "payload": {
+        "listName": "Top HBO Max Movies",
+        "listSlug": "top-hbo-max-movies",
+        "traktId": 33032914,
+        "username": "snoak"
+      }
+    }
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/hidive-square-fusion.png",
+    "hideTitle": true,
+    "id": "7FE15CA8-6D8A-4908-B5F9-C7FE0A937A78",
+    "layout": "Square",
+    "name": "Hidive"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/hulu-square-fusion.png",
+    "hideTitle": true,
+    "id": "F7D787F0-47C4-43CA-9B44-E9E09751D7B0",
+    "layout": "Square",
+    "name": "Hulu",
+    "dataSources": [
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Hulu Movies",
+          "listSlug": "top-hulu-movies",
+          "traktId": 33118941,
+          "username": "snoak"
+        }
+      },
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Hulu Shows",
+          "listSlug": "top-hulu-shows",
+          "traktId": 33118956,
+          "username": "snoak"
+        }
+      }
+    ],
+    "dataSource": {
+      "kind": "traktList",
+      "payload": {
+        "listName": "Top Hulu Movies",
+        "listSlug": "top-hulu-movies",
+        "traktId": 33118941,
+        "username": "snoak"
+      }
+    }
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/netflix-square-fusion.png",
+    "hideTitle": true,
+    "id": "25352256-D68C-41BA-BA8D-1DE31A92758F",
+    "layout": "Square",
+    "name": "Netflix",
+    "dataSources": [
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Netflix Movies",
+          "listSlug": "top-netflix-movies",
+          "traktId": 33032882,
+          "username": "snoak"
+        }
+      },
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Netflix Shows",
+          "listSlug": "top-netflix-shows",
+          "traktId": 33032878,
+          "username": "snoak"
+        }
+      }
+    ],
+    "dataSource": {
+      "kind": "traktList",
+      "payload": {
+        "listName": "Top Netflix Movies",
+        "listSlug": "top-netflix-movies",
+        "traktId": 33032882,
+        "username": "snoak"
+      }
+    }
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/paramount-square-fusion.png",
+    "hideTitle": true,
+    "id": "D8437CDD-7D7E-4C69-84EB-C92805321C4C",
+    "layout": "Square",
+    "name": "Paramount",
+    "dataSources": [
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Paramount+ Movies",
+          "listSlug": "top-paramount-movies",
+          "traktId": 33032910,
+          "username": "snoak"
+        }
+      },
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Paramount+ Shows",
+          "listSlug": "top-paramount-shows",
+          "traktId": 33032908,
+          "username": "snoak"
+        }
+      }
+    ],
+    "dataSource": {
+      "kind": "traktList",
+      "payload": {
+        "listName": "Top Paramount+ Movies",
+        "listSlug": "top-paramount-movies",
+        "traktId": 33032910,
+        "username": "snoak"
+      }
+    }
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/plex-square-fusion.png",
+    "hideTitle": true,
+    "id": "E403674D-5FEF-4FA0-9B5F-64E94F4D22B6",
+    "layout": "Square",
+    "name": "Plex"
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/prime-square-fusion.png",
+    "hideTitle": true,
+    "id": "B3617E98-1EB8-460A-AA39-C0984AEC8DB0",
+    "layout": "Square",
+    "name": "Prime",
+    "dataSources": [
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Amazon Prime Movies",
+          "listSlug": "top-amazon-prime-movies",
+          "traktId": 33032892,
+          "username": "snoak"
+        }
+      },
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Top Amazon Prime Shows",
+          "listSlug": "top-amazon-prime-shows",
+          "traktId": 33032887,
+          "username": "snoak"
+        }
+      }
+    ],
+    "dataSource": {
+      "kind": "traktList",
+      "payload": {
+        "listName": "Top Amazon Prime Movies",
+        "listSlug": "top-amazon-prime-movies",
+        "traktId": 33032892,
+        "username": "snoak"
+      }
+    }
+  },
+  {
+    "backgroundImageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/streaming/square/orangebyte/fusion/skyshowtime-square-fusion.png",
+    "hideTitle": true,
+    "id": "8FA629F2-A707-4053-8938-4083EAEF1208",
+    "layout": "Square",
+    "name": "Skyshowtime",
+    "dataSources": [
+      {
+        "kind": "traktList",
+        "payload": {
+          "listName": "skyshowtime",
+          "listSlug": "skyshowtime",
+          "traktId": 33841165,
+          "username": "certefied"
+        }
+      }
+    ],
+    "dataSource": {
+      "kind": "traktList",
+      "payload": {
+        "listName": "skyshowtime",
+        "listSlug": "skyshowtime",
+        "traktId": 33841165,
+        "username": "certefied"
+      }
+    }
+  }
+]

@@ -11,7 +11,7 @@ Updated: 2026-02-23T10:41:40
 - If movie and show use the same URL/source, it is shown once and `Total Lists` is `1`.
 - Genres are split into two sections: non-dannyrutledge and dannyrutledge, with overlap shown in both.
 
-## Streaming (19)
+## Streaming (21)
 
 | Term | Movies | Movies Source | Shows | Shows Source | Total Lists | Status | Notes |
 |---|---|---|---|---|---|---|---|
@@ -22,6 +22,7 @@ Updated: 2026-02-23T10:41:40
 | Discovery+ | https://trakt.tv/users/moviemankev79/lists/discovery | search (moviemankev79) | — | — | 1 | mapped | — |
 | Disney | https://trakt.tv/users/snoak/lists/top-disney-movies | snoak | https://trakt.tv/users/snoak/lists/top-disney-shows | snoak | 2 | mapped | — |
 | HBO Max | https://trakt.tv/users/snoak/lists/top-hbo-max-movies | snoak | https://trakt.tv/users/snoak/lists/top-hbo-max-shows | snoak | 2 | mapped | — |
+| Hidive | — | — | — | — | 0 | skip | No source mapping yet. |
 | Hulu | https://trakt.tv/users/snoak/lists/top-hulu-movies | snoak | https://trakt.tv/users/snoak/lists/top-hulu-shows | snoak | 2 | mapped | — |
 | KDrama+ | https://app.trakt.tv/users/snoak/lists/popular-kdrama-movies?mode=media | snoak | https://app.trakt.tv/users/snoak/lists/popular-kdrama-shows?mode=media | snoak | 2 | mapped | — |
 | Livetv | — | — | — | — | 0 | skip | Skipped by request. |
@@ -30,6 +31,7 @@ Updated: 2026-02-23T10:41:40
 | Netflix | https://trakt.tv/users/snoak/lists/top-netflix-movies | snoak | https://trakt.tv/users/snoak/lists/top-netflix-shows | snoak | 2 | mapped | — |
 | Paramount | https://trakt.tv/users/snoak/lists/top-paramount-movies | snoak | https://trakt.tv/users/snoak/lists/top-paramount-shows | snoak | 2 | mapped | — |
 | Peacock | https://trakt.tv/users/tvgeniekodi/lists/peacock-movies | tvgeniekodi | https://trakt.tv/users/tvgeniekodi/lists/peacock-shows | tvgeniekodi | 2 | mapped | — |
+| Plex | — | — | — | — | 0 | skip | No source mapping yet. |
 | Prime Video | https://trakt.tv/users/snoak/lists/top-amazon-prime-movies | snoak | https://trakt.tv/users/snoak/lists/top-amazon-prime-shows | snoak | 2 | mapped | — |
 | Shudder | https://app.trakt.tv/users/snoak/lists/latest-shudder-movies?mode=media | snoak | — | — | 1 | mapped | — |
 | SkyShowtime | https://trakt.tv/users/certefied/lists/skyshowtime | search (certefied) | — | — | 1 | mapped | — |
