@@ -518,6 +518,43 @@
             cursor: not-allowed;
         }
 
+        .builder-status-toast {
+            position: fixed;
+            left: 50%;
+            bottom: clamp(18px, 4vh, 34px);
+            z-index: 130;
+            width: min(520px, calc(100% - 32px));
+            padding: 0.8rem 0.95rem;
+            border: 1px solid var(--line-h);
+            border-radius: 12px;
+            background: rgba(21, 21, 21, 0.96);
+            color: var(--w2);
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.42);
+            font-size: 0.84rem;
+            font-weight: 600;
+            line-height: 1.35;
+            text-align: center;
+            opacity: 0;
+            pointer-events: none;
+            transform: translate(-50%, 12px);
+            transition: opacity 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+        }
+
+        .builder-status-toast.active {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+
+        .builder-status-toast.is-success {
+            border-color: rgba(94, 234, 212, 0.34);
+            color: var(--w);
+        }
+
+        .builder-status-toast.is-error {
+            border-color: rgba(248, 113, 113, 0.45);
+            color: var(--w);
+        }
+
         .manual-copy-overlay {
             position: fixed;
             inset: 0;
@@ -2471,6 +2508,8 @@
         </div>
     </div>
 
+    <div class="builder-status-toast" id="builderStatusToast" role="status" aria-live="polite" aria-hidden="true"></div>
+
     <div class="manual-copy-overlay" id="manualCopyOverlay" aria-hidden="true">
         <div class="manual-copy-sheet" role="dialog" aria-modal="true" aria-labelledby="manualCopyTitle">
             <div class="manual-copy-header">
@@ -2514,6 +2553,7 @@
         let copySourceState = null;
         let manualCopyState = { triggerBtn: null };
         let setupBuilderState = { selectedIds: new Set(), triggerBtn: null };
+        let setupBuilderStatusTimer = null;
 
         async function writeTextToClipboard(text) {
             const value = (typeof text === 'string') ? text : String(text);
@@ -3220,6 +3260,32 @@
             });
         }
 
+        function getRandomInteger(maxExclusive) {
+            if (maxExclusive <= 0) return 0;
+
+            if (window.crypto && typeof window.crypto.getRandomValues === 'function') {
+                const values = new Uint32Array(1);
+                window.crypto.getRandomValues(values);
+                return values[0] % maxExclusive;
+            }
+
+            return Math.floor(Math.random() * maxExclusive);
+        }
+
+        function shuffleCardPreviewImages() {
+            document.querySelectorAll('.card-widget .card-preview:not(.generic-preview):not(.icon-pack-preview)').forEach((preview) => {
+                const thumbs = Array.from(preview.children).filter((child) => child.classList.contains('thumb'));
+                if (thumbs.length < 2) return;
+
+                for (let index = thumbs.length - 1; index > 0; index -= 1) {
+                    const swapIndex = getRandomInteger(index + 1);
+                    [thumbs[index], thumbs[swapIndex]] = [thumbs[swapIndex], thumbs[index]];
+                }
+
+                thumbs.forEach((thumb) => preview.appendChild(thumb));
+            });
+        }
+
         function generateUpperUuid() {
             if (window.crypto && typeof window.crypto.randomUUID === 'function') {
                 return window.crypto.randomUUID().toUpperCase();
@@ -3337,7 +3403,46 @@
                 selectAllBtn: document.getElementById('builderSelectAllBtn'),
                 clearBtn: document.getElementById('builderClearBtn'),
                 closeBtn: document.getElementById('builderCloseBtn'),
+                statusToast: document.getElementById('builderStatusToast'),
             };
+        }
+
+        function clearBuilderStatus() {
+            const toast = document.getElementById('builderStatusToast');
+            if (setupBuilderStatusTimer) {
+                window.clearTimeout(setupBuilderStatusTimer);
+                setupBuilderStatusTimer = null;
+            }
+            if (!toast) {
+                return;
+            }
+
+            toast.classList.remove('active', 'is-success', 'is-error', 'is-busy');
+            toast.setAttribute('aria-hidden', 'true');
+        }
+
+        function showBuilderStatus(message, kind = 'busy', duration = 2600) {
+            const toast = document.getElementById('builderStatusToast');
+            if (!toast) {
+                return;
+            }
+
+            if (setupBuilderStatusTimer) {
+                window.clearTimeout(setupBuilderStatusTimer);
+                setupBuilderStatusTimer = null;
+            }
+
+            toast.textContent = message;
+            toast.classList.remove('is-success', 'is-error', 'is-busy');
+            toast.classList.add(`is-${kind}`);
+            toast.classList.add('active');
+            toast.setAttribute('aria-hidden', 'false');
+
+            if (duration > 0) {
+                setupBuilderStatusTimer = window.setTimeout(() => {
+                    clearBuilderStatus();
+                }, duration);
+            }
         }
 
         function getFilteredBuilderSources() {
@@ -3431,6 +3536,7 @@
             }
 
             setupBuilderState.triggerBtn = btn || null;
+            clearBuilderStatus();
 
             if (elements.searchInput) {
                 elements.searchInput.value = '';
@@ -3487,7 +3593,7 @@
                         label: 'Without sources',
                         hint: 'Builds raw widget JSON without predefined Trakt lists. Add your own lists in Fusion.',
                         enabled: true,
-                        onSelect: () => copyGeneratedSetupJson(false),
+                        onSelect: (triggerBtn) => copyGeneratedSetupJson(false, triggerBtn),
                     },
                     withSources: {
                         label: 'With sources',
@@ -3495,14 +3601,14 @@
                             ? 'Sourced JSON is unavailable for one or more selected widget packs.'
                             : 'Builds JSON with predefined Trakt list sources.',
                         enabled: missingSourced.length === 0,
-                        onSelect: () => copyGeneratedSetupJson(true),
+                        onSelect: (triggerBtn) => copyGeneratedSetupJson(true, triggerBtn),
                     },
                 },
                 sourceChoiceTriggerBtn
             );
         }
 
-        async function copyGeneratedSetupJson(useSourcedJson = false) {
+        async function copyGeneratedSetupJson(useSourcedJson = false, triggerBtn = null) {
             const elements = getBuilderElements();
             if (!elements.copyBtn) {
                 return;
@@ -3527,6 +3633,10 @@
             const originalLabel = 'Copy JSON';
             elements.copyBtn.disabled = true;
             setBuilderCopyButtonText('Building...');
+            showBuilderStatus('Building BYO JSON...', 'busy', 0);
+            if (triggerBtn && triggerBtn !== elements.copyBtn) {
+                triggerBtn.setAttribute('aria-busy', 'true');
+            }
 
             try {
                 const mergedWidgets = [];
@@ -3563,6 +3673,11 @@
                     openManualCopyDialog(outputText, elements.copyBtn, 'Clipboard access was blocked. Tap Select all, then copy.');
                 }
 
+                showBuilderStatus(
+                    copied ? 'BYO JSON copied to clipboard.' : 'Manual copy opened. Select all, then copy.',
+                    copied ? 'success' : 'busy',
+                    copied ? 7000 : 0
+                );
                 setBuilderCopyButtonText(copied ? 'Copied!' : 'Manual copy');
                 setTimeout(() => {
                     setBuilderCopyButtonText(originalLabel);
@@ -3570,9 +3685,13 @@
                 }, 1600);
             } catch (error) {
                 console.error(error);
-                window.alert(`Could not build JSON: ${error.message}`);
+                showBuilderStatus(`Could not build BYO JSON: ${error.message}`, 'error', 5200);
                 setBuilderCopyButtonText(originalLabel);
                 updateBuilderSelectionCount();
+            } finally {
+                if (triggerBtn && triggerBtn !== elements.copyBtn) {
+                    triggerBtn.removeAttribute('aria-busy');
+                }
             }
         }
 
@@ -3775,6 +3894,7 @@
         initManualCopyDialog();
         initSetupBuilder();
         resolveSetupPreviewSources();
+        shuffleCardPreviewImages();
         normalizeCardPreviewShapes();
         initTypeFilterFromUrl();
     </script>
