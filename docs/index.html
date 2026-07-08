@@ -2501,7 +2501,7 @@
                             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                         </svg>
                     </span>
-                    <span class="btn-text" id="builderCopyBtnText">Copy JSON</span>
+                    <span class="btn-text" id="builderCopyBtnText">Build JSON</span>
                 </button>
                 <button type="button" class="choice-cancel" id="builderCloseBtn">Close</button>
             </div>
@@ -2836,13 +2836,45 @@
             }
         }
 
-        function closeCopySourceChoice(restoreFocus = true) {
+        function setCopySourceBusy(isBusy) {
+            const cancelBtn = document.getElementById('copySourceCancelBtn');
+            const withoutBtn = document.getElementById('copySourceWithoutBtn');
+            const withBtn = document.getElementById('copySourceWithBtn');
+
+            if (copySourceState) {
+                copySourceState.isBusy = isBusy;
+            }
+
+            if (cancelBtn) {
+                cancelBtn.textContent = isBusy ? 'Building JSON' : 'Cancel';
+                cancelBtn.disabled = isBusy;
+                if (isBusy) {
+                    cancelBtn.setAttribute('aria-busy', 'true');
+                } else {
+                    cancelBtn.removeAttribute('aria-busy');
+                }
+            }
+
+            if (withoutBtn) {
+                withoutBtn.disabled = isBusy || !copySourceState?.without?.enabled;
+            }
+            if (withBtn) {
+                withBtn.disabled = isBusy || !copySourceState?.withSources?.enabled;
+            }
+        }
+
+        function closeCopySourceChoice(restoreFocus = true, force = false) {
+            if (copySourceState?.isBusy && !force) {
+                return;
+            }
+
             const overlay = document.getElementById('copySourceOverlay');
             if (!overlay) {
                 copySourceState = null;
                 return;
             }
 
+            setCopySourceBusy(false);
             overlay.classList.remove('active');
             overlay.setAttribute('aria-hidden', 'true');
 
@@ -2874,36 +2906,46 @@
             });
 
             withoutBtn.addEventListener('click', async () => {
+                if (copySourceState?.isBusy) {
+                    return;
+                }
                 const option = copySourceState?.without;
                 if (!option || !option.enabled) {
                     return;
                 }
+                setCopySourceBusy(true);
                 try {
                     if (typeof option.onSelect === 'function') {
                         await option.onSelect(copySourceState.triggerBtn);
                     } else if (option.url) {
                         await copyToClipboard(option.url, copySourceState.triggerBtn);
                     }
-                    closeCopySourceChoice();
+                    closeCopySourceChoice(true, true);
                 } catch (error) {
+                    setCopySourceBusy(false);
                     console.error(error);
                     window.alert(`Could not complete action: ${error.message}`);
                 }
             });
 
             withBtn.addEventListener('click', async () => {
+                if (copySourceState?.isBusy) {
+                    return;
+                }
                 const option = copySourceState?.withSources;
                 if (!option || !option.enabled) {
                     return;
                 }
+                setCopySourceBusy(true);
                 try {
                     if (typeof option.onSelect === 'function') {
                         await option.onSelect(copySourceState.triggerBtn);
                     } else if (option.url) {
                         await copyToClipboard(option.url, copySourceState.triggerBtn);
                     }
-                    closeCopySourceChoice();
+                    closeCopySourceChoice(true, true);
                 } catch (error) {
+                    setCopySourceBusy(false);
                     console.error(error);
                     window.alert(`Could not complete action: ${error.message}`);
                 }
@@ -2949,6 +2991,7 @@
                 triggerBtn: triggerBtn || null,
                 without: config.without,
                 withSources: config.withSources,
+                isBusy: false,
             };
 
             titleEl.textContent = config.title || 'Copy JSON URL';
@@ -3477,6 +3520,26 @@
             }
         }
 
+        function getButtonText(button) {
+            if (!button) {
+                return '';
+            }
+            const textElement = button.querySelector('.btn-text');
+            return (textElement?.textContent || button.textContent || '').trim();
+        }
+
+        function setButtonText(button, label) {
+            if (!button) {
+                return;
+            }
+            const textElement = button.querySelector('.btn-text');
+            if (textElement) {
+                textElement.textContent = label;
+            } else {
+                button.textContent = label;
+            }
+        }
+
         function renderSetupBuilderList() {
             const elements = getBuilderElements();
             if (!elements.list) {
@@ -3630,11 +3693,14 @@
                 }
             }
 
-            const originalLabel = 'Copy JSON';
+            const originalLabel = 'Build JSON';
+            const triggerOriginalLabel = getButtonText(triggerBtn) || originalLabel;
+            const shouldUpdateTrigger = triggerBtn && triggerBtn !== elements.copyBtn;
             elements.copyBtn.disabled = true;
-            setBuilderCopyButtonText('Building...');
-            showBuilderStatus('Building BYO JSON...', 'busy', 0);
-            if (triggerBtn && triggerBtn !== elements.copyBtn) {
+            setBuilderCopyButtonText('Building JSON');
+            clearBuilderStatus();
+            if (shouldUpdateTrigger) {
+                triggerBtn.disabled = true;
                 triggerBtn.setAttribute('aria-busy', 'true');
             }
 
@@ -3673,23 +3739,35 @@
                     openManualCopyDialog(outputText, elements.copyBtn, 'Clipboard access was blocked. Tap Select all, then copy.');
                 }
 
-                showBuilderStatus(
-                    copied ? 'BYO JSON copied to clipboard.' : 'Manual copy opened. Select all, then copy.',
-                    copied ? 'success' : 'busy',
-                    copied ? 7000 : 0
-                );
-                setBuilderCopyButtonText(copied ? 'Copied!' : 'Manual copy');
+                if (!copied) {
+                    showBuilderStatus('Manual copy opened. Select all, then copy.', 'busy', 0);
+                }
+
+                const resultLabel = copied ? 'Copied' : 'Manual copy';
+                setBuilderCopyButtonText(resultLabel);
+                if (shouldUpdateTrigger) {
+                    setButtonText(triggerBtn, resultLabel);
+                }
                 setTimeout(() => {
                     setBuilderCopyButtonText(originalLabel);
+                    if (shouldUpdateTrigger) {
+                        setButtonText(triggerBtn, triggerOriginalLabel);
+                        triggerBtn.disabled = false;
+                        triggerBtn.removeAttribute('aria-busy');
+                    }
                     updateBuilderSelectionCount();
                 }, 1600);
             } catch (error) {
                 console.error(error);
                 showBuilderStatus(`Could not build BYO JSON: ${error.message}`, 'error', 5200);
                 setBuilderCopyButtonText(originalLabel);
+                if (shouldUpdateTrigger) {
+                    setButtonText(triggerBtn, triggerOriginalLabel);
+                    triggerBtn.disabled = false;
+                }
                 updateBuilderSelectionCount();
             } finally {
-                if (triggerBtn && triggerBtn !== elements.copyBtn) {
+                if (shouldUpdateTrigger) {
                     triggerBtn.removeAttribute('aria-busy');
                 }
             }
