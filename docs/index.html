@@ -882,47 +882,44 @@
         }
 
         .header-actions {
-            margin-top: 18px;
+            margin-top: 14px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             opacity: 0;
             animation: kitUp .7s .55s forwards;
             translate: 0 16px;
         }
 
         .header-helper {
-            font-size: clamp(13px, 1.5vw, 16px);
-            color: var(--g);
-            line-height: 1.55;
+            font-size: 13px;
+            color: var(--g2);
+            line-height: 1.4;
         }
 
         .header-link {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
-            border-radius: 999px;
-            border: 1px solid var(--line);
-            background: rgba(255, 255, 255, .03);
-            color: var(--w2);
+            gap: 6px;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            color: var(--g);
             text-decoration: none;
-            font-size: clamp(13px, 1.5vw, 16px);
+            font-size: 13px;
             font-weight: 500;
-            transition: border-color .2s ease, background .2s ease, color .2s ease, transform .2s ease;
+            line-height: 1.4;
+            transition: color .2s ease;
         }
 
         .header-link:hover {
-            border-color: var(--line-h);
-            background: rgba(255, 255, 255, .06);
-            color: var(--w);
-            transform: translateY(-1px);
+            color: var(--w2);
         }
 
         .header-link::after {
             content: '↗';
-            font-size: 12px;
+            font-size: 11px;
             color: var(--g2);
         }
 
@@ -1132,45 +1129,6 @@
             color: var(--g);
             line-height: 1.65;
             max-width: 560px;
-        }
-
-        .sh-desc-inline-guide {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            max-width: 100%;
-            flex-wrap: nowrap;
-        }
-
-        .sh-desc-copy {
-            flex: 0 0 auto;
-            white-space: nowrap;
-        }
-
-        .section-guide {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: nowrap;
-            white-space: nowrap;
-            flex: 0 0 auto;
-        }
-
-        @media (max-width: 900px) {
-            .sh-desc-inline-guide {
-                display: block;
-                max-width: 560px;
-            }
-
-            .sh-desc-copy {
-                white-space: normal;
-            }
-
-            .sh-desc-inline-guide .section-guide {
-                display: flex;
-                width: fit-content;
-                margin-top: 12px;
-            }
         }
 
         .grid {
@@ -1509,7 +1467,7 @@
     data-section-search="full setup setup">
     <div class="section-header">
         <div class="sh"><span class="sh-num">01</span><h2 class="sh-title">Full Setup</h2></div>
-        <p class="sh-desc sh-desc-inline-guide"><span class="sh-desc-copy">Community full setups in one go.</span><span class="section-guide"><span class="header-helper">Need help?</span><a class="header-link" href="https://itsrenoria.github.io/fusion-starter-guide/#kit">Open Guide</a></span></p>
+        <p class="sh-desc">Community full setups in one go.</p>
     </div>
     <div class="grid">
 
@@ -1645,7 +1603,7 @@
     data-section-search="widgets widgets">
     <div class="section-header">
         <div class="sh"><span class="sh-num">02</span><h2 class="sh-title">Widgets</h2></div>
-        <p class="sh-desc sh-desc-inline-guide"><span class="sh-desc-copy">Community collection of widgets.</span><span class="section-guide"><span class="header-helper">Need help?</span><a class="header-link" href="https://itsrenoria.github.io/fusion-starter-guide/#kit">Open Widgets Guide</a></span></p>
+        <p class="sh-desc">Community collection of widgets.</p>
     </div>
     <div class="grid">
 
@@ -2323,7 +2281,7 @@
     data-section-search="icon packs icon-packs">
     <div class="section-header">
         <div class="sh"><span class="sh-num">03</span><h2 class="sh-title">Icon Packs</h2></div>
-        <p class="sh-desc sh-desc-inline-guide"><span class="sh-desc-copy">Community icon packs that add ratings icons.</span><span class="section-guide"><span class="header-helper">Need help?</span><a class="header-link" href="https://itsrenoria.github.io/fusion-starter-guide/#ratings">Open Icon Packs Guide</a></span></p>
+        <p class="sh-desc">Community icon packs that add ratings icons.</p>
     </div>
     <div class="grid">
 
