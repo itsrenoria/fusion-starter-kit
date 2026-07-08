@@ -3885,6 +3885,7 @@
             acc[section] = type;
             return acc;
         }, {});
+        let scrollActiveSection = '';
 
         function syncFilterControls(type) {
             document.querySelectorAll('[data-type]').forEach((control) => {
@@ -3896,6 +3897,36 @@
             });
         }
 
+        function getScrollActiveSection() {
+            const headerOffset = document.querySelector('.type-filter-wrap')?.getBoundingClientRect().height || 0;
+            const probeY = Math.max(96, Math.round(headerOffset + 64));
+            const visibleSections = Array.from(document.querySelectorAll('.content-section'))
+                .filter((section) => section.style.display !== 'none');
+
+            let activeSection = '';
+            let bestDistance = Number.POSITIVE_INFINITY;
+
+            visibleSections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.bottom < probeY || rect.top > window.innerHeight) {
+                    return;
+                }
+
+                const distance = Math.abs(rect.top - probeY);
+                if (distance < bestDistance) {
+                    bestDistance = distance;
+                    activeSection = (section.getAttribute('data-section') || '').toLowerCase();
+                }
+            });
+
+            return activeSection;
+        }
+
+        function updateScrollActiveSection() {
+            scrollActiveSection = getScrollActiveSection();
+            syncWidgetFilterControls(activeWidgetFilter);
+        }
+
         function syncWidgetFilterControls(category) {
             document.querySelectorAll('[data-widget-filter]').forEach((control) => {
                 control.classList.toggle('active', control.dataset.widgetFilter === category);
@@ -3903,7 +3934,7 @@
 
             const wrap = document.getElementById('widgetFilterWrap');
             if (wrap) {
-                wrap.hidden = activeTypeFilter !== 'widgets';
+                wrap.hidden = activeTypeFilter !== 'widgets' && scrollActiveSection !== 'widgets';
             }
         }
 
@@ -4031,6 +4062,7 @@
                     section.style.display = matched ? '' : 'none';
                 }
             });
+            updateScrollActiveSection();
         }
 
         function revealActiveTypeSections() {
@@ -4055,8 +4087,11 @@
         }
 
         addEventListener('scroll', updateScrollChrome);
+        addEventListener('scroll', updateScrollActiveSection, { passive: true });
         addEventListener('resize', updateScrollChrome);
+        addEventListener('resize', updateScrollActiveSection);
         updateScrollChrome();
+        updateScrollActiveSection();
 
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
