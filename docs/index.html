@@ -1043,6 +1043,28 @@
             border-color: var(--w);
         }
 
+        .widget-filter-wrap {
+            margin-top: 8px;
+        }
+
+        .widget-filter-wrap[hidden] {
+            display: none;
+        }
+
+        .widget-filter {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            white-space: nowrap;
+            padding-bottom: 2px;
+        }
+
+        .widget-filter::-webkit-scrollbar {
+            display: none;
+        }
+
         .content-section {
             margin: 0;
             padding: clamp(36px, 6vh, 72px) 0;
@@ -1393,6 +1415,12 @@
                 white-space: normal;
             }
 
+            .widget-filter {
+                flex-wrap: wrap;
+                overflow-x: visible;
+                white-space: normal;
+            }
+
             .type-pill {
                 padding: 9px 12px;
             }
@@ -1466,6 +1494,16 @@
                     <button class="type-pill" data-type="aio-formatter" onclick="setTypeFilter('aio-formatter')">
                         AIO Formatter
                     </button>
+            </div>
+            <div class="widget-filter-wrap" id="widgetFilterWrap" hidden>
+                <div class="widget-filter" aria-label="Widget filters">
+                    <button class="type-pill active" data-widget-filter="all" onclick="setWidgetFilter('all')">All Widgets</button>
+                    <button class="type-pill" data-widget-filter="awards" onclick="setWidgetFilter('awards')">Awards</button>
+                    <button class="type-pill" data-widget-filter="decades" onclick="setWidgetFilter('decades')">Decades</button>
+                    <button class="type-pill" data-widget-filter="directors" onclick="setWidgetFilter('directors')">Directors</button>
+                    <button class="type-pill" data-widget-filter="genres" onclick="setWidgetFilter('genres')">Genres</button>
+                    <button class="type-pill" data-widget-filter="streaming" onclick="setWidgetFilter('streaming')">Streaming</button>
+                </div>
             </div>
         </div>
 
@@ -1614,7 +1652,190 @@
     </div>
     <div class="grid">
 
-    <div class="card card-widget" data-search="genres dangeruex23 poster widgets">
+    <div class="card card-widget" data-widget-category="awards" data-search="awards mousa.a poster widgets">
+        <div class="card-header-top">
+            <h3 class="card-title">Awards</h3>
+            <span class="card-author-inline">by mousa.a</span>
+            <span class="badge">poster</span>
+        </div>
+        <div class="card-preview">
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/bafta-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/fisa-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/goldenglobes-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/iff-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/oscars-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/viff-poster.png');"></div>
+        </div>
+        <div class="card-content">
+            <p class="card-author" style="display:none;">awards mousa.a poster widgets</p>
+            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-awards-poster-mousa.a.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-awards-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-awards-poster-mousa.a.json', true, true, this)">
+                <span class="btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                </span>
+                <span class="btn-text">Copy JSON URL</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card card-widget" data-widget-category="decades" data-search="decades mousa.a poster widgets">
+        <div class="card-header-top">
+            <h3 class="card-title">Decades</h3>
+            <span class="card-author-inline">by mousa.a</span>
+            <span class="badge">poster</span>
+        </div>
+        <div class="card-preview">
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1960s-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1970s-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1980s-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1990s-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2000s-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2010s-poster.png');"></div>
+            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2020s-poster.png');"></div>
+        </div>
+        <div class="card-content">
+            <p class="card-author" style="display:none;">decades mousa.a poster widgets</p>
+            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-poster-mousa.a.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-decades-poster-mousa.a.json', true, true, this)">
+                <span class="btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                </span>
+                <span class="btn-text">Copy JSON URL</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card card-widget" data-widget-category="decades" data-search="decades mousa.a wide widgets">
+        <div class="card-header-top">
+            <h3 class="card-title">Decades</h3>
+            <span class="card-author-inline">by mousa.a</span>
+            <span class="badge">wide</span>
+        </div>
+        <div class="card-preview">
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1960s-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1970s-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1980s-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1990s-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/2000s-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/2010s-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/2020s-wide.png');"></div>
+        </div>
+        <div class="card-content">
+            <p class="card-author" style="display:none;">decades mousa.a wide widgets</p>
+            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-wide-mousa.a.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-wide-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-decades-wide-mousa.a.json', true, true, this)">
+                <span class="btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                </span>
+                <span class="btn-text">Copy JSON URL</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card card-widget" data-widget-category="decades" data-search="decades orangebyte square widgets">
+        <div class="card-header-top">
+            <h3 class="card-title">Decades</h3>
+            <span class="card-author-inline">by orangebyte</span>
+            <span class="badge">square</span>
+        </div>
+        <div class="card-preview">
+            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1930s-square.png');"></div>
+            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1940s-square.png');"></div>
+            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1950s-square.png');"></div>
+            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1960s-square.png');"></div>
+            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1970s-square.png');"></div>
+            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1980s-square.png');"></div>
+            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1990s-square.png');"></div>
+            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/2000s-square.png');"></div>
+            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/2010s-square.png');"></div>
+            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/2020s-square.png');"></div>
+        </div>
+        <div class="card-content">
+            <p class="card-author" style="display:none;">decades orangebyte square widgets</p>
+            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-square-orangebyte.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-square-orangebyte.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-square-orangebyte.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-decades-square-orangebyte.json', true, true, this)">
+                <span class="btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                </span>
+                <span class="btn-text">Copy JSON URL</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card card-widget" data-widget-category="decades" data-search="decades rdnoni wide widgets">
+        <div class="card-header-top">
+            <h3 class="card-title">Decades</h3>
+            <span class="card-author-inline">by rdnoni</span>
+            <span class="badge">wide</span>
+        </div>
+        <div class="card-preview">
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/1980s-wide.jpg');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/1990s-wide.jpg');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2000s-wide.jpg');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2010s-wide.jpg');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2020s-wide.jpg');"></div>
+        </div>
+        <div class="card-content">
+            <p class="card-author" style="display:none;">decades rdnoni wide widgets</p>
+            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-wide-rdnoni.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-wide-rdnoni.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-decades-wide-rdnoni.json', true, true, this)">
+                <span class="btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                </span>
+                <span class="btn-text">Copy JSON URL</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card card-widget" data-widget-category="directors" data-search="directors fexm92 wide widgets">
+        <div class="card-header-top">
+            <h3 class="card-title">Directors</h3>
+            <span class="card-author-inline">by fexm92</span>
+            <span class="badge">wide</span>
+        </div>
+        <div class="card-preview">
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/anderson-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/carpenter-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/depalma-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/fincher-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/hitchcock-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/kubrick-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/nolan-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/scorsese-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/spielberg-wide.png');"></div>
+            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/villeneuve-wide.png');"></div>
+        </div>
+        <div class="card-content">
+            <p class="card-author" style="display:none;">directors fexm92 wide widgets</p>
+            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-directors-wide-fexm92.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-directors-wide-fexm92.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-directors-wide-fexm92.json', true, true, this)">
+                <span class="btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                </span>
+                <span class="btn-text">Copy JSON URL</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card card-widget" data-widget-category="genres" data-search="genres dangeruex23 poster widgets">
         <div class="card-header-top">
             <h3 class="card-title">Genres</h3>
             <span class="card-author-inline">by dangeruex23</span>
@@ -1658,7 +1879,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="genres dannyrutledge wide widgets">
+    <div class="card card-widget" data-widget-category="genres" data-search="genres dannyrutledge wide widgets">
         <div class="card-header-top">
             <h3 class="card-title">Genres</h3>
             <span class="card-author-inline">by dannyrutledge</span>
@@ -1737,129 +1958,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="directors fexm92 wide widgets">
-        <div class="card-header-top">
-            <h3 class="card-title">Directors</h3>
-            <span class="card-author-inline">by fexm92</span>
-            <span class="badge">wide</span>
-        </div>
-        <div class="card-preview">
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/anderson-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/carpenter-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/depalma-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/fincher-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/hitchcock-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/kubrick-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/nolan-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/scorsese-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/spielberg-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/directors/wide/fexm92/villeneuve-wide.png');"></div>
-        </div>
-        <div class="card-content">
-            <p class="card-author" style="display:none;">directors fexm92 wide widgets</p>
-            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-directors-wide-fexm92.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-directors-wide-fexm92.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-directors-wide-fexm92.json', true, true, this)">
-                <span class="btn-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                </span>
-                <span class="btn-text">Copy JSON URL</span>
-            </button>
-        </div>
-    </div>
-
-    <div class="card card-widget" data-search="awards mousa.a poster widgets">
-        <div class="card-header-top">
-            <h3 class="card-title">Awards</h3>
-            <span class="card-author-inline">by mousa.a</span>
-            <span class="badge">poster</span>
-        </div>
-        <div class="card-preview">
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/bafta-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/fisa-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/goldenglobes-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/iff-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/oscars-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/awards/poster/mousa.a/viff-poster.png');"></div>
-        </div>
-        <div class="card-content">
-            <p class="card-author" style="display:none;">awards mousa.a poster widgets</p>
-            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-awards-poster-mousa.a.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-awards-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-awards-poster-mousa.a.json', true, true, this)">
-                <span class="btn-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                </span>
-                <span class="btn-text">Copy JSON URL</span>
-            </button>
-        </div>
-    </div>
-
-    <div class="card card-widget" data-search="decades mousa.a poster widgets">
-        <div class="card-header-top">
-            <h3 class="card-title">Decades</h3>
-            <span class="card-author-inline">by mousa.a</span>
-            <span class="badge">poster</span>
-        </div>
-        <div class="card-preview">
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1960s-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1970s-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1980s-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/1990s-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2000s-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2010s-poster.png');"></div>
-            <div class="thumb" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/poster/mousa.a/2020s-poster.png');"></div>
-        </div>
-        <div class="card-content">
-            <p class="card-author" style="display:none;">decades mousa.a poster widgets</p>
-            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-poster-mousa.a.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-poster-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-decades-poster-mousa.a.json', true, true, this)">
-                <span class="btn-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                </span>
-                <span class="btn-text">Copy JSON URL</span>
-            </button>
-        </div>
-    </div>
-
-    <div class="card card-widget" data-search="decades mousa.a wide widgets">
-        <div class="card-header-top">
-            <h3 class="card-title">Decades</h3>
-            <span class="card-author-inline">by mousa.a</span>
-            <span class="badge">wide</span>
-        </div>
-        <div class="card-preview">
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1960s-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1970s-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1980s-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/1990s-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/2000s-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/2010s-wide.png');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/mousa.a/2020s-wide.png');"></div>
-        </div>
-        <div class="card-content">
-            <p class="card-author" style="display:none;">decades mousa.a wide widgets</p>
-            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-wide-mousa.a.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-wide-mousa.a.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-decades-wide-mousa.a.json', true, true, this)">
-                <span class="btn-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                </span>
-                <span class="btn-text">Copy JSON URL</span>
-            </button>
-        </div>
-    </div>
-
-    <div class="card card-widget" data-search="genres mousa.a poster widgets">
+    <div class="card card-widget" data-widget-category="genres" data-search="genres mousa.a poster widgets">
         <div class="card-header-top">
             <h3 class="card-title">Genres</h3>
             <span class="card-author-inline">by mousa.a</span>
@@ -1892,7 +1991,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="genres mousa.a wide widgets">
+    <div class="card card-widget" data-widget-category="genres" data-search="genres mousa.a wide widgets">
         <div class="card-header-top">
             <h3 class="card-title">Genres</h3>
             <span class="card-author-inline">by mousa.a</span>
@@ -1925,40 +2024,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="decades orangebyte square widgets">
-        <div class="card-header-top">
-            <h3 class="card-title">Decades</h3>
-            <span class="card-author-inline">by orangebyte</span>
-            <span class="badge">square</span>
-        </div>
-        <div class="card-preview">
-            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1930s-square.png');"></div>
-            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1940s-square.png');"></div>
-            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1950s-square.png');"></div>
-            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1960s-square.png');"></div>
-            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1970s-square.png');"></div>
-            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1980s-square.png');"></div>
-            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/1990s-square.png');"></div>
-            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/2000s-square.png');"></div>
-            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/2010s-square.png');"></div>
-            <div class="thumb square" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/square/orangebyte/2020s-square.png');"></div>
-        </div>
-        <div class="card-content">
-            <p class="card-author" style="display:none;">decades orangebyte square widgets</p>
-            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-square-orangebyte.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-square-orangebyte.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-square-orangebyte.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-decades-square-orangebyte.json', true, true, this)">
-                <span class="btn-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                </span>
-                <span class="btn-text">Copy JSON URL</span>
-            </button>
-        </div>
-    </div>
-
-    <div class="card card-widget" data-search="genres (color) orangebyte color square widgets">
+    <div class="card card-widget" data-widget-category="genres" data-search="genres (color) orangebyte color square widgets">
         <div class="card-header-top">
             <h3 class="card-title">Genres (Color)</h3>
             <span class="card-author-inline">by orangebyte</span>
@@ -1995,7 +2061,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="genres (fusion) orangebyte fusion square widgets">
+    <div class="card card-widget" data-widget-category="genres" data-search="genres (fusion) orangebyte fusion square widgets">
         <div class="card-header-top">
             <h3 class="card-title">Genres (Fusion)</h3>
             <span class="card-author-inline">by orangebyte</span>
@@ -2031,7 +2097,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="streaming orangebyte square widgets">
+    <div class="card card-widget" data-widget-category="streaming" data-search="streaming orangebyte square widgets">
         <div class="card-header-top">
             <h3 class="card-title">Streaming</h3>
             <span class="card-author-inline">by orangebyte</span>
@@ -2071,7 +2137,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="streaming (color) orangebyte color square widgets">
+    <div class="card card-widget" data-widget-category="streaming" data-search="streaming (color) orangebyte color square widgets">
         <div class="card-header-top">
             <h3 class="card-title">Streaming (Color)</h3>
             <span class="card-author-inline">by orangebyte</span>
@@ -2111,7 +2177,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="streaming (fusion) orangebyte fusion square widgets">
+    <div class="card card-widget" data-widget-category="streaming" data-search="streaming (fusion) orangebyte fusion square widgets">
         <div class="card-header-top">
             <h3 class="card-title">Streaming (Fusion)</h3>
             <span class="card-author-inline">by orangebyte</span>
@@ -2145,35 +2211,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="decades rdnoni wide widgets">
-        <div class="card-header-top">
-            <h3 class="card-title">Decades</h3>
-            <span class="card-author-inline">by rdnoni</span>
-            <span class="badge">wide</span>
-        </div>
-        <div class="card-preview">
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/1980s-wide.jpg');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/1990s-wide.jpg');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2000s-wide.jpg');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2010s-wide.jpg');"></div>
-            <div class="thumb wide" style="background-image: url('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2020s-wide.jpg');"></div>
-        </div>
-        <div class="card-content">
-            <p class="card-author" style="display:none;">decades rdnoni wide widgets</p>
-            <button class="copy-btn" onclick="copyWidgetJsonChoice('https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-wide-rdnoni.json', true, 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-decades-wide-rdnoni.json', 'https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/collections/collections-sourced-decades-wide-rdnoni.json', true, true, this)">
-                <span class="btn-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                </span>
-                <span class="btn-text">Copy JSON URL</span>
-            </button>
-        </div>
-    </div>
-
-    <div class="card card-widget" data-search="streaming (color) rdnoni color wide widgets">
+    <div class="card card-widget" data-widget-category="streaming" data-search="streaming (color) rdnoni color wide widgets">
         <div class="card-header-top">
             <h3 class="card-title">Streaming (Color)</h3>
             <span class="card-author-inline">by rdnoni</span>
@@ -2213,7 +2251,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="streaming (tinted) rdnoni tinted wide widgets">
+    <div class="card card-widget" data-widget-category="streaming" data-search="streaming (tinted) rdnoni tinted wide widgets">
         <div class="card-header-top">
             <h3 class="card-title">Streaming (Tinted)</h3>
             <span class="card-author-inline">by rdnoni</span>
@@ -2246,7 +2284,7 @@
         </div>
     </div>
 
-    <div class="card card-widget" data-search="streaming (transparent) rdnoni transparent wide widgets">
+    <div class="card card-widget" data-widget-category="streaming" data-search="streaming (transparent) rdnoni transparent wide widgets">
         <div class="card-header-top">
             <h3 class="card-title">Streaming (Transparent)</h3>
             <span class="card-author-inline">by rdnoni</span>
@@ -2547,8 +2585,9 @@
     </footer>
 
     <script>
-        const WIDGET_BUILDER_SOURCES = [{"id": "widgets-genres-poster-dangeruex23.json", "title": "Genres", "author": "dangeruex23", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-dangeruex23.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-dangeruex23.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-poster-dangeruex23.json", "hasSourced": true, "search": "genres dangeruex23 poster widgets-genres-poster-dangeruex23.json widgets"}, {"id": "widgets-genres-wide-dannyrutledge.json", "title": "Genres", "author": "dannyrutledge", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-dannyrutledge.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-dannyrutledge.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-wide-dannyrutledge.json", "hasSourced": true, "search": "genres dannyrutledge wide widgets-genres-wide-dannyrutledge.json widgets"}, {"id": "widgets-directors-wide-fexm92.json", "title": "Directors", "author": "fexm92", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-directors-wide-fexm92.json", "hasSourced": true, "search": "directors fexm92 wide widgets-directors-wide-fexm92.json widgets"}, {"id": "widgets-awards-poster-mousa.a.json", "title": "Awards", "author": "mousa.a", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-awards-poster-mousa.a.json", "hasSourced": true, "search": "awards mousa.a poster widgets-awards-poster-mousa.a.json widgets"}, {"id": "widgets-decades-poster-mousa.a.json", "title": "Decades", "author": "mousa.a", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-poster-mousa.a.json", "hasSourced": true, "search": "decades mousa.a poster widgets-decades-poster-mousa.a.json widgets"}, {"id": "widgets-decades-wide-mousa.a.json", "title": "Decades", "author": "mousa.a", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-wide-mousa.a.json", "hasSourced": true, "search": "decades mousa.a wide widgets-decades-wide-mousa.a.json widgets"}, {"id": "widgets-genres-poster-mousa.a.json", "title": "Genres", "author": "mousa.a", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-mousa.a.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-mousa.a.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-poster-mousa.a.json", "hasSourced": true, "search": "genres mousa.a poster widgets-genres-poster-mousa.a.json widgets"}, {"id": "widgets-genres-wide-mousa.a.json", "title": "Genres", "author": "mousa.a", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-mousa.a.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-mousa.a.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-wide-mousa.a.json", "hasSourced": true, "search": "genres mousa.a wide widgets-genres-wide-mousa.a.json widgets"}, {"id": "widgets-decades-square-orangebyte.json", "title": "Decades", "author": "orangebyte", "shape": "square", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-square-orangebyte.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-square-orangebyte.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-square-orangebyte.json", "hasSourced": true, "search": "decades orangebyte square widgets-decades-square-orangebyte.json widgets"}, {"id": "widgets-genres-square-orangebyte-color.json", "title": "Genres (Color)", "author": "orangebyte", "shape": "square", "variant": "color", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte-color.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte-color.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-square-orangebyte-color.json", "hasSourced": true, "search": "genres (color) orangebyte square color widgets-genres-square-orangebyte-color.json widgets"}, {"id": "widgets-genres-square-orangebyte-fusion.json", "title": "Genres (Fusion)", "author": "orangebyte", "shape": "square", "variant": "fusion", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte-fusion.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte-fusion.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-square-orangebyte-fusion.json", "hasSourced": true, "search": "genres (fusion) orangebyte square fusion widgets-genres-square-orangebyte-fusion.json widgets"}, {"id": "widgets-streaming-square-orangebyte.json", "title": "Streaming", "author": "orangebyte", "shape": "square", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-square-orangebyte.json", "hasSourced": true, "search": "streaming orangebyte square widgets-streaming-square-orangebyte.json widgets"}, {"id": "widgets-streaming-square-orangebyte-color.json", "title": "Streaming (Color)", "author": "orangebyte", "shape": "square", "variant": "color", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-color.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-color.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-square-orangebyte-color.json", "hasSourced": true, "search": "streaming (color) orangebyte square color widgets-streaming-square-orangebyte-color.json widgets"}, {"id": "widgets-streaming-square-orangebyte-fusion.json", "title": "Streaming (Fusion)", "author": "orangebyte", "shape": "square", "variant": "fusion", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-fusion.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-fusion.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-square-orangebyte-fusion.json", "hasSourced": true, "search": "streaming (fusion) orangebyte square fusion widgets-streaming-square-orangebyte-fusion.json widgets"}, {"id": "widgets-decades-wide-rdnoni.json", "title": "Decades", "author": "rdnoni", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-wide-rdnoni.json", "hasSourced": true, "search": "decades rdnoni wide widgets-decades-wide-rdnoni.json widgets"}, {"id": "widgets-streaming-wide-rdnoni-color.json", "title": "Streaming (Color)", "author": "rdnoni", "shape": "wide", "variant": "color", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-color.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-color.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-wide-rdnoni-color.json", "hasSourced": true, "search": "streaming (color) rdnoni wide color widgets-streaming-wide-rdnoni-color.json widgets"}, {"id": "widgets-streaming-wide-rdnoni-tinted.json", "title": "Streaming (Tinted)", "author": "rdnoni", "shape": "wide", "variant": "tinted", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-tinted.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-tinted.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-wide-rdnoni-tinted.json", "hasSourced": true, "search": "streaming (tinted) rdnoni wide tinted widgets-streaming-wide-rdnoni-tinted.json widgets"}, {"id": "widgets-streaming-wide-rdnoni-transparent.json", "title": "Streaming (Transparent)", "author": "rdnoni", "shape": "wide", "variant": "transparent", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-transparent.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-transparent.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-wide-rdnoni-transparent.json", "hasSourced": true, "search": "streaming (transparent) rdnoni wide transparent widgets-streaming-wide-rdnoni-transparent.json widgets"}];
+        const WIDGET_BUILDER_SOURCES = [{"id": "widgets-awards-poster-mousa.a.json", "title": "Awards", "author": "mousa.a", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-awards-poster-mousa.a.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-awards-poster-mousa.a.json", "hasSourced": true, "search": "awards mousa.a poster widgets-awards-poster-mousa.a.json widgets"}, {"id": "widgets-decades-poster-mousa.a.json", "title": "Decades", "author": "mousa.a", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-poster-mousa.a.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-poster-mousa.a.json", "hasSourced": true, "search": "decades mousa.a poster widgets-decades-poster-mousa.a.json widgets"}, {"id": "widgets-decades-wide-mousa.a.json", "title": "Decades", "author": "mousa.a", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-mousa.a.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-wide-mousa.a.json", "hasSourced": true, "search": "decades mousa.a wide widgets-decades-wide-mousa.a.json widgets"}, {"id": "widgets-decades-square-orangebyte.json", "title": "Decades", "author": "orangebyte", "shape": "square", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-square-orangebyte.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-square-orangebyte.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-square-orangebyte.json", "hasSourced": true, "search": "decades orangebyte square widgets-decades-square-orangebyte.json widgets"}, {"id": "widgets-decades-wide-rdnoni.json", "title": "Decades", "author": "rdnoni", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-decades-wide-rdnoni.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-decades-wide-rdnoni.json", "hasSourced": true, "search": "decades rdnoni wide widgets-decades-wide-rdnoni.json widgets"}, {"id": "widgets-directors-wide-fexm92.json", "title": "Directors", "author": "fexm92", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-directors-wide-fexm92.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-directors-wide-fexm92.json", "hasSourced": true, "search": "directors fexm92 wide widgets-directors-wide-fexm92.json widgets"}, {"id": "widgets-genres-poster-dangeruex23.json", "title": "Genres", "author": "dangeruex23", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-dangeruex23.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-dangeruex23.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-poster-dangeruex23.json", "hasSourced": true, "search": "genres dangeruex23 poster widgets-genres-poster-dangeruex23.json widgets"}, {"id": "widgets-genres-wide-dannyrutledge.json", "title": "Genres", "author": "dannyrutledge", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-dannyrutledge.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-dannyrutledge.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-wide-dannyrutledge.json", "hasSourced": true, "search": "genres dannyrutledge wide widgets-genres-wide-dannyrutledge.json widgets"}, {"id": "widgets-genres-poster-mousa.a.json", "title": "Genres", "author": "mousa.a", "shape": "poster", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-mousa.a.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-poster-mousa.a.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-poster-mousa.a.json", "hasSourced": true, "search": "genres mousa.a poster widgets-genres-poster-mousa.a.json widgets"}, {"id": "widgets-genres-wide-mousa.a.json", "title": "Genres", "author": "mousa.a", "shape": "wide", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-mousa.a.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-wide-mousa.a.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-wide-mousa.a.json", "hasSourced": true, "search": "genres mousa.a wide widgets-genres-wide-mousa.a.json widgets"}, {"id": "widgets-genres-square-orangebyte-color.json", "title": "Genres (Color)", "author": "orangebyte", "shape": "square", "variant": "color", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte-color.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte-color.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-square-orangebyte-color.json", "hasSourced": true, "search": "genres (color) orangebyte square color widgets-genres-square-orangebyte-color.json widgets"}, {"id": "widgets-genres-square-orangebyte-fusion.json", "title": "Genres (Fusion)", "author": "orangebyte", "shape": "square", "variant": "fusion", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte-fusion.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-genres-square-orangebyte-fusion.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-genres-square-orangebyte-fusion.json", "hasSourced": true, "search": "genres (fusion) orangebyte square fusion widgets-genres-square-orangebyte-fusion.json widgets"}, {"id": "widgets-streaming-square-orangebyte.json", "title": "Streaming", "author": "orangebyte", "shape": "square", "variant": "", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-square-orangebyte.json", "hasSourced": true, "search": "streaming orangebyte square widgets-streaming-square-orangebyte.json widgets"}, {"id": "widgets-streaming-square-orangebyte-color.json", "title": "Streaming (Color)", "author": "orangebyte", "shape": "square", "variant": "color", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-color.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-color.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-square-orangebyte-color.json", "hasSourced": true, "search": "streaming (color) orangebyte square color widgets-streaming-square-orangebyte-color.json widgets"}, {"id": "widgets-streaming-square-orangebyte-fusion.json", "title": "Streaming (Fusion)", "author": "orangebyte", "shape": "square", "variant": "fusion", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-fusion.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-square-orangebyte-fusion.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-square-orangebyte-fusion.json", "hasSourced": true, "search": "streaming (fusion) orangebyte square fusion widgets-streaming-square-orangebyte-fusion.json widgets"}, {"id": "widgets-streaming-wide-rdnoni-color.json", "title": "Streaming (Color)", "author": "rdnoni", "shape": "wide", "variant": "color", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-color.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-color.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-wide-rdnoni-color.json", "hasSourced": true, "search": "streaming (color) rdnoni wide color widgets-streaming-wide-rdnoni-color.json widgets"}, {"id": "widgets-streaming-wide-rdnoni-tinted.json", "title": "Streaming (Tinted)", "author": "rdnoni", "shape": "wide", "variant": "tinted", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-tinted.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-tinted.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-wide-rdnoni-tinted.json", "hasSourced": true, "search": "streaming (tinted) rdnoni wide tinted widgets-streaming-wide-rdnoni-tinted.json widgets"}, {"id": "widgets-streaming-wide-rdnoni-transparent.json", "title": "Streaming (Transparent)", "author": "rdnoni", "shape": "wide", "variant": "transparent", "url": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-transparent.json", "urlWithoutSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-streaming-wide-rdnoni-transparent.json", "urlWithSources": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/json/widgets/widgets-sourced-streaming-wide-rdnoni-transparent.json", "hasSourced": true, "search": "streaming (transparent) rdnoni wide transparent widgets-streaming-wide-rdnoni-transparent.json widgets"}];
         let activeTypeFilter = 'all';
+        let activeWidgetFilter = 'all';
         let copyChoiceState = null;
         let copySourceState = null;
         let manualCopyState = { triggerBtn: null };
@@ -3540,6 +3579,13 @@
             }
         }
 
+        function setButtonCopied(button, label = 'Copied') {
+            if (!button) {
+                return;
+            }
+            button.innerHTML = `<span class="btn-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span class="btn-text">${escapeHtml(label)}</span>`;
+        }
+
         function renderSetupBuilderList() {
             const elements = getBuilderElements();
             if (!elements.list) {
@@ -3695,6 +3741,7 @@
 
             const originalLabel = 'Build JSON';
             const triggerOriginalLabel = getButtonText(triggerBtn) || originalLabel;
+            const triggerOriginalHtml = triggerBtn?.innerHTML || '';
             const shouldUpdateTrigger = triggerBtn && triggerBtn !== elements.copyBtn;
             elements.copyBtn.disabled = true;
             setBuilderCopyButtonText('Building JSON');
@@ -3746,12 +3793,20 @@
                 const resultLabel = copied ? 'Copied' : 'Manual copy';
                 setBuilderCopyButtonText(resultLabel);
                 if (shouldUpdateTrigger) {
-                    setButtonText(triggerBtn, resultLabel);
+                    if (copied) {
+                        setButtonCopied(triggerBtn, resultLabel);
+                    } else {
+                        setButtonText(triggerBtn, resultLabel);
+                    }
                 }
                 setTimeout(() => {
                     setBuilderCopyButtonText(originalLabel);
                     if (shouldUpdateTrigger) {
-                        setButtonText(triggerBtn, triggerOriginalLabel);
+                        if (triggerOriginalHtml) {
+                            triggerBtn.innerHTML = triggerOriginalHtml;
+                        } else {
+                            setButtonText(triggerBtn, triggerOriginalLabel);
+                        }
                         triggerBtn.disabled = false;
                         triggerBtn.removeAttribute('aria-busy');
                     }
@@ -3841,15 +3896,33 @@
             });
         }
 
+        function syncWidgetFilterControls(category) {
+            document.querySelectorAll('[data-widget-filter]').forEach((control) => {
+                control.classList.toggle('active', control.dataset.widgetFilter === category);
+            });
+
+            const wrap = document.getElementById('widgetFilterWrap');
+            if (wrap) {
+                wrap.hidden = activeTypeFilter !== 'widgets';
+            }
+        }
+
         function syncFilterUrl(type) {
             const url = new URL(window.location.href);
 
             if (type === 'all') {
                 url.searchParams.delete('type');
+                url.searchParams.delete('widget');
                 url.hash = '';
             } else {
                 url.searchParams.set('type', type);
                 url.hash = FILTER_TO_SECTION[type] || '';
+            }
+
+            if (type === 'widgets' && activeWidgetFilter !== 'all') {
+                url.searchParams.set('widget', activeWidgetFilter);
+            } else {
+                url.searchParams.delete('widget');
             }
 
             window.history.replaceState({}, '', url);
@@ -3857,7 +3930,11 @@
 
         function setTypeFilter(type, syncUrl = true) {
             activeTypeFilter = type;
+            if (type !== 'widgets') {
+                activeWidgetFilter = 'all';
+            }
             syncFilterControls(type);
+            syncWidgetFilterControls(activeWidgetFilter);
 
             if (syncUrl) {
                 syncFilterUrl(type);
@@ -3867,24 +3944,46 @@
             revealActiveTypeSections();
         }
 
+        function setWidgetFilter(category, syncUrl = true) {
+            activeWidgetFilter = category;
+            if (activeTypeFilter !== 'widgets') {
+                activeTypeFilter = 'widgets';
+                syncFilterControls(activeTypeFilter);
+            }
+            syncWidgetFilterControls(category);
+
+            if (syncUrl) {
+                syncFilterUrl(activeTypeFilter);
+            }
+
+            filterCards();
+            revealActiveTypeSections();
+        }
+
         function initTypeFilterFromUrl() {
             const params = new URLSearchParams(window.location.search);
             const typeParam = params.get('type');
+            const widgetParam = params.get('widget');
             const hashSection = window.location.hash.replace('#', '');
             const inferredType = SECTION_TO_FILTER[hashSection] || 'all';
             const initialType = typeParam || inferredType;
 
             if (!initialType || initialType === 'all') {
                 syncFilterControls('all');
+                syncWidgetFilterControls('all');
                 filterCards();
                 return;
             }
 
             const targetControl = document.querySelector(`[data-type="${initialType}"]`);
             if (targetControl) {
+                if (initialType === 'widgets' && widgetParam && document.querySelector(`[data-widget-filter="${widgetParam}"]`)) {
+                    activeWidgetFilter = widgetParam;
+                }
                 setTypeFilter(initialType, false);
             } else {
                 syncFilterControls('all');
+                syncWidgetFilterControls('all');
                 filterCards();
             }
         }
@@ -3909,20 +4008,22 @@
                     let visibleCards = 0;
 
                     cards.forEach((card) => {
+                        const widgetCategory = (card.getAttribute('data-widget-category') || '').toLowerCase();
+                        const widgetMatched = sectionType !== 'widgets' || activeWidgetFilter === 'all' || widgetCategory === activeWidgetFilter;
                         const title = (card.querySelector('.card-title')?.textContent || '').toLowerCase();
                         const hidden = (card.querySelector('.card-author')?.textContent || '').toLowerCase();
                         const badge = (card.querySelector('.badge')?.textContent || '').toLowerCase();
                         const dataSearch = (card.getAttribute('data-search') || '').toLowerCase();
                         const combined = `${title} ${hidden} ${badge} ${dataSearch} ${sectionSearch}`;
 
-                        const matched = !filter || combined.includes(filter);
+                        const matched = widgetMatched && (!filter || combined.includes(filter));
                         card.style.display = matched ? '' : 'none';
                         if (matched) {
                             visibleCards += 1;
                         }
                     });
 
-                    section.style.display = (visibleCards > 0 || !filter) ? '' : 'none';
+                    section.style.display = (visibleCards > 0 || (!filter && activeWidgetFilter === 'all')) ? '' : 'none';
                 } else if (emptyState) {
                     const emptySearch = (emptyState.getAttribute('data-empty-search') || '').toLowerCase();
                     const combined = `${sectionSearch} ${emptySearch}`;
